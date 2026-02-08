@@ -5,23 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" id="viewport-meta">
   
 <script>
-  // Apply saved PC/Mobile mode as early as possible (before layout).
-  // IMPORTANT: Do NOT rewrite the viewport meta here (fixes iOS scrolling issues).
+  // Apply saved mode early (no viewport changes — fixes iOS scrolling)
   (function(){
     try{
-      var STORAGE_KEY = 'ttd_layout_mode';
-      var VERSION_KEY = 'ttd_layout_mode_ver';
-      var CURRENT_VER = '2'; // bump this if you ever want to force-reset everyone to PC again
-
-      // First load after an update: force PC Mode
-      var ver = localStorage.getItem(VERSION_KEY);
-      if (ver !== CURRENT_VER){
-        localStorage.setItem(VERSION_KEY, CURRENT_VER);
-        localStorage.setItem(STORAGE_KEY, 'pc');
-      }
-
-      var saved = localStorage.getItem(STORAGE_KEY);
-      if (saved === 'mobile'){
+      if (localStorage.getItem('ttd_layout_mode') === 'mobile'){
         document.documentElement.classList.add('mobile-mode');
       }
     }catch(e){}
@@ -1675,18 +1662,19 @@
 
     /* In Mobile Mode allow horizontal scrolling like "desktop site" */
     html.mobile-mode body{
-      /* Keep horizontal scrolling for wide layouts */
+      /* горизонтальный скролл оставляем */
       overflow-x: auto !important;
 
-      /* IMPORTANT: don't turn <body> into a separate vertical scroll container (iOS bug) */
+      /* ВАЖНО: не делаем body отдельным вертикальным скролл-контейнером (iOS bug) */
       overflow-y: visible !important;
 
-      /* Not needed on body */
+      /* на body не нужно */
       -webkit-overflow-scrolling: auto;
 
-      /* Helps mobile browsers treat gestures as scroll */
+      /* подсказка браузеру, что жесты — это прокрутка */
       touch-action: pan-x pan-y;
     }
+
 
     /* делаем “десктопную” ширину не через body/html, а через сам макет */
     html.mobile-mode .custom-container{
@@ -2631,10 +2619,10 @@
   <script>
         // ====== PC / Mobile Mode Toggle ======
     (function () {
-      const STORAGE_KEY = 'ttd_layout_mode';
-
       const VERSION_KEY = 'ttd_layout_mode_ver';
-      const CURRENT_VER = '2'; // bump to force default PC for everyone
+      const CURRENT_VER = '2'; // увеличивай, если захочешь снова сбросить всем режим
+
+
       // "Normal" responsive (PC Mode)
       const VIEWPORT_PC = 'width=device-width, initial-scale=1.0';
       const VIEWPORT_MOBILE = VIEWPORT_PC; // <-- ключ
@@ -2665,7 +2653,7 @@
         try {
           const ver = localStorage.getItem(VERSION_KEY);
 
-          // First load after an update: force PC Mode by default
+          // Первый запуск после обновления — форсируем PC
           if (ver !== CURRENT_VER) {
             localStorage.setItem(VERSION_KEY, CURRENT_VER);
             localStorage.setItem(STORAGE_KEY, 'pc');
@@ -2679,9 +2667,10 @@
         }
       }
 
+
       document.addEventListener('DOMContentLoaded', () => {
         const saved = getSavedMode();
-        setMode(saved);
+        setMode(saved || 'pc');
 
         const toggleBtn = document.getElementById('mode-toggle');
         if (!toggleBtn) return;
@@ -3470,7 +3459,7 @@
             speed: { min: 4, max: 2.5 },
             damage: { min: 16, max: 25 },
             dps: { min: 4, max: 10 },
-            splash: { min: 15, max: 15 },
+            splash: { min: 10, max: 10 },
             crit: { min: 10, max: 25 }
           },
           abilities: [
@@ -3560,6 +3549,130 @@
           ]
         },
         { 
+          name: `Witch TV Woman`, 
+          imageUrl: "https://i.postimg.cc/MZ9b8bD0/transparent_Photoroom_2026_01_28T172737_645.png",
+          rarity: 'legendary',
+          type: 'Splash & Support',
+          obtainmentStats: 
+          [
+            { from: "Zombie Battle Pass", chance: "Tier 40", imageUrl: "https://i.postimg.cc/zvKHfvN1/Скриншот_24_01_2026_223405.jpg" }
+          ],
+          stats: {
+            cost: { min: 700, max: "5,925" },
+            placements: { min: 3, max: 3 },
+            range: { min: 26, max: 40 },
+            speed: { min: 4, max: 3 },
+            damage: { min: 20, max: 50 },
+            splash: { min: 14, max: 14 },
+            dps: { min: 5, max: 16.66 }
+          },
+          abilities: [
+            {
+              name: "Lightning Bottle",
+              description: "Attacks may strike with lightning, stunning enemies for 4 seconds",
+              onLevel: 1,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            },
+            {
+              name: "Acid Bottle",
+              description: "Attacks may inflict toxic status effect for 8 seconds",
+              onLevel: 4,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            },
+            {
+              name: "Infernal Bottle",
+              description: "Attacks may inflict burn status effect for that deals 100% damage",
+              onLevel: 7,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            },
+          ]
+        },
+        { 
+          name: `Witch TV Woman (broom)`, 
+          imageUrl: "https://i.postimg.cc/PfcShLyF/transparent_Photoroom_2026_01_23T232325_156.png",
+          rarity: 'legendary',
+          type: 'Splash & Support & Booster',
+          obtainmentInfo: {
+            mode: 'craft',
+            craft: [
+              {
+                name: 'Witch TV Woman',
+                rarity: 'legendary',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/MZ9b8bD0/transparent_Photoroom_2026_01_28T172737_645.png'
+              },
+              {
+                name: 'Magical Broom',
+                rarity: 'legendary',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/j52HLwdx/transparent_Photoroom_2026_01_27T135251_006.png'
+              },
+              {
+                name: 'Eyeball',
+                rarity: 'common',
+                quantity: 60,
+                imageUrl: 'https://i.postimg.cc/vmDcVhHL/Eyeball.png'
+              }
+            ]
+          },
+          stats: {
+            cost: { min: 700, max: "11,575" },
+            placements: { min: 3, max: 3 },
+            range: { min: 32, max: 56 },
+            speed: { min: 3.5, max: 2.5 },
+            damage: { min: 25, max: 80 },
+            splash: { min: 17, max: 17 },
+            dps: { min: 7.1, max: 32 }
+          },
+          abilities: [
+            {
+              name: "Lightning Bottle",
+              description: "Attacks may strike with lightning, stunning enemies for 4 seconds",
+              onLevel: 1,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            },
+            {
+              name: "Acid Bottle",
+              description: "Attacks may inflict toxic status effect for 8 seconds",
+              onLevel: 4,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            },
+            {
+              name: "Infernal Bottle",
+              description: "Attacks may inflict burn status effect for that deals 100% damage",
+              onLevel: 7,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            },
+            {
+              name: "Damage Potion",
+              description: "Every 30 seconds damage buffs random nearby Unit by 30%",
+              onLevel: 9,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            },
+          ]
+        },
+        { 
           name: "Moyai", 
           imageUrl: "https://i.postimg.cc/wBZqch2Y/Moyai-Totem.png",
           rarity: 'legendary',
@@ -3570,6 +3683,7 @@
           ],
           stats: {
             cost: { min: "1,000", max: "19,000" },
+            placements: { min: 1, max: 1 },
             range: { min: 26, max: 50 }
           },
           abilities: [
