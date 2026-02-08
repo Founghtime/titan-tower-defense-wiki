@@ -5,18 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" id="viewport-meta">
   
 <script>
-  // Apply saved PC/Mobile mode as early as possible (before layout) for reliable viewport behavior.
+  // Apply saved PC/Mobile mode as early as possible (before layout).
+  // IMPORTANT: Do NOT rewrite the viewport meta here (fixes iOS scrolling issues).
   (function(){
     try{
-      var key = 'ttd_layout_mode';
-      var saved = localStorage.getItem(key);
-      var isMobile = (saved === 'mobile');
-      var meta = document.getElementById('viewport-meta') || document.querySelector('meta[name="viewport"]');
-      if (isMobile){
+      var STORAGE_KEY = 'ttd_layout_mode';
+      var VERSION_KEY = 'ttd_layout_mode_ver';
+      var CURRENT_VER = '2'; // bump this if you ever want to force-reset everyone to PC again
+
+      // First load after an update: force PC Mode
+      var ver = localStorage.getItem(VERSION_KEY);
+      if (ver !== CURRENT_VER){
+        localStorage.setItem(VERSION_KEY, CURRENT_VER);
+        localStorage.setItem(STORAGE_KEY, 'pc');
+      }
+
+      var saved = localStorage.getItem(STORAGE_KEY);
+      if (saved === 'mobile'){
         document.documentElement.classList.add('mobile-mode');
-        if (meta){
-          meta.setAttribute('content','width=1200, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, user-scalable=yes, shrink-to-fit=no');
-        }
       }
     }catch(e){}
   })();
@@ -1669,9 +1675,17 @@
 
     /* In Mobile Mode allow horizontal scrolling like "desktop site" */
     html.mobile-mode body{
+      /* Keep horizontal scrolling for wide layouts */
       overflow-x: auto !important;
-      overflow-y: auto !important;
-      -webkit-overflow-scrolling: touch;
+
+      /* IMPORTANT: don't turn <body> into a separate vertical scroll container (iOS bug) */
+      overflow-y: visible !important;
+
+      /* Not needed on body */
+      -webkit-overflow-scrolling: auto;
+
+      /* Helps mobile browsers treat gestures as scroll */
+      touch-action: pan-x pan-y;
     }
 
     /* делаем “десктопную” ширину не через body/html, а через сам макет */
@@ -2619,6 +2633,8 @@
     (function () {
       const STORAGE_KEY = 'ttd_layout_mode';
 
+      const VERSION_KEY = 'ttd_layout_mode_ver';
+      const CURRENT_VER = '2'; // bump to force default PC for everyone
       // "Normal" responsive (PC Mode)
       const VIEWPORT_PC = 'width=device-width, initial-scale=1.0';
       const VIEWPORT_MOBILE = VIEWPORT_PC; // <-- ключ
@@ -2647,16 +2663,25 @@
 
       function getSavedMode() {
         try {
+          const ver = localStorage.getItem(VERSION_KEY);
+
+          // First load after an update: force PC Mode by default
+          if (ver !== CURRENT_VER) {
+            localStorage.setItem(VERSION_KEY, CURRENT_VER);
+            localStorage.setItem(STORAGE_KEY, 'pc');
+            return 'pc';
+          }
+
           const v = localStorage.getItem(STORAGE_KEY);
-          return (v === 'mobile' || v === 'pc') ? v : null;
+          return (v === 'mobile' || v === 'pc') ? v : 'pc';
         } catch (e) {
-          return null;
+          return 'pc';
         }
       }
 
       document.addEventListener('DOMContentLoaded', () => {
         const saved = getSavedMode();
-        setMode(saved || 'pc');
+        setMode(saved);
 
         const toggleBtn = document.getElementById('mode-toggle');
         if (!toggleBtn) return;
@@ -15440,5 +15465,4 @@ document.addEventListener('DOMContentLoaded', initWiki);
   </script>
 </body>
 </html>
-
 
