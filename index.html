@@ -3042,7 +3042,7 @@
           abilities: [
             {
               name: "Toxic",
-              description: "Attacks inflict toxic that increases toilet damage taken by 25%",
+              description: "Attacks inflict toxic status effect that increases toilet damage taken by 25%",
               onLevel: 4,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -3492,7 +3492,7 @@
           abilities: [
             {
               name: "Toxic",
-              description: "Attacks inflict toxic effect that increases toilet damage taken by 25%",
+              description: "Attacks inflict toxic status effect that increases toilet damage taken by 25%",
               onLevel: 1,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -3587,7 +3587,7 @@
             },
             {
               name: "Infernal Bottle",
-              description: "Attacks may inflict burn status effect for that deals 100% damage",
+              description: "Attacks may inflict burn status effect for 100% damage",
               onLevel: 7,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -3654,7 +3654,7 @@
             },
             {
               name: "Infernal Bottle",
-              description: "Attacks may inflict burn status effect for that deals 100% damage",
+              description: "Attacks may inflict burn status effect for 100% damage",
               onLevel: 7,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -3666,7 +3666,7 @@
               description: "Every 30 seconds damage buffs random nearby Unit by 30%",
               onLevel: 9,
               type: "Passive",
-              speed: { min: 0, max: 0 },
+              speed: { min: 30, max: 30 },
               damage: { min: 0, max: 0 },
               dps: { min: 0, max: 0 }
             },
@@ -4022,7 +4022,7 @@
         },
         { 
           name: `Shackled Speaker Guy (no escape)`, 
-          imageUrl: "https://i.postimg.cc/QMm44WLM/transparent_Photoroom_(27).png",
+          imageUrl: "https://i.postimg.cc/XNhs3ZLm/transparent_Photoroom_2026_01_23T232216_711.png",
           rarity: 'legendary',
           type: 'Single Target',
           obtainmentInfo: {
@@ -4088,12 +4088,12 @@
         },
         { 
           name: `Wave Crusher Camera Guy`, 
-          imageUrl: "https://i.postimg.cc/QMm44WLM/transparent_Photoroom_(27).png",
+          imageUrl: "https://i.postimg.cc/fyNVWHqH/Wave_Camera_Crusher.png",
           rarity: 'legendary',
           type: 'Single Target',
           obtainmentStats: 
           [
-            { from: "Summer Crate", chance: "3%", imageUrl: "https://i.postimg.cc/m2nsQsmv/Banner.jpg" }
+            { from: "Summer Crate", chance: "3%", imageUrl: "https://i.postimg.cc/tJf6xLKb/Summer_Crate.jpg" }
           ],
           stats: {
             cost: { min: "1,400", max: "10,050" },
@@ -4116,6 +4116,78 @@
               dps: { min: 0, max: 0 }
             }
           ]
+        },
+        { 
+          name: `Pirate Speaker Woman`, 
+          imageUrl: "https://i.postimg.cc/vZnQFKTc/Pirate_Speaker_Woman.png",
+          rarity: 'legendary',
+          type: 'AOE',
+          obtainmentStats: 
+          [
+            { from: "Zombie Crate", chance: "3%", imageUrl: "https://i.postimg.cc/ZngNd1GS/Zombie_Crate.jpg" }
+          ],
+          stats: {
+            cost: { min: "350", max: "4,000" },
+            placements: { min: 3, max: 3 },
+            range: { min: 20, max: 26 },
+            speed: { min: 3, max: 2.5 },
+            damage: { min: 12, max: 34 },
+            angle: { min: 100, max: 100 },
+            cash: { min: 30, max: 200 },
+            dps: { min: 4, max: 13.6 }
+          },
+          abilities: [
+            {
+              name: "Rusty Hook",
+              description: "Attacks inflict bleed status effect for 25% damage over 3 seconds",
+              onLevel: 3,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            },
+            {
+              name: "Smoke Bomb",
+              description: "Every 16 seconds, stuns enemies for 3 seconds",
+              onLevel: 5,
+              type: "Passive",
+              speed: { min: 16, max: 16 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            },
+          ]
+        },
+        { 
+          name: `Ninja Camera Guy (dual wield)`, 
+          imageUrl: "https://i.postimg.cc/V6jnCPXG/Ninja_Camera_Guy.png",
+          rarity: 'legendary',
+          type: 'Single target',
+          obtainmentInfo: {
+            mode: 'craft',
+            craft: [
+              {
+                name: 'Ninja Camera Guy',
+                rarity: 'epic',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/V6jnCPXG/Ninja_Camera_Guy.png'
+              },
+              {
+                name: 'Lost Plunger',
+                rarity: 'rare',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/dtTTRyrN/transparent_Photoroom_(16).png'
+              }
+            ]
+          },
+          stats: {
+            cost: { min: "300", max: "4,000" },
+            placements: { min: 4, max: 4 },
+            range: { min: 30, max: 70 },
+            speed: { min: 1.5, max: 1 },
+            damage: { min: 12, max: 25 },
+            crit: { min: 25, max: 75 },
+            dps: { min: 8, max: 25 }
+          }
         },
         { 
           name: "Moyai", 
@@ -4410,7 +4482,7 @@
             },
             {
               name: "Ignition",
-              description: "Titan Grill Guy burns enemies for 100% damage over 10 seconds",
+              description: "Attacks inflict burn status effect for 100% damage over 10 seconds",
               onLevel: 7,
               type: "Pasive",
               speed: { min: 0, max: 0 },
