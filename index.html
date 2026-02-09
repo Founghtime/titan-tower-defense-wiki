@@ -3197,14 +3197,14 @@
             { from: "Gear Lab Map", chance: "Beating the Map (2.5% on Easy | 3% on Normal | 3.5% on Hard | 4% on Insane)", imageUrl: "https://i.postimg.cc/zBXZ1zvB/Скриншот_06_01_2026_163700.jpg" }
           ],
           stats: {
-            cost: { min: 600, max: "4,600" },
+            cost: { min: 600, max: "4,600 (45 scrap)" },
             placements: { min: 4, max: 4 },
             speed: { min: 12, max: 8 }
           },
           abilities: [
             {
               name: "Gear Research",
-              description: "Attacks reduce gear cooldown by 1s",
+              description: "Attacks reduce gear cooldown by 1s (1.6s)",
               onLevel: 1,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -3336,7 +3336,7 @@
             },
             {
               name: "Emergency Fund",
-              description: "Gives +350 cash if you are holding less than 800 cash at the start of the wave",
+              description: "Gives +350 (600) cash if you are holding less than 800 (1,000) cash at the start of the wave",
               onLevel: 1,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -3403,7 +3403,7 @@
           stats: {
             cost: { min: 600, max: "4,550 (165 Scrap)" },
             placements: { min: 4, max: 4 },
-            range: { min: 24, max: 30 },
+            range: { min: 24, max: "30 (31)" },
             speed: { min: 2, max: 1 },
             damage: { min: 5, max: 12 },
             dps: { min: 2.5, max: 12 }
@@ -3411,7 +3411,7 @@
           abilities: [
             {
               name: "Camera Command",
-              description: "Camera units within range gain +20% damage",
+              description: "Camera units within range gain +20% (26%) damage",
               onLevel: 6,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -3830,7 +3830,7 @@
             ]
           },
           stats: {
-            cost: { min: 900, max: "11,950 + 35 scrap" },
+            cost: { min: 900, max: "11,950 (35 scrap)" },
             placements: { min: 2, max: 2 },
             range: { min: 30, max: 45 },
             speed: { min: 2, max: 1.5 },
@@ -3850,7 +3850,7 @@
             },
             {
               name: "Metal Fangs",
-              description: "Uses 30 blood stacks to deal 10x damage and heal the base by 5%",
+              description: "Uses 30 blood stacks to deal 10x damage and heal the base by 5% (8%)",
               onLevel: 4,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -4243,6 +4243,259 @@
           ]
         },
         { 
+          name: `Mace Camera Guy`, 
+          imageUrl: "https://i.postimg.cc/nhgPFTty/transparent_Photoroom_2026_01_25T140008_055.png",
+          rarity: 'legendary',
+          type: 'Splash',
+          obtainmentInfo: {
+            mode: 'craft',
+            craft: [
+              {
+                name: 'Camera Guy',
+                rarity: 'common',
+                quantity: 3,
+                imageUrl: 'https://i.postimg.cc/qv7FBZfK/Camera_Guy.png'
+              },
+              {
+                name: 'Mace',
+                rarity: 'legendary',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/fTFpF6VP/transparent_Photoroom_(18).png'
+              }
+            ]
+          },
+          stats: {
+            cost: { min: "450", max: "5,200" },
+            placements: { min: 3, max: 3 },
+            range: { min: 22, max: 36 },
+            speed: { min: 3.7, max: 2.5 },
+            damage: { min: 24, max: 75 },
+            splash: { min: 18, max: 21 },
+            dps: { min: 6.5, max: 30 }
+          },
+          abilities: [
+            {
+              name: "Grand Slam",
+              description: "Every other attack is twice as large",
+              onLevel: 4,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            },
+            {
+              name: "Heave Blows",
+              description: "Damage dealt to enemies above 50% health is increased by 30%",
+              onLevel: 7,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            },
+          ]
+        },
+        { 
+          name: `Large Disabler Camera Guy`, 
+          imageUrl: "https://i.postimg.cc/44tspj2j/transparent_Photoroom_(82).png",
+          rarity: 'legendary',
+          type: 'Single target',
+          obtainmentInfo: {
+            mode: 'craft',
+            craft: [
+              {
+                name: 'Large Camera Guy',
+                rarity: 'rare',
+                quantity: 3,
+                imageUrl: 'https://i.postimg.cc/Hx32xQQL/Large_Camera_Guy.png'
+              },
+              {
+                name: 'Disabler Gun',
+                rarity: 'epic',
+                quantity: 2,
+                imageUrl: 'https://i.postimg.cc/vBKW9YcD/transparent_Photoroom_2026_01_27T134514_661.png'
+              },
+              {
+                name: 'Charged Battery',
+                rarity: 'common',
+                quantity: 8,
+                imageUrl: 'https://i.postimg.cc/5yjHM8Q9/transparent_Photoroom_(23).png'
+              }
+            ]
+          },
+          stats: {
+            cost: { min: "800", max: "7,900" },
+            placements: { min: 3, max: 3 },
+            range: { min: 30, max: 45 },
+            speed: { min: 3.5, max: 3 },
+            damage: { min: 30, max: 50 },
+            strokes: { min: 2, max: 2 },
+            dps: { min: 17.1, max: 33.33 }
+          },
+          abilities: [
+            {
+              name: "Stun Disabler",
+              description: "Attacks can shoot stunned Units to unstun them",
+              onLevel: 4,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            },
+            {
+              name: "Stun Gun",
+              description: "Attacks stun toilets for 1 second",
+              onLevel: 6,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            },
+            {
+              name: "Anti-Parasite",
+              description: "Damage is doubled against infected enemies and parasites",
+              onLevel: 7,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            },
+          ]
+        },
+        { 
+          name: `Grillmaster TV Guy (chef)`, 
+          imageUrl: "https://i.postimg.cc/cLnrZF7f/transparent_Photoroom_2026_01_23T153613_892.png",
+          rarity: 'legendary',
+          type: 'Splash',
+          obtainmentInfo: {
+            mode: 'craft',
+            craft: [
+              {
+                name: 'Grillmaster TV Guy',
+                rarity: 'epic',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/hj5YYxXS/Grillmaster_TV_Guy.png'
+              },
+              {
+                name: "Chef's Hat",
+                rarity: 'epic',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/cHzQYxrC/transparent_Photoroom_2026_01_27T134931_315.png'
+              },
+              {
+                name: 'Sunscreen',
+                rarity: 'common',
+                quantity: 25,
+                imageUrl: 'https://i.postimg.cc/66Vb5k2z/Sunscreen_Photoroom.png'
+              }
+            ]
+          },
+          stats: {
+            cost: { min: "500", max: "4,975" },
+            placements: { min: 2, max: 2 },
+            range: { min: 18, max: 22 },
+            speed: { min: 4, max: 2.5 },
+            damage: { min: 24, max: 40 },
+            crit: { min: 10, max: 25 },
+            splash: { min: 10, max: 14 },
+            dps: { min: 6, max: 16 }
+          },
+          abilities: [
+            {
+              name: "Raging Grill",
+              description: "Nearby allies gain +20% crit chance",
+              onLevel: 5,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            },
+            {
+              name: "TV Cuisine",
+              description: "Nearby TV Guys gain +30% crit chance",
+              onLevel: 7,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            }
+          ]
+        },
+        { 
+          name: `Golden Mace Camera Guy`, 
+          imageUrl: "https://i.postimg.cc/G3XBY5Mw/transparent_Photoroom_(91).png",
+          rarity: 'legendary',
+          type: 'Splash + Farm',
+          obtainmentInfo: {
+            mode: 'craft',
+            craft: [
+              {
+                name: 'Mace Camera Guy',
+                rarity: 'legendary',
+                quantity: 2,
+                imageUrl: 'https://i.postimg.cc/nhgPFTty/transparent_Photoroom_2026_01_25T140008_055.png'
+              },
+              {
+                name: 'Gold Bar',
+                rarity: 'legendary',
+                quantity: 3,
+                imageUrl: 'https://i.postimg.cc/90PTCdQK/image.png'
+              },
+              {
+                name: 'Reinforced Plating',
+                rarity: 'epic',
+                quantity: 6,
+                imageUrl: 'https://i.postimg.cc/FKJHZQZD/Reinforced_Plating.png'
+              }
+            ]
+          },
+          stats: {
+            cost: { min: 500, max: "5,250 (20 scrap)" },
+            placements: { min: 3, max: 3 },
+            range: { min: 20, max: 38 },
+            speed: { min: 4, max: 3 },
+            damage: { min: 30, max: 150 },
+            splash: { min: 18, max: "21 (42)" },
+            cash: { min: 50, max: 550 },
+            dps: { min: 7.5, max: 50 }
+          },
+          abilities: [
+            {
+              name: "Bank Bash",
+              description: "Gain 30 cash if an attack hits 4+ enemies",
+              onLevel: 1,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            },
+            {
+              name: "Overtime",
+              description: "Attacks are 1% bigger for each 100 cash you hold, capped at 100%",
+              onLevel: 4,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 500, max: 900 },
+              dps: { min: 0, max: 0 }
+            },
+            {
+              name: "Heavy Blows",
+              description: "Damage dealt to toilets above 50% (40%) health is increased by 30%",
+              onLevel: 7,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            },
+          ],
+          scrapUpgrades: {
+            levels: 1,
+            prices: [20],
+            abilities: [
+              { ability: "Heavy Blows (min toilet health)", values: ["50% → 40%"] }
+            ]
+          }
+        },
+        { 
           name: "Infected Titan Speaker Guy", 
           imageUrl: "https://i.postimg.cc/HkhfgqS4/Infected-Titan-Speaker-Guy.png",
           rarity: 'mythic',
@@ -4271,7 +4524,7 @@
             },
             {
               name: "Infused",
-              description: "Damage to the toilet is increased by 25% per debuff inflicted on the toilet",
+              description: "Damage to the toilet is increased by 25% (40%) per debuff inflicted on the toilet",
               onLevel: 9,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -4283,7 +4536,7 @@
             levels: 3,
             prices: [25, 30, 35],
             abilities: [
-              { ability: "Infused (damage buff)", values: ["25% → 30%", "30% → 35%", "35 → 40"] },
+              { ability: "Infused (damage buff)", values: ["25% → 30%", "30% → 35%", "35% → 40%"] },
               { ability: "🎯 Range", values: ["70 → 71", "71 → 73", "73 → 75"] }
             ]
           }
@@ -4392,7 +4645,7 @@
             },
             {
               name: "Devour",
-              description: "Gain +1 damage when Gnaw kills an enemy, max +50",
+              description: "Gain +1 (3) damage when Gnaw kills an enemy, max +50 (105)",
               onLevel: 8,
               type: "Pasive",
               speed: { min: 0, max: 0 },
@@ -4520,7 +4773,7 @@
             ]
           },
           stats: {
-            cost: { min: "4,600", max: "59,000" },
+            cost: { min: "4,600", max: "59,000 (55 scrap)" },
             placements: { min: 1, max: 1 },
             range: { min: 45, max: "62 (66)" },
             speed: { min: 3.5, max: 7 },
@@ -4542,7 +4795,7 @@
             },
             {
               name: "Too Hot",
-              description: "Titan Grill Guy debuffs allies in range for 40% damage",
+              description: "Titan Grill Guy debuffs allies in range for 40% (30%) damage",
               onLevel: 1,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -4579,7 +4832,7 @@
             { from: "Banner", chance: "0.001%", imageUrl: "https://i.postimg.cc/m2nsQsmv/Banner.jpg" }
           ],
           stats: {
-            cost: { min: "5 Scrap", max: "29,800 + 125 scrap" },
+            cost: { min: "5 Scrap", max: "29,800 (125 scrap)" },
             placements: { min: 1, max: 1 },
             range: { min: 28, max: "38 (42)" },
             speed: { min: 3.5, max: 2.5 },
@@ -4610,7 +4863,7 @@
           ],
           scrapUpgrades: {
             levels: 1,
-            prices: [120],
+            prices: [80],
             abilities: [
               { ability: "🎯 Range", values: ["38 → 42"] },
               { ability: "Infinity", values: ["Allows to place another Clock Woman"] },
@@ -4684,7 +4937,7 @@
             ]
           },
           stats: {
-            cost: { min: "500", max: "29,650" },
+            cost: { min: "500", max: "29,650 (100 scrpa)" },
             placements: { min: 3, max: 3 },
             range: { min: 36, max: 90 },
             speed: { min: 4, max: 2 },
@@ -4712,7 +4965,7 @@
             },
             {
               name: "Conduit",
-              description: "Energy TV Guy gains 10% of the damage from all units in range, max +300",
+              description: "Energy TV Guy gains 10% (15%) of the damage from all units in range, max +300 (350)",
               onLevel: 2,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -16096,4 +16349,3 @@ document.addEventListener('DOMContentLoaded', initWiki);
   </script>
 </body>
 </html>
-
