@@ -3398,7 +3398,7 @@
           type: 'Single target & Booster',
           obtainmentStats: 
           [
-            { from: "Train Route Map", chance: "Beating the Map (2.5% on Easy | 3% on Normal | 3.5% on Insane)", imageUrl: "https://i.postimg.cc/zBXZ1zvB/Скриншот_06_01_2026_163700.jpg" }
+            { from: "Train Route Map", chance: "Beating the Map (2.5% on Easy | 3% on Normal | 3.5% on Insane)", imageUrl: "https://i.postimg.cc/NMfqwsFQ/Скриншот_06_01_2026_163441.jpg" }
           ],
           stats: {
             cost: { min: 600, max: "4,550 (165 Scrap)" },
@@ -4424,7 +4424,7 @@
           name: `Golden Mace Camera Guy`, 
           imageUrl: "https://i.postimg.cc/G3XBY5Mw/transparent_Photoroom_(91).png",
           rarity: 'legendary',
-          type: 'Splash + Farm',
+          type: 'Splash & Farm',
           obtainmentInfo: {
             mode: 'craft',
             craft: [
@@ -4454,7 +4454,7 @@
             range: { min: 20, max: 38 },
             speed: { min: 4, max: 3 },
             damage: { min: 30, max: 150 },
-            splash: { min: 18, max: "21 (42)" },
+            splash: { min: 18, max: 21 },
             cash: { min: 50, max: 550 },
             dps: { min: 7.5, max: 50 }
           },
@@ -4474,7 +4474,7 @@
               onLevel: 4,
               type: "Passive",
               speed: { min: 0, max: 0 },
-              damage: { min: 500, max: 900 },
+              damage: { min: 0, max: 0 },
               dps: { min: 0, max: 0 }
             },
             {
@@ -4494,6 +4494,152 @@
               { ability: "Heavy Blows (min toilet health)", values: ["50% → 40%"] }
             ]
           }
+        },
+        { 
+          name: `Golden Disabler Camera Guy`, 
+          imageUrl: "https://i.postimg.cc/2831x7tX/transparent_Photoroom_(90).png",
+          rarity: 'legendary',
+          type: 'Single Target & Farm & Support',
+          obtainmentInfo: {
+            mode: 'craft',
+            craft: [
+              {
+                name: 'Disabler Camera Guy',
+                rarity: 'legendary',
+                quantity: 4,
+                imageUrl: 'https://i.postimg.cc/02H2mQvP/Disabler_Camera_Guy.png'
+              },
+              {
+                name: 'Gold Bar',
+                rarity: 'legendary',
+                quantity: 6,
+                imageUrl: 'https://i.postimg.cc/90PTCdQK/image.png'
+              },
+              {
+                name: 'Disabler Gun',
+                rarity: 'epic',
+                quantity: 2,
+                imageUrl: 'https://i.postimg.cc/vBKW9YcD/transparent_Photoroom_2026_01_27T134514_661.png'
+              },
+              {
+                name: 'Reinforced Plating',
+                rarity: 'epic',
+                quantity: 6,
+                imageUrl: 'https://i.postimg.cc/FKJHZQZD/Reinforced_Plating.png'
+              },
+              {
+                name: 'Camera',
+                rarity: 'uncommon',
+                quantity: 999,
+                imageUrl: 'https://i.postimg.cc/tTZR4Rwz/transparent_Photoroom_2026_01_24T151822_437.png'
+              },
+              {
+                name: 'Metal Plating',
+                rarity: 'common',
+                quantity: 99,
+                imageUrl: 'https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png'
+              },
+            ]
+          },
+          stats: {
+            cost: { min: 650, max: "7,600" },
+            placements: { min: 4, max: 4 },
+            range: { min: 36, max: 46 },
+            speed: { min: 2.5, max: 2 },
+            damage: { min: 20, max: 80 },
+            cash: { min: 200, max: 500 },
+            dps: { min: 8, max: 40 }
+          },
+          abilities: [
+            {
+              name: "Stun Disabler",
+              description: "Attacks can shoot stunned Units to unstun them",
+              onLevel: 4,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            },
+            {
+              name: "Refund",
+              description: "Refunds 10% of Unit upgrade cost within range",
+              onLevel: 6,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            },
+            {
+              name: "Anti-Parasite",
+              description: "Damage is doubled against infected enemies and parasites",
+              onLevel: 7,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            },
+          ]
+        },
+        { 
+          name: `Golden Camera Toilet`, 
+          imageUrl: "https://i.postimg.cc/7PJv6m87/transparent_Photoroom_(32).png",
+          rarity: 'legendary',
+          type: 'Single Target & Farm',
+          obtainmentInfo: {
+            mode: 'craft',
+            craft: [
+              {
+                name: 'Camera Toilet',
+                rarity: 'uncommon',
+                quantity: 3,
+                imageUrl: 'https://i.postimg.cc/Y2DRfNvk/Camera_Toilet.png'
+              },
+              {
+                name: 'Gold Bar',
+                rarity: 'legendary',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/90PTCdQK/image.png'
+              }
+            ]
+          },
+          stats: {
+            cost: { min: 650, max: "7,600" },
+            placements: { min: 4, max: 4 },
+            range: { min: 36, max: 46 },
+            speed: { min: 2.5, max: 2 },
+            damage: { min: 20, max: 80 },
+            cash: { min: 200, max: 500 },
+            dps: { min: 8, max: 40 }
+          },
+          abilities: [
+            {
+              name: "Stun Disabler",
+              description: "Attacks can shoot stunned Units to unstun them",
+              onLevel: 4,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            },
+            {
+              name: "Refund",
+              description: "Refunds 10% of Unit upgrade cost within range",
+              onLevel: 6,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            },
+            {
+              name: "Anti-Parasite",
+              description: "Damage is doubled against infected enemies and parasites",
+              onLevel: 7,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            },
+          ]
         },
         { 
           name: "Infected Titan Speaker Guy", 
