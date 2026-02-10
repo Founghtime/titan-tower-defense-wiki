@@ -4470,7 +4470,7 @@
             },
             {
               name: "Overtime",
-              description: "Attacks are 1% bigger for each 100 cash you hold, capped at 100%",
+              description: "Attacks are +1% bigger for each 100 cash you hold, capped at +100%",
               onLevel: 4,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -4603,27 +4603,86 @@
             ]
           },
           stats: {
-            cost: { min: 650, max: "7,600" },
-            placements: { min: 4, max: 4 },
-            range: { min: 36, max: 46 },
-            speed: { min: 2.5, max: 2 },
-            damage: { min: 20, max: 80 },
-            cash: { min: 200, max: 500 },
-            dps: { min: 8, max: 40 }
+            cost: { min: 500, max: "16,250" },
+            placements: { min: 1, max: 1 },
+            range: { min: 25, max: 60 },
+            speed: { min: 2, max: 0.5 },
+            damage: { min: 6, max: 30 },
+            cash: { min: 100, max: "1,150" },
+            dps: { min: 3, max: 60 }
           },
           abilities: [
             {
-              name: "Stun Disabler",
-              description: "Attacks can shoot stunned Units to unstun them",
-              onLevel: 4,
+              name: "Cash Crush",
+              description: "Killing blows give +1% cash per wave, capped at +100%",
+              onLevel: 1,
               type: "Passive",
               speed: { min: 0, max: 0 },
               damage: { min: 0, max: 0 },
               dps: { min: 0, max: 0 }
             },
             {
-              name: "Refund",
-              description: "Refunds 10% of Unit upgrade cost within range",
+              name: "Golden Gun",
+              description: "Attacks deal 1 increased damage for each 1,000 cash you hold up, capped at 100",
+              onLevel: 6,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            }
+          ]
+        },
+        { 
+          name: `Golden Crusher Camera Guy`, 
+          imageUrl: "https://i.postimg.cc/Gh94jxff/transparent_Photoroom_(89).png",
+          rarity: 'legendary',
+          type: 'Single Target → AOE & Farm',
+          obtainmentInfo: {
+            mode: 'craft',
+            craft: [
+              {
+                name: 'Crusher Camera Guy',
+                rarity: 'legendary',
+                quantity: 2,
+                imageUrl: 'https://i.postimg.cc/mDRmXFWN/transparent_Photoroom_(53).png'
+              },
+              {
+                name: 'Gold Bar',
+                rarity: 'legendary',
+                quantity: 6,
+                imageUrl: 'https://i.postimg.cc/90PTCdQK/image.png'
+              },
+              {
+                name: 'Reinforced Plating',
+                rarity: 'epic',
+                quantity: 8,
+                imageUrl: 'https://i.postimg.cc/FKJHZQZD/Reinforced_Plating.png'
+              }
+            ]
+          },
+          stats: {
+            cost: { min: "1,250", max: "10,150" },
+            placements: { min: 3, max: 3 },
+            range: { min: 35, max: 66 },
+            speed: { min: 3.4, max: 3.5 },
+            damage: { min: 70, max: 170 },
+            angle: { min: 0, max: 90 },
+            cash: { min: 100, max: 500 },
+            dps: { min: 20.6, max: 48.6 }
+          },
+          abilities: [
+            {
+              name: "Cash Crush",
+              description: "Killing blows give +1% cash per wave, capped at +100%",
+              onLevel: 1,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            },
+            {
+              name: "Crushing Blow",
+              description: "Damage dealt to enemies below 50% health is increased by 30%",
               onLevel: 6,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -4631,15 +4690,95 @@
               dps: { min: 0, max: 0 }
             },
             {
-              name: "Anti-Parasite",
-              description: "Damage is doubled against infected enemies and parasites",
+              name: "Golden Lens",
+              description: "Gains +1% range for each 500 cash you hold up, cappet at +50%",
               onLevel: 7,
               type: "Passive",
               speed: { min: 0, max: 0 },
               damage: { min: 0, max: 0 },
               dps: { min: 0, max: 0 }
-            },
+            }
           ]
+        },
+        { 
+          name: `Golden Buzzsaw Camera Guy`, 
+          imageUrl: "https://i.postimg.cc/NfLKxknW/transparent_Photoroom_(88).png",
+          rarity: 'legendary',
+          type: 'Splash & Farm',
+          obtainmentInfo: {
+            mode: 'craft',
+            craft: [
+              {
+                name: 'Buzzsaw Camera Guy',
+                rarity: 'legendary',
+                quantity: 4,
+                imageUrl: 'https://i.postimg.cc/sDxXBkWG/transparent_Photoroom_2026_01_27T191037_261.png'
+              },
+              {
+                name: 'Gold Bar',
+                rarity: 'legendary',
+                quantity: 5,
+                imageUrl: 'https://i.postimg.cc/90PTCdQK/image.png'
+              },
+              {
+                name: 'Buzzsaw',
+                rarity: 'epic',
+                quantity: 30,
+                imageUrl: 'https://i.postimg.cc/m2cJh223/Buzzsaw.png'
+              },
+              {
+                name: 'Reinforced Plating',
+                rarity: 'epic',
+                quantity: 6,
+                imageUrl: 'https://i.postimg.cc/FKJHZQZD/Reinforced_Plating.png'
+              },
+              {
+                name: 'Scrеw',
+                rarity: 'epic',
+                quantity: 99,
+                imageUrl: 'https://i.postimg.cc/hG80hNdw/Screw.png'
+              }
+            ]
+          },
+          stats: {
+            cost: { min: 350, max: "4,150 (35 scrap)" },
+            placements: { min: 5, max: 5 },
+            range: { min: 18, max: "24 (27)" },
+            speed: { min: 2, max: 1.6 },
+            damage: { min: 3, max: 18 },
+            strokes: { min: 3, max: 2 },
+            angle: { min: 180, max: 360 },
+            cash: { min: 50, max: 275 },
+            dps: { min: 4.5, max: 22.5 }
+          },
+          abilities: [
+            {
+              name: "Midas Touch",
+              description: "Attacks inflict midas status effect to toilet that causes them take 30% more damage from golden Units",
+              onLevel: 1,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            },
+            {
+              name: "Saw Fest",
+              description: "Attacks deal +2 ( damage for each enemy hit in a row",
+              onLevel: 7,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            }
+          ],
+          scrapUpgrades: {
+            levels: 3,
+            prices: [5, 10, 20],
+            abilities: [
+              { ability: "Saw Fest (damage gain)", values: ["2 → 2.5", "2.5 → 3", "3 → 3.5"] },
+              { ability: "🎯 Range", values: ["24 → 25", "25 → 26", "26 → 27"] },
+            ]
+          }
         },
         { 
           name: "Infected Titan Speaker Guy", 
@@ -4708,7 +4847,7 @@
           abilities: [
             {
               name: "Power Scaling",
-              description: "Prototype Camera Toilet gains +5% damage every wave, max +300%",
+              description: "Prototype Camera Toilet gains +5% damage every wave, capped at +300%",
               onLevel: 1,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -4791,7 +4930,7 @@
             },
             {
               name: "Devour",
-              description: "Gain +1 (3) damage when Gnaw kills an enemy, max +50 (105)",
+              description: "Gain +1 (3) damage when Gnaw kills an enemy, capped at +50 (105)",
               onLevel: 8,
               type: "Pasive",
               speed: { min: 0, max: 0 },
@@ -4845,7 +4984,7 @@
             },
             {
               name: "Devour",
-              description: "Gain +1 damage when Gnaw kills an enemy, max +50",
+              description: "Gain +1 damage when Gnaw kills an enemy, capped at +50",
               onLevel: 8,
               type: "Pasive",
               speed: { min: 0, max: 0 },
@@ -5036,7 +5175,7 @@
           abilities: [
             {
               name: "Energy Rip",
-              description: "Energy TV Guy steals energy from the toilet and gain +1% base stats, max +50%",
+              description: "Energy TV Guy steals energy from the toilet and gain +1% base stats, capped at +50%",
               onLevel: 1,
               type: "Passive",
               speed: { min: 20, max: 20 },
@@ -5093,7 +5232,7 @@
           abilities: [
             {
               name: "Energy Rip",
-              description: "Energy TV Guy steals energy from the toilet and gain +1% base stats, max +50%",
+              description: "Energy TV Guy steals energy from the toilet and gain +1% base stats, capped at +50%",
               onLevel: 1,
               type: "Passive",
               speed: { min: 20, max: 20 },
@@ -5111,7 +5250,7 @@
             },
             {
               name: "Conduit",
-              description: "Energy TV Guy gains 10% (15%) of the damage from all units in range, max +300 (350)",
+              description: "Energy TV Guy gains 10% (15%) of the damage from all units in range, capped at +300 (350)",
               onLevel: 2,
               type: "Passive",
               speed: { min: 0, max: 0 },
