@@ -4704,7 +4704,7 @@
           name: `Golden Buzzsaw Camera Guy`, 
           imageUrl: "https://i.postimg.cc/NfLKxknW/transparent_Photoroom_(88).png",
           rarity: 'legendary',
-          type: 'Splash & Farm',
+          type: 'AOE & Farm',
           obtainmentInfo: {
             mode: 'craft',
             craft: [
@@ -4763,7 +4763,7 @@
             },
             {
               name: "Saw Fest",
-              description: "Attacks deal +2 ( damage for each enemy hit in a row",
+              description: "Attacks deal +2 (3.5) damage for each enemy hit in a row",
               onLevel: 7,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -4779,6 +4779,543 @@
               { ability: "🎯 Range", values: ["24 → 25", "25 → 26", "26 → 27"] },
             ]
           }
+        },
+        { 
+          name: `Flamethrower Camera Guy (blue flames)`, 
+          imageUrl: "https://i.postimg.cc/MZRq1grk/transparent_Photoroom_(81).png",
+          rarity: 'legendary',
+          type: 'AOE',
+          obtainmentInfo: {
+            mode: 'craft',
+            craft: [
+              {
+                name: 'Flamethrower Camera Guy',
+                rarity: 'legendary',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/j59GcJNx/transparent_Photoroom_(31).png'
+              },
+              {
+                name: 'Charged Battery',
+                rarity: 'common',
+                quantity: 12,
+                imageUrl: 'https://i.postimg.cc/5yjHM8Q9/transparent_Photoroom_(23).png'
+              },
+              {
+                name: 'Metal Plating',
+                rarity: 'common',
+                quantity: 5,
+                imageUrl: 'https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png'
+              }
+            ]
+          },
+          stats: {
+            cost: { min: "825", max: "7,175" },
+            placements: { min: 3, max: 3 },
+            range: { min: 26, max: 36 },
+            speed: { min: 3, max: 3 },
+            damage: { min: 7, max: 28 },
+            angle: { min: 115, max: 160 },
+            dps: { min: 11.33, max: 37.33 }
+          },
+          abilities: [
+            {
+              name: "Burn",
+              description: "Attacks inflict burn status effect that deals damage 9 times",
+              onLevel: 1,
+              type: "Passive",
+              speed: { min: 9, max: 9 },
+              damage: { min: 63, max: 252 },
+              dps: { min: 7, max: 28 }
+            }
+          ]
+        },
+        { 
+          name: `Flamethrower Camera Guy`, 
+          imageUrl: "https://i.postimg.cc/j59GcJNx/transparent_Photoroom_(31).png",
+          rarity: 'legendary',
+          type: 'AOE',
+          obtainmentStats: 
+          [
+            { from: "Banner", chance: "0.9%", imageUrl: "https://i.postimg.cc/m2nsQsmv/Banner.jpg" }
+          ],
+          stats: {
+            cost: { min: "900", max: "7,250" },
+            placements: { min: 3, max: 3 },
+            range: { min: 24, max: 34 },
+            speed: { min: 3, max: 3 },
+            damage: { min: 6, max: 24 },
+            angle: { min: 115, max: 160 },
+            dps: { min: 8, max: 32 }
+          },
+          abilities: [
+            {
+              name: "Burn",
+              description: "Attacks inflict burn status effect that deals damage 5 times",
+              onLevel: 1,
+              type: "Passive",
+              speed: { min: 5, max: 5 },
+              damage: { min: 30, max: 120 },
+              dps: { min: 6, max: 24 }
+            }
+          ]
+        },
+        { 
+          name: `Egg Launcher Camera Guy`, 
+          imageUrl: "https://i.postimg.cc/90k9Dky7/Egg-Launcher-Camera-Guy.png",
+          rarity: 'legendary',
+          type: 'Splash',
+          obtainmentStats: 
+          [
+            { from: "Easter Crate", chance: "Unobtainable", imageUrl: "https://i.postimg.cc/gJmfYzVd/Easter_Crate.jpg" }
+          ],
+          stats: {
+            cost: { min: "800", max: "5,800" },
+            placements: { min: 3, max: 3 },
+            range: { min: 36, max: 54 },
+            speed: { min: 4, max: 3 },
+            damage: { min: 36, max: 70 },
+            splash: { min: 16, max: 18 },
+            dps: { min: 9, max: 23.3 }
+          },
+          abilities: [
+            {
+              name: "Big Egg!",
+              description: "Every other attack is twice as large",
+              onLevel: 6,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            }
+          ]
+        },
+        { 
+          name: `Disabler Camera Guy`, 
+          imageUrl: "https://i.postimg.cc/02H2mQvP/Disabler_Camera_Guy.png",
+          rarity: 'legendary',
+          type: 'Single target',
+          obtainmentStats: 
+          [
+            { from: "Raid Crate", chance: "12%", imageUrl: "https://i.postimg.cc/mkq9H0vf/Raid_Crate.jpg" }
+          ],
+          stats: {
+            cost: { min: "600", max: "5,700" },
+            placements: { min: 4, max: 4 },
+            range: { min: 42, max: 70 },
+            speed: { min: 2.5, max: 2 },
+            damage: { min: 20, max: 60 },
+            dps: { min: 8, max: 30 }
+          },
+          abilities: [
+            {
+              name: "Stun Disabler",
+              description: "Attacks cam shoot stunned Units to unstun them",
+              onLevel: 4,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            },
+            {
+              name: "Anti-Parasite",
+              description: "Damage is doubled against infected enemies and parasites",
+              onLevel: 7,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            }
+          ]
+        },
+        { 
+          name: `Dark Speaker Guy 2.0 (spear)`, 
+          imageUrl: "https://i.postimg.cc/x1h4fg2Y/transparent_Photoroom_2026_01_25T135449_640.png",
+          rarity: 'legendary',
+          type: 'AOE',
+          obtainmentInfo: {
+            mode: 'craft',
+            craft: [
+              {
+                name: 'Flamethrower Camera Guy',
+                rarity: 'legendary',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/yN648Ksc/transparent_Photoroom_(30).png'
+              },
+              {
+                name: 'Spear',
+                rarity: 'epic',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/br0rMQgX/transparent_Photoroom_(17).png'
+              }
+            ]
+          },
+          stats: {
+            cost: { min: "250", max: "2,600 (90 scrap)" },
+            placements: { min: 3, max: 3 },
+            range: { min: 42, max: 34 },
+            speed: { min: 2.5, max: 3.5 },
+            damage: { min: 20, max: 30 },
+            angle: { min: 115, max: 180 },
+            strokes: { min: 1, max: 2 },
+            dps: { min: 8, max: 17.2 }
+          },
+          abilities: [
+            {
+              name: "Assassin",
+              description: "5% (9%) chance to deal x1000 damage to toilets under 25% (29%) health",
+              onLevel: 6,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: "26,000", max: "30,000" },
+              dps: { min: 0, max: 0 }
+            }
+          ],
+          scrapUpgrades: {
+            levels: 4,
+            prices: [15, 20, 25, 30],
+            abilities: [
+              { ability: "Assassin (min toilet health)", values: ["25% → 26%", "26% → 27%", "27% → 28%", "28% → 29%" ] },
+              { ability: "Assassin (chance)", values: ["5% → 6%", "6% → 7%", "7% → 8%", "8% → 9%"] },
+            ]
+          }
+        },
+        { 
+          name: `Dark Speaker Guy 2.0`, 
+          imageUrl: "https://i.postimg.cc/yN648Ksc/transparent_Photoroom_(30).png",
+          rarity: 'legendary',
+          type: 'Single target',
+          obtainmentStats: 
+          [
+            { from: "Banner", chance: "0.9%", imageUrl: "https://i.postimg.cc/m2nsQsmv/Banner.jpg" }
+          ],
+          stats: {
+            cost: { min: "250", max: "2,600" },
+            placements: { min: 3, max: 3 },
+            range: { min: 28, max: 42 },
+            speed: { min: 3.5, max: 2.3 },
+            damage: { min: 8, max: 21 },
+            strokes: { min: 2, max: 3 },
+            dps: { min: 4.6, max: 27.4 }
+          },
+          abilities: [
+            {
+              name: "Assassin",
+              description: "5% chance to deal x1000 damage to toilets under 25% health",
+              onLevel: 6,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: "17,000", max: "21,000" },
+              dps: { min: 0, max: 0 }
+            }
+          ]
+        },
+        { 
+          name: `Commander Camera Guy`, 
+          imageUrl: "https://i.postimg.cc/dtDh9jXc/transparent_Photoroom_(87).png",
+          rarity: 'legendary',
+          type: 'Single target & Booster',
+          obtainmentInfo: {
+            mode: 'craft',
+            craft: [
+              {
+                name: 'Captain Camera Guy',
+                rarity: 'epic',
+                quantity: 2,
+                imageUrl: 'https://i.postimg.cc/vZn3Ykcd/Captain_Camera_Guy.png'
+              },
+              {
+                name: 'Fuel Cell',
+                rarity: 'epic',
+                quantity: 12,
+                imageUrl: 'https://i.postimg.cc/DyVdd2P5/Fuel_Cell.png'
+              },
+              {
+                name: 'Reinforced Plating',
+                rarity: 'epic',
+                quantity: 6,
+                imageUrl: 'https://i.postimg.cc/FKJHZQZD/Reinforced_Plating.png'
+              },
+              {
+                name: 'Camera',
+                rarity: 'uncommon',
+                quantity: 25,
+                imageUrl: 'https://i.postimg.cc/tTZR4Rwz/transparent_Photoroom_2026_01_24T151822_437.png'
+              }
+            ]
+          },
+          stats: {
+            cost: { min: 600, max: "7,050 (90 scrap)" },
+            placements: { min: 2, max: 2 },
+            range: { min: 24, max: 36 },
+            speed: { min: 2, max: 1 },
+            damage: { min: 8, max: 20 },
+            dps: { min: 4, max: 20 }
+          },
+          abilities: [
+            {
+              name: "Camera Command",
+              description: "Camera Units within range gain +20% damage",
+              onLevel: 5,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: "0", max: "0" },
+              dps: { min: 0, max: 0 }
+            },
+            {
+              name: "Final Stand",
+              description: "Lowers ability cooldown of Units within range by 5% (10%), 10% (20%) for cameras",
+              onLevel: 7,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: "0", max: "0" },
+              dps: { min: 0, max: 0 }
+            }
+          ],
+          scrapUpgrades: {
+            levels: 4,
+            prices: [15, 20, 20, 35],
+            abilities: [
+              { ability: "Final Stand (ability cooldown reduction)", values: ["5% → 6%", "6% → 7%", "7% → 8%", "8% → 10%" ] }
+            ]
+          }
+        },
+        { 
+          name: `Chief Scientist Camera Guy`, 
+          imageUrl: "https://i.postimg.cc/nL2RRQ8X/transparent_Photoroom_(28).png",
+          rarity: 'legendary',
+          type: 'Line AOE & Farm',
+          obtainmentStats: 
+          [
+            { from: "Banner", chance: "0.9%", imageUrl: "https://i.postimg.cc/m2nsQsmv/Banner.jpg" }
+          ],
+          stats: {
+            cost: { min: "5 scrap", max: "33 scrap" },
+            placements: { min: 2, max: 2 },
+            range: { min: 0, max: 20 },
+            speed: { min: 0, max: 12 },
+            damage: { min: 0, max: 25 },
+            cash: { min: 125, max: 750 },
+            dps: { min: 0, max: 12 }
+          },
+          abilities: [
+            {
+              name: "Drone Command",
+              description: "Attacks summon a drone that deals 25% damage every 0.5 seconds",
+              onLevel: 4,
+              type: "Passive",
+              speed: { min: 0.5, max: 0.5 },
+              damage: { min: "3", max: "6" },
+              dps: { min: 6, max: 12 }
+            }
+          ]
+        },
+        { 
+          name: `Camera Woman 2.0`, 
+          imageUrl: "https://i.postimg.cc/PfZT10Fs/transparent_Photoroom_(80).png",
+          rarity: 'legendary',
+          type: 'AOE → Line AOE',
+          obtainmentInfo: {
+            mode: 'craft',
+            craft: [
+              {
+                name: 'Camera Woman',
+                rarity: 'legendary',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/4d38rNZV/transparent_Photoroom_(29).png'
+              },
+              {
+                name: 'Charged Battery',
+                rarity: 'common',
+                quantity: 12,
+                imageUrl: 'https://i.postimg.cc/5yjHM8Q9/transparent_Photoroom_(23).png'
+              },
+              {
+                name: 'Metal Plating',
+                rarity: 'common',
+                quantity: 8,
+                imageUrl: 'https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png'
+              },
+            ]
+          },
+          stats: {
+            cost: { min: "750", max: "7,100" },
+            placements: { min: 4, max: 4 },
+            range: { min: 22, max: 48 },
+            speed: { min: 3, max: 0.4 },
+            damage: { min: 25, max: 10 },
+            angle: { min: 75, max: 0 },
+            dps: { min: 8.33, max: 25 }
+          },
+          abilities: [
+            {
+              name: "Incinerator",
+              description: "Damage increases while aimed at the same target, max +100%",
+              onLevel: 7,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: "0", max: "0" },
+              dps: { min: 0, max: 0 }
+            }
+          ]
+        },
+        { 
+          name: `Camera Woman`, 
+          imageUrl: "https://i.postimg.cc/4d38rNZV/transparent_Photoroom_(29).png",
+          rarity: 'legendary',
+          type: 'Single Target',
+          obtainmentStats: 
+          [
+            { from: "Banner", chance: "0.9%", imageUrl: "https://i.postimg.cc/m2nsQsmv/Banner.jpg" }
+          ],
+          stats: {
+            cost: { min: "750", max: "7,300" },
+            placements: { min: 4, max: 4 },
+            range: { min: 30, max: 54 },
+            speed: { min: 2.5, max: 0.3 },
+            damage: { min: 45, max: 16 },
+            dps: { min: 18, max: 53.33 }
+          },
+          abilities: [
+            {
+              name: "Incinerator",
+              description: "Damage increases while aimed at the same target, max +100%",
+              onLevel: 7,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: "0", max: "0" },
+              dps: { min: 0, max: 0 }
+            }
+          ]
+        },
+        { 
+          name: `Crusher Camera Guy`, 
+          imageUrl: "https://i.postimg.cc/mDRmXFWN/transparent_Photoroom_(53).png",
+          rarity: 'legendary',
+          type: 'Single Target → AOE',
+          obtainmentStats: 
+          [
+            { from: "Wastelands Map", chance: "Beating the Map (0.4% on Easy | 0.73% on Normal | 1.06% on Hard | 1.4% on Insane)", imageUrl: "https://i.postimg.cc/QtxGr8CD/Скриншот_06_01_2026_163504.jpg" }
+          ],
+          stats: {
+            cost: { min: "1,400", max: "10,350" },
+            placements: { min: 4, max: 4 },
+            range: { min: 36, max: 52 },
+            speed: { min: 4, max: 2.8 },
+            damage: { min: 90, max: 140 },
+            angle: { min: 0, max: 75 },
+            dps: { min: 22.5, max: 50 }
+          },
+          abilities: [
+            {
+              name: "Crushing Blow",
+              description: "Damage dealt to toilets below 50% health is increased by 30%",
+              onLevel: 7,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: "0", max: "0" },
+              dps: { min: 0, max: 0 }
+            }
+          ]
+        },
+        { 
+          name: `Buzzsaw Camera Guy`, 
+          imageUrl: "https://i.postimg.cc/sDxXBkWG/transparent_Photoroom_2026_01_27T191037_261.png",
+          rarity: 'legendary',
+          type: 'AOE → Full AOE',
+          obtainmentInfo: {
+            mode: 'craft',
+            craft: [
+              {
+                name: 'Camera Guy',
+                rarity: 'common',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/qv7FBZfK/Camera_Guy.png'
+              },
+              {
+                name: 'Buzzsaw',
+                rarity: 'epic',
+                quantity: 2,
+                imageUrl: 'https://i.postimg.cc/m2cJh223/Buzzsaw.png'
+              }
+            ]
+          },
+          stats: {
+            cost: { min: "400", max: "4,000" },
+            placements: { min: 4, max: 4 },
+            range: { min: 18, max: 22 },
+            speed: { min: 2, max: 1.6 },
+            damage: { min: 3, max: 16 },
+            angle: { min: 180, max: 360 },
+            strokes: { min: 3, max: 2 },
+            dps: { min: 4.5, max: 20 }
+          },
+          abilities: [
+            {
+              name: "Saw Fest",
+              description: "Attacks deal +2 damage for each enemy hit in a row",
+              onLevel: 7,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: "0", max: "0" },
+              dps: { min: 0, max: 0 }
+            }
+          ]
+        },
+        { 
+          name: `Hero Speaker Guy`, 
+          imageUrl: "https://i.postimg.cc/mDw802b1/transparent_Photoroom_(49).png",
+          rarity: 'legendary',
+          type: 'Single Target → AOE',
+          obtainmentStats: 
+          [
+            { from: "Titan Factory Raid", chance: "Beating the Map (0.7% on Easy | 0.95% on Normal | 1.2% on Hard)", imageUrl: "https://i.postimg.cc/m2nsQsmv/Banner.jpg" }
+          ],
+          stats: {
+            cost: { min: "400", max: "3,425" },
+            placements: { min: 3, max: 3 },
+            range: { min: 26, max: 42 },
+            speed: { min: 3.5, max: 3 },
+            damage: { min: 42, max: 74 },
+            angle: { min: 0, max: 75 },
+            dps: { min: 12, max: 24.66 }
+          },
+          abilities: [
+            {
+              name: "Adrenaline",
+              description: "This Unit can't be stunned",
+              onLevel: 1,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: "0", max: "0" },
+              dps: { min: 0, max: 0 }
+            }
+          ]
+        },
+        { 
+          name: `Beach Speaker Guy`, 
+          imageUrl: "https://i.postimg.cc/Y0Hv2XDy/Beach_Speaker_Guy.png",
+          rarity: 'legendary',
+          type: 'Booster & Farm',
+          obtainmentStats: 
+          [
+            { from: "Summer Crate", chance: "12%", imageUrl: "https://i.postimg.cc/tJf6xLKb/Summer_Crate.jpg" }
+          ],
+          stats: {
+            cost: { min: "275", max: "4,925" },
+            placements: { min: 2, max: 2 },
+            cash: { min: 75, max: "1,200" }
+          },
+          abilities: [
+            {
+              name: "Umbrella!",
+              description: "Speaker Units within range gain +20% range",
+              onLevel: 5,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: "0", max: "0" },
+              dps: { min: 0, max: 0 }
+            }
+          ]
         },
         { 
           name: "Infected Titan Speaker Guy", 
