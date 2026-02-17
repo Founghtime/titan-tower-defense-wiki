@@ -8,7 +8,20 @@
   // Apply saved mode early (no viewport changes — fixes iOS scrolling)
   (function(){
     try{
-      if (localStorage.getItem('ttd_layout_mode') === 'mobile'){
+      const STORAGE_KEY = 'ttd_layout_mode';
+      const VERSION_KEY = 'ttd_layout_mode_ver';
+      const CURRENT_VER = '3'; // увеличивай, если захочешь снова сбросить всем режим
+
+      const ver = localStorage.getItem(VERSION_KEY);
+
+      // Первый запуск после обновления — форсируем PC до выбора пользователем
+      if (ver !== CURRENT_VER) {
+        localStorage.setItem(VERSION_KEY, CURRENT_VER);
+        localStorage.setItem(STORAGE_KEY, 'pc');
+        return;
+      }
+
+      if (localStorage.getItem(STORAGE_KEY) === 'mobile'){
         document.documentElement.classList.add('mobile-mode');
       }
     }catch(e){}
@@ -2620,7 +2633,8 @@
         // ====== PC / Mobile Mode Toggle ======
     (function () {
       const VERSION_KEY = 'ttd_layout_mode_ver';
-      const CURRENT_VER = '2'; // увеличивай, если захочешь снова сбросить всем режим
+      const CURRENT_VER = '3'; // увеличивай, если захочешь снова сбросить всем режим
+      const STORAGE_KEY = 'ttd_layout_mode';
 
 
       // "Normal" responsive (PC Mode)
@@ -2691,9 +2705,10 @@
         toggleBtn.addEventListener('click', () => {
           const isMobile = document.documentElement.classList.contains('mobile-mode');
           const next = isMobile ? 'pc' : 'mobile';
+
           setMode(next);
-          // Reload so viewport + breakpoints apply consistently across mobile browsers.
-          setTimeout(() => { location.reload(); }, 60);
+          syncToggleUI(); // обновить текст/иконку без перезагрузки
+          window.dispatchEvent(new Event('resize')); // мягкий пересчёт лэйаута
         });
         });
     })();
@@ -5367,7 +5382,7 @@
           name: "Prototype Camera Toilet", 
           imageUrl: "https://i.postimg.cc/sfktdh4N/transparent_Photoroom_2026_01_28T185403_131.png",
           rarity: 'mythic',
-          type: 'Splash → Full AOE',
+          type: 'Single Target → Splash',
           obtainmentStats: 
           [
             { from: "Endless Leaderboard", chance: "Getting into the top 100", imageUrl: "https://i.postimg.cc/y8tDPz5r/image.png" }
@@ -5392,6 +5407,78 @@
               dps: { min: 0, max: 0 }
             }
           ]
+        },
+        { 
+          name: "Titan Speaker Guy", 
+          imageUrl: "https://i.postimg.cc/d3zMnZbn/transparent_Photoroom_(35).png",
+          rarity: 'mythic',
+          type: 'AOE → Splash',
+          obtainmentStats: 
+          [
+            { from: "Banner", chance: "0.1%", imageUrl: "https://i.postimg.cc/m2nsQsmv/Banner.jpg" }
+          ],
+          stats: {
+            cost: { min: "1,250", max: "17,750" },
+            placements: { min: 1, max: 1 },
+            range: { min: 36, max: 88 },
+            speed: { min: 2.6, max: 2 },
+            damage: { min: 40, max: 180 },
+            dps: { min: 15.4, max: 90 },
+            angle: { min: 70, max: 0 },
+            splash: { min: 0, max: 36 }
+          }
+        },
+        { 
+          name: "Titan Camera Guy", 
+          imageUrl: "https://i.postimg.cc/CKYgWDRF/transparent_Photoroom_(33).png",
+          rarity: 'mythic',
+          type: 'Single Target → Splash',
+          obtainmentStats: 
+          [
+            { from: "Banner", chance: "0.1%", imageUrl: "https://i.postimg.cc/m2nsQsmv/Banner.jpg" }
+          ],
+          stats: {
+            cost: { min: "2,000", max: "30,750" },
+            placements: { min: 1, max: 1 },
+            range: { min: 42, max: 90 },
+            speed: { min: 2.5, max: 0.3 },
+            damage: { min: 62, max: 55 },
+            dps: { min: 49.6, max: 183.33 },
+            strokes: { min: 2, max: 1 },
+            splash: { min: 0, max: 14 }
+          },
+          abilities: [
+            {
+              name: "Back Shield",
+              description: "Overall stun duration is reduced by 50%",
+              onLevel: 8,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            }
+          ]
+        },
+        { 
+          name: "Titan TV Guy", 
+          imageUrl: "https://i.postimg.cc/fy3nxfrx/transparent_Photoroom_(34).png",
+          rarity: 'mythic',
+          type: 'Splash → AOE',
+          obtainmentStats: 
+          [
+            { from: "Banner", chance: "0.1%", imageUrl: "https://i.postimg.cc/m2nsQsmv/Banner.jpg" }
+          ],
+          stats: {
+            cost: { min: "2,750", max: "17,750" },
+            placements: { min: 1, max: 1 },
+            range: { min: 40, max: 86 },
+            speed: { min: 3.5, max: 3 },
+            damage: { min: 100, max: 150 },
+            dps: { min: 28.6, max: 150 },
+            angle: { min: 0, max: 150 },
+            strokes: { min: 1, max: 3 },
+            splash: { min: 16, max: 0 }
+          }
         },
         { 
           name: "Zombie Titan TV Guy (enraged)", 
@@ -17172,5 +17259,4 @@ document.addEventListener('DOMContentLoaded', initWiki);
   </script>
 </body>
 </html>
-
 
