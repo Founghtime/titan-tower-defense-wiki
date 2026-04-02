@@ -219,7 +219,7 @@ window.gameData = {
           abilities: [
             {
               name: "Heavy Blows",
-              description: "Damage dealt to enemies above 50% health is increased by 30%",
+              description: "+30% damage to enemies above 50% HP",
               onLevel: 5,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -249,7 +249,7 @@ window.gameData = {
           abilities: [
             {
               name: "Active Infection",
-              description: "Overall stun duration is reduced by 25%",
+              description: "-25% stun duration",
               onLevel: 1,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -341,7 +341,7 @@ window.gameData = {
           abilities: [
             {
               name: "Toxic",
-              description: "Attacks inflict toxic status effect that increases toilet damage taken by 25%",
+              description: "Applies Toxic: toilets take 25% more damage",
               onLevel: 4,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -370,7 +370,7 @@ window.gameData = {
           abilities: [
             {
               name: "Stun Absorber",
-              description: "Shield Camera Guy can't be stunned for longer than 1 second",
+              description: "Max stun: 1 second",
               onLevel: 4,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -477,7 +477,7 @@ window.gameData = {
           abilities: [
             {
               name: "Explosive",
-              description: "Does 3 more damage for each enemy hit",
+              description: "+3 damage per enemy hit",
               onLevel: 5,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -539,7 +539,7 @@ window.gameData = {
           abilities: [
             {
               name: "Active Infection",
-              description: "Overall stun duration is reduced by 25%",
+              description: "-25% stun duration",
               onLevel: 1,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -548,7 +548,7 @@ window.gameData = {
             },
             {
               name: "Heavy Blows",
-              description: "Damage dealt to enemies above 50% health is increased by 30%",
+              description: "+30% damage to enemies above 50% HP",
               onLevel: 5,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -635,7 +635,7 @@ window.gameData = {
             },
             {
               name: "Emergency Fund",
-              description: "Gives +350 (600) cash if you are holding less than 800 (1,000) cash at the start of the wave",
+              description: "Gain +350 (600) cash if below 800 (1,000) cash at wave start",
               onLevel: 1,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -710,7 +710,7 @@ window.gameData = {
           abilities: [
             {
               name: "Camera Command",
-              description: "Camera units within range gain +20% (26%) damage",
+              description: "Camera units in range gain +20% (26%) damage",
               onLevel: 6,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -764,7 +764,7 @@ window.gameData = {
           abilities: [
             {
               name: "Raging Grill",
-              description: "Units within range gain +20% crit chance",
+              description: "Units in range gain +20% crit chance",
               onLevel: 5,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -791,7 +791,7 @@ window.gameData = {
           abilities: [
             {
               name: "Toxic",
-              description: "Attacks inflict toxic status effect that increases toilet damage taken by 25%",
+              description: "Applies Toxic: toilets take 25% more damage",
               onLevel: 1,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -829,7 +829,7 @@ window.gameData = {
           abilities: [
             {
               name: "Shackled",
-              description: "Absorbs debuffs from nearby units",
+              description: "Absorbs nearby debuffs",
               onLevel: 1,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -838,7 +838,7 @@ window.gameData = {
             },
             {
               name: "Prison Escape",
-              description: "Debuffs inflicted on Shackled Speaker Guy have halved duration",
+              description: "Debuffs on Shackled Speaker Guy last 50% less",
               onLevel: 6,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -868,7 +868,7 @@ window.gameData = {
           abilities: [
             {
               name: "Lightning Bottle",
-              description: "Attacks may strike with lightning, stunning enemies for 4 seconds",
+              description: "Chance to strike lightning and stun for 4 seconds",
               onLevel: 1,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -877,7 +877,7 @@ window.gameData = {
             },
             {
               name: "Acid Bottle",
-              description: "Attacks may inflict toxic status effect for 8 seconds",
+              description: "Chance to apply Toxic for 8 seconds",
               onLevel: 4,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -886,7 +886,7 @@ window.gameData = {
             },
             {
               name: "Infernal Bottle",
-              description: "Attacks may inflict burn status effect for 100% damage",
+              description: "Chance to apply Burn for 100% damage",
               onLevel: 7,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -935,7 +935,7 @@ window.gameData = {
           abilities: [
             {
               name: "Lightning Bottle",
-              description: "Attacks may strike with lightning, stunning enemies for 4 seconds",
+              description: "Chance to strike lightning and stun for 4 seconds",
               onLevel: 1,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -944,7 +944,7 @@ window.gameData = {
             },
             {
               name: "Acid Bottle",
-              description: "Attacks may inflict toxic status effect for 8 seconds",
+              description: "Chance to apply Toxic for 8 seconds",
               onLevel: 4,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -953,7 +953,7 @@ window.gameData = {
             },
             {
               name: "Infernal Bottle",
-              description: "Attacks may inflict burn status effect for 100% damage",
+              description: "Chance to apply Burn for 100% damage",
               onLevel: 7,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -962,7 +962,7 @@ window.gameData = {
             },
             {
               name: "Damage Potion",
-              description: "Every 30 seconds damage buffs random nearby Unit by 30%",
+              description: "Every 30 seconds: buff a random nearby unit by 30% damage",
               onLevel: 9,
               type: "Passive",
               speed: { min: 30, max: 30 },
@@ -1021,7 +1021,7 @@ window.gameData = {
             },
             {
               name: "Ripples",
-              description: "Critical hits have double knockback",
+              description: "Crits have 2x knockback",
               onLevel: 1,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -1082,7 +1082,7 @@ window.gameData = {
           abilities: [
             {
               name: "Bloodsucker",
-              description: "Critical hits grant 1 stack of blood",
+              description: "Crits grant 1 blood stack",
               onLevel: 1,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -1091,7 +1091,7 @@ window.gameData = {
             },
             {
               name: "Metal Fangs",
-              description: "Uses 30 blood stacks to deal 10x damage and heal the base by 5%",
+              description: "Consumes 30 blood stacks: deal 10x damage and heal base by 5%",
               onLevel: 4,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -1140,7 +1140,7 @@ window.gameData = {
           abilities: [
             {
               name: "Bloodsucker",
-              description: "Critical hits grant 1 stack of blood",
+              description: "Crits grant 1 blood stack",
               onLevel: 1,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -1149,7 +1149,7 @@ window.gameData = {
             },
             {
               name: "Metal Fangs",
-              description: "Uses 30 blood stacks to deal 10x damage and heal the base by 5% (8%)",
+              description: "Consumes 30 blood stacks: deal 10x damage and heal base by 5% (8%)",
               onLevel: 4,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -1158,7 +1158,7 @@ window.gameData = {
             },
             {
               name: "Decompose",
-              description: "Successful kills grant 5 stacks of blood",
+              description: "Kills grant 5 blood stacks",
               onLevel: 8,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -1214,7 +1214,7 @@ window.gameData = {
           abilities: [
             {
               name: "Frequency Fusion",
-              description: "Critical hits grant 1 stack of blood",
+              description: "Crits grant 1 blood stack",
               onLevel: 7,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -1244,7 +1244,7 @@ window.gameData = {
           abilities: [
             {
               name: "Anti-Tank",
-              description: "If only one target is hit, the damage is increases by 30%",
+              description: "+30% damage when only one target is hit",
               onLevel: 6,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -1272,7 +1272,7 @@ window.gameData = {
           abilities: [
             {
               name: "Explosive Ducks",
-              description: "When ducks are destroyed they explode, dealing 500% damage",
+              description: "Destroyed ducks explode for 500% damage",
               onLevel: 7,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -1358,7 +1358,7 @@ window.gameData = {
           abilities: [
             {
               name: "Shackled",
-              description: "Absorbs negative status effects from nearby Units",
+              description: "Absorbs nearby negative effects",
               onLevel: 1,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -1367,7 +1367,7 @@ window.gameData = {
             },
             {
               name: "Prison Escape",
-              description: "Negative status effects inflicted on Shackled Speaker Guy have halved duration",
+              description: "Negative effects on Shackled Speaker Guy last 50% less",
               onLevel: 6,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -1376,7 +1376,7 @@ window.gameData = {
             },
             {
               name: "Shackled 2",
-              description: "Additionally absorbs negative status effects from the most debuffed nearby Unit",
+              description: "Also absorbs negative effects from the most debuffed nearby unit",
               onLevel: 8,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -1438,7 +1438,7 @@ window.gameData = {
           abilities: [
             {
               name: "Rusty Hook",
-              description: "Attacks inflict bleed status effect for 25% damage over 3 seconds",
+              description: "Applies Bleed: 25% damage over 3 seconds",
               onLevel: 3,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -1447,7 +1447,7 @@ window.gameData = {
             },
             {
               name: "Smoke Bomb",
-              description: "Every 16 seconds, stuns enemies for 3 seconds",
+              description: "Every 16 seconds: stun enemies for 3 seconds",
               onLevel: 5,
               type: "Passive",
               speed: { min: 16, max: 16 },
@@ -1505,7 +1505,7 @@ window.gameData = {
           abilities: [
             {
               name: "Stone Protection 1",
-              description: "Units within range have 10% reduced stun duration",
+              description: "Units in range have 10% less stun duration",
               onLevel: 1,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -1514,7 +1514,7 @@ window.gameData = {
             },
             {
               name: "Stone Protection 2",
-              description: "Units within range have 20% reduced stun duration",
+              description: "Units in range have 20% less stun duration",
               onLevel: 2,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -1523,7 +1523,7 @@ window.gameData = {
             },
             {
               name: "Stone Protection 3",
-              description: "Units within range have 30% reduced stun duration",
+              description: "Units in range have 30% less stun duration",
               onLevel: 3,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -1532,7 +1532,7 @@ window.gameData = {
             },
             {
               name: "Stone Awakening",
-              description: "Units within range are immune to being stunned",
+              description: "Units in range are stun-immune",
               onLevel: 4,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -1575,7 +1575,7 @@ window.gameData = {
           abilities: [
             {
               name: "Grand Slam",
-              description: "Every other attack is twice as large",
+              description: "Every other attack is 2x larger",
               onLevel: 4,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -1584,7 +1584,7 @@ window.gameData = {
             },
             {
               name: "Heave Blows",
-              description: "Damage dealt to enemies above 50% health is increased by 30%",
+              description: "+30% damage to enemies above 50% HP",
               onLevel: 7,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -1633,7 +1633,7 @@ window.gameData = {
           abilities: [
             {
               name: "Stun Disabler",
-              description: "Attacks can shoot stunned Units to unstun them",
+              description: "Can shoot stunned units to remove stun",
               onLevel: 4,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -1651,7 +1651,7 @@ window.gameData = {
             },
             {
               name: "Anti-Parasite",
-              description: "Damage is doubled against infected enemies and parasites",
+              description: "2x damage to infected enemies and parasites",
               onLevel: 7,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -1778,7 +1778,7 @@ window.gameData = {
             },
             {
               name: "Heavy Blows",
-              description: "Damage dealt to toilets above 50% (40%) health is increased by 30%",
+              description: "+30% damage to toilets above 50% (40%) HP",
               onLevel: 7,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -1852,7 +1852,7 @@ window.gameData = {
           abilities: [
             {
               name: "Stun Disabler",
-              description: "Attacks can shoot stunned Units to unstun them",
+              description: "Can shoot stunned units to remove stun",
               onLevel: 4,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -1870,7 +1870,7 @@ window.gameData = {
             },
             {
               name: "Anti-Parasite",
-              description: "Damage is doubled against infected enemies and parasites",
+              description: "2x damage to infected enemies and parasites",
               onLevel: 7,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -1913,7 +1913,7 @@ window.gameData = {
           abilities: [
             {
               name: "Cash Crush",
-              description: "Killing blows give +1% cash per wave, capped at +100%",
+              description: "Killing blows: +1% cash per wave, capped at +100%",
               onLevel: 1,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -1972,7 +1972,7 @@ window.gameData = {
           abilities: [
             {
               name: "Cash Crush",
-              description: "Killing blows give +1% cash per wave, capped at +100%",
+              description: "Killing blows: +1% cash per wave, capped at +100%",
               onLevel: 1,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -1981,7 +1981,7 @@ window.gameData = {
             },
             {
               name: "Crushing Blow",
-              description: "Damage dealt to enemies below 50% health is increased by 30%",
+              description: "+30% damage to enemies below 50% HP",
               onLevel: 6,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -1990,7 +1990,7 @@ window.gameData = {
             },
             {
               name: "Golden Lens",
-              description: "Gains +1% range for each 500 cash you hold up, cappet at +50%",
+              description: "+1% range per 500 cash held, capped at +50%",
               onLevel: 7,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -2053,7 +2053,7 @@ window.gameData = {
           abilities: [
             {
               name: "Midas Touch",
-              description: "Attacks inflict midas status effect to toilet that causes them take 30% more damage from golden Units",
+              description: "Applies Midas: toilets take 30% more damage from golden units",
               onLevel: 1,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -2062,7 +2062,7 @@ window.gameData = {
             },
             {
               name: "Saw Fest",
-              description: "Attacks deal +2 (3.5) damage for each enemy hit in a row",
+              description: "+2 (3.5) damage per consecutive enemy hit",
               onLevel: 7,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -2119,7 +2119,7 @@ window.gameData = {
           abilities: [
             {
               name: "Burn",
-              description: "Attacks inflict burn status effect that deals damage 9 times",
+              description: "Applies Burn: hits 9 times",
               onLevel: 1,
               type: "Passive",
               speed: { min: 9, max: 9 },
@@ -2149,7 +2149,7 @@ window.gameData = {
           abilities: [
             {
               name: "Burn",
-              description: "Attacks inflict burn status effect that deals damage 5 times",
+              description: "Applies Burn: hits 5 times",
               onLevel: 1,
               type: "Passive",
               speed: { min: 5, max: 5 },
@@ -2179,7 +2179,7 @@ window.gameData = {
           abilities: [
             {
               name: "Big Egg!",
-              description: "Every other attack is twice as large",
+              description: "Every other attack is 2x larger",
               onLevel: 6,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -2208,7 +2208,7 @@ window.gameData = {
           abilities: [
             {
               name: "Stun Disabler",
-              description: "Attacks cam shoot stunned Units to unstun them",
+              description: "Can shoot stunned units to remove stun",
               onLevel: 4,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -2217,7 +2217,7 @@ window.gameData = {
             },
             {
               name: "Anti-Parasite",
-              description: "Damage is doubled against infected enemies and parasites",
+              description: "2x damage to infected enemies and parasites",
               onLevel: 7,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -2353,7 +2353,7 @@ window.gameData = {
           abilities: [
             {
               name: "Camera Command",
-              description: "Camera Units within range gain +20% damage",
+              description: "Camera units in range gain +20% damage",
               onLevel: 5,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -2507,7 +2507,7 @@ window.gameData = {
           abilities: [
             {
               name: "Crushing Blow",
-              description: "Damage dealt to toilets below 50% health is increased by 30%",
+              description: "+30% damage to toilets below 50% HP",
               onLevel: 7,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -2551,7 +2551,7 @@ window.gameData = {
           abilities: [
             {
               name: "Saw Fest",
-              description: "Attacks deal +2 damage for each enemy hit in a row",
+              description: "+2 damage per consecutive enemy hit",
               onLevel: 7,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -2581,7 +2581,7 @@ window.gameData = {
           abilities: [
             {
               name: "Adrenaline",
-              description: "This Unit can't be stunned",
+              description: "Immune to stun",
               onLevel: 1,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -2607,7 +2607,7 @@ window.gameData = {
           abilities: [
             {
               name: "Umbrella!",
-              description: "Speaker Units within range gain +20% range",
+              description: "Speaker units in range gain +20% range",
               onLevel: 5,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -2636,7 +2636,7 @@ window.gameData = {
           abilities: [
             {
               name: "Infected Core",
-              description: "This unit can't be stunned",
+              description: "Immune to stun",
               onLevel: 1,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -2734,7 +2734,7 @@ window.gameData = {
           abilities: [
             {
               name: "Back Shield",
-              description: "Overall stun duration is reduced by 50%",
+              description: "-50% stun duration",
               onLevel: 8,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -3007,7 +3007,7 @@ window.gameData = {
             },
             {
               name: "Gnaw",
-              description: "Every 20 seconds, bite enemies for 2x damage in a Splash Radius",
+              description: "Every 20 seconds: bite enemies for 2x damage in splash radius",
               onLevel: 4,
               type: "Passive",
               speed: { min: 20, max: 20 },
@@ -3016,7 +3016,7 @@ window.gameData = {
             },
             {
               name: "Horror Scream",
-              description: "Every 30 seconds, deal 1.5x damage in Full AOE",
+              description: "Every 30 seconds: deal 1.5x damage in Full AOE",
               onLevel: 6,
               type: "Passive",
               speed: { min: 30, max: 30 },
@@ -3025,7 +3025,7 @@ window.gameData = {
             },
             {
               name: "Devour",
-              description: "Gain +1 (3) damage when Gnaw kills an enemy, capped at +50 (105)",
+              description: "Gnaw kills grant +1 (3) damage, capped at +50 (105)",
               onLevel: 8,
               type: "Pasive",
               speed: { min: 0, max: 0 },
@@ -3061,7 +3061,7 @@ window.gameData = {
           abilities: [
             {
               name: "Gnaw",
-              description: "Every 20 seconds, bite enemies for 2x damage in a Splash Radius",
+              description: "Every 20 seconds: bite enemies for 2x damage in splash radius",
               onLevel: 4,
               type: "Passive",
               speed: { min: 20, max: 20 },
@@ -3070,7 +3070,7 @@ window.gameData = {
             },
             {
               name: "Horror Scream",
-              description: "Every 30 seconds, deal 1.5x damage in Full AOE",
+              description: "Every 30 seconds: deal 1.5x damage in Full AOE",
               onLevel: 6,
               type: "Passive",
               speed: { min: 30, max: 30 },
@@ -3079,7 +3079,7 @@ window.gameData = {
             },
             {
               name: "Devour",
-              description: "Gain +1 damage when Gnaw kills an enemy, capped at +50",
+              description: "Gnaw kills grant +1 damage, capped at +50",
               onLevel: 8,
               type: "Pasive",
               speed: { min: 0, max: 0 },
@@ -3115,7 +3115,7 @@ window.gameData = {
             },
             {
               name: "Ignition",
-              description: "Attacks inflict burn status effect for 100% damage over 10 seconds",
+              description: "Applies Burn: 100% damage over 10 seconds",
               onLevel: 7,
               type: "Pasive",
               speed: { min: 0, max: 0 },
@@ -3224,7 +3224,7 @@ window.gameData = {
           abilities: [
             {
               name: "Fast Forward",
-              description: "Game speed is increased by +50%",
+              description: "Game speed: +50%",
               onLevel: 1,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -3233,7 +3233,7 @@ window.gameData = {
             },
             {
               name: "Ticked Off",
-              description: "Clock Woman launches her head every 20s dealing 200% damage with each bounce",
+              description: "Every 20s: launch head for 200% damage per bounce",
               onLevel: 3,
               type: "Passive",
               speed: { min: 15, max: 15 },
@@ -3270,7 +3270,7 @@ window.gameData = {
           abilities: [
             {
               name: "Energy Rip",
-              description: "Energy TV Guy steals energy from the toilet and gain +1% base stats, capped at +50%",
+              description: "Energy TV Guy steals energy from the toilet and gains +1% base stats, capped at +50%",
               onLevel: 1,
               type: "Passive",
               speed: { min: 20, max: 20 },
@@ -3327,7 +3327,7 @@ window.gameData = {
           abilities: [
             {
               name: "Energy Rip",
-              description: "Energy TV Guy steals energy from the toilet and gain +1% base stats, capped at +50%",
+              description: "Energy TV Guy steals energy from the toilet and gains +1% base stats, capped at +50%",
               onLevel: 1,
               type: "Passive",
               speed: { min: 20, max: 20 },
@@ -7284,7 +7284,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Ground Smash", description: "Deals 800 damage in 25 splash radius and removes 7 shields", imageUrl: "https://i.postimg.cc/Cxs6grN2/transparent-Photoroom-2026-02-02T192832-676.png" },
-                { name: "Charged Smash", description: "Hammer can be charged for 9 seconds, dealing 1,000 damage at max charge", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
+                { name: "Charged Smash", description: "Charge hammer for 9 seconds to deal 1,000 damage", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
               ]
             },
             {
@@ -7296,7 +7296,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Ground Smash", description: "Deals 825 damage in 25 splash radius and removes 7 shields", imageUrl: "https://i.postimg.cc/Cxs6grN2/transparent-Photoroom-2026-02-02T192832-676.png" },
-                { name: "Charged Smash", description: "Hammer can be charged for 9 seconds, dealing 1,056 damage at max charge", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
+                { name: "Charged Smash", description: "Charge hammer for 9 seconds to deal 1,056 damage", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
               ]
             },
             {
@@ -7308,7 +7308,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Ground Smash", description: "Deals 850 damage in 25 splash radius and removes 7 shields", imageUrl: "https://i.postimg.cc/Cxs6grN2/transparent-Photoroom-2026-02-02T192832-676.png" },
-                { name: "Charged Smash", description: "Hammer can be charged for 9 seconds, dealing 1,114 damage at max charge", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
+                { name: "Charged Smash", description: "Charge hammer for 9 seconds to deal 1,114 damage", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
               ]
             },
             {
@@ -7320,7 +7320,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Ground Smash", description: "Deals 875 damage in 25 splash radius and removes 8 shields", imageUrl: "https://i.postimg.cc/Cxs6grN2/transparent-Photoroom-2026-02-02T192832-676.png" },
-                { name: "Charged Smash", description: "Hammer can be charged for 9 seconds, dealing 1,173 damage at max charge", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
+                { name: "Charged Smash", description: "Charge hammer for 9 seconds to deal 1,173 damage", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
               ]
             },
             {
@@ -7332,7 +7332,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Ground Smash", description: "Deals 900 damage in 25 splash radius and removes 8 shields", imageUrl: "https://i.postimg.cc/Cxs6grN2/transparent-Photoroom-2026-02-02T192832-676.png" },
-                { name: "Charged Smash", description: "Hammer can be charged for 9 seconds, dealing 1,233 damage at max charge", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
+                { name: "Charged Smash", description: "Charge hammer for 9 seconds to deal 1,233 damage", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
               ]
             },
             {
@@ -7344,7 +7344,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Ground Smash", description: "Deals 925 damage in 25 splash radius and removes 8 shields", imageUrl: "https://i.postimg.cc/Cxs6grN2/transparent-Photoroom-2026-02-02T192832-676.png" },
-                { name: "Charged Smash", description: "Hammer can be charged for 9 seconds, dealing 1,295 damage at max charge", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
+                { name: "Charged Smash", description: "Charge hammer for 9 seconds to deal 1,295 damage", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
               ]
             },
             {
@@ -7357,7 +7357,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Ground Smash", description: "Deals 950 damage in 25 splash radius and removes 9 shields", imageUrl: "https://i.postimg.cc/Cxs6grN2/transparent-Photoroom-2026-02-02T192832-676.png" },
-                { name: "Charged Smash", description: "Hammer can be charged for 9 seconds, dealing 1,359 damage at max charge", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
+                { name: "Charged Smash", description: "Charge hammer for 9 seconds to deal 1,359 damage", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
               ]
             },
             {
@@ -7369,7 +7369,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Ground Smash", description: "Deals 975 damage in 25 splash radius and removes 9 shields", imageUrl: "https://i.postimg.cc/Cxs6grN2/transparent-Photoroom-2026-02-02T192832-676.png" },
-                { name: "Charged Smash", description: "Hammer can be charged for 9 seconds, dealing 1,424 damage at max charge", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
+                { name: "Charged Smash", description: "Charge hammer for 9 seconds to deal 1,424 damage", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
               ]
             },
             {
@@ -7381,7 +7381,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Ground Smash", description: "Deals 1,000 damage in 25 splash radius and removes 9 shields", imageUrl: "https://i.postimg.cc/Cxs6grN2/transparent-Photoroom-2026-02-02T192832-676.png" },
-                { name: "Charged Smash", description: "Hammer can be charged for 9 seconds, dealing 1,490 damage at max charge", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
+                { name: "Charged Smash", description: "Charge hammer for 9 seconds to deal 1,490 damage", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
               ]
             },
             {
@@ -7393,7 +7393,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Ground Smash", description: "Deals 1,025 damage in 25 splash radius and removes 9 shields", imageUrl: "https://i.postimg.cc/Cxs6grN2/transparent-Photoroom-2026-02-02T192832-676.png" },
-                { name: "Charged Smash", description: "Hammer can be charged for 9 seconds, dealing 1,558 damage at max charge", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
+                { name: "Charged Smash", description: "Charge hammer for 9 seconds to deal 1,558 damage", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
               ]
             },
             {
@@ -7405,7 +7405,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Ground Smash", description: "Deals 1,050 damage in 25 splash radius and removes 10 shields", imageUrl: "https://i.postimg.cc/Cxs6grN2/transparent-Photoroom-2026-02-02T192832-676.png" },
-                { name: "Charged Smash", description: "Hammer can be charged for 9 seconds, dealing 1,628 damage at max charge", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
+                { name: "Charged Smash", description: "Charge hammer for 9 seconds to deal 1,628 damage", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
               ]
             },
             {
@@ -7417,7 +7417,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Ground Smash", description: "Deals 1,075 damage in 25 splash radius and removes 10 shields", imageUrl: "https://i.postimg.cc/Cxs6grN2/transparent-Photoroom-2026-02-02T192832-676.png" },
-                { name: "Charged Smash", description: "Hammer can be charged for 9 seconds, dealing 1,699 damage at max charge", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
+                { name: "Charged Smash", description: "Charge hammer for 9 seconds to deal 1,699 damage", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
               ]
             },
             {
@@ -7429,7 +7429,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Ground Smash", description: "Deals 1,100 damage in 25 splash radius and removes 10 shields", imageUrl: "https://i.postimg.cc/Cxs6grN2/transparent-Photoroom-2026-02-02T192832-676.png" },
-                { name: "Charged Smash", description: "Hammer can be charged for 9 seconds, dealing 1,771 damage at max charge", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
+                { name: "Charged Smash", description: "Charge hammer for 9 seconds to deal 1,771 damage", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
               ]
             },
             {
@@ -7441,7 +7441,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Ground Smash", description: "Deals 1,125 damage in 25 splash radius and removes 11 shields", imageUrl: "https://i.postimg.cc/Cxs6grN2/transparent-Photoroom-2026-02-02T192832-676.png" },
-                { name: "Charged Smash", description: "Hammer can be charged for 9 seconds, dealing 1,845 damage at max charge", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
+                { name: "Charged Smash", description: "Charge hammer for 9 seconds to deal 1,845 damage", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
               ]
             },
             {
@@ -7453,7 +7453,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Ground Smash", description: "Deals 1,150 damage in 25 splash radius and removes 11 shields", imageUrl: "https://i.postimg.cc/Cxs6grN2/transparent-Photoroom-2026-02-02T192832-676.png" },
-                { name: "Charged Smash", description: "Hammer can be charged for 9 seconds, dealing 1,921 damage at max charge", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
+                { name: "Charged Smash", description: "Charge hammer for 9 seconds to deal 1,921 damage", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
               ]
             },
             {
@@ -7465,7 +7465,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Ground Smash", description: "Deals 1,175 damage in 25 splash radius and removes 11 shields", imageUrl: "https://i.postimg.cc/Cxs6grN2/transparent-Photoroom-2026-02-02T192832-676.png" },
-                { name: "Charged Smash", description: "Hammer can be charged for 9 seconds, dealing 1,998 damage at max charge", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
+                { name: "Charged Smash", description: "Charge hammer for 9 seconds to deal 1,998 damage", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
               ]
             },
             {
@@ -7478,7 +7478,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Ground Smash", description: "Deals 1,200 damage in 25 splash radius and removes 12 shields", imageUrl: "https://i.postimg.cc/Cxs6grN2/transparent-Photoroom-2026-02-02T192832-676.png" },
-                { name: "Charged Smash", description: "Hammer can be charged for 9 seconds, dealing 2,076 damage at max charge", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
+                { name: "Charged Smash", description: "Charge hammer for 9 seconds to deal 2,076 damage", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
               ]
             },
             {
@@ -7490,7 +7490,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Ground Smash", description: "Deals 1,225 damage in 25 splash radius and removes 12 shields", imageUrl: "https://i.postimg.cc/Cxs6grN2/transparent-Photoroom-2026-02-02T192832-676.png" },
-                { name: "Charged Smash", description: "Hammer can be charged for 9 seconds, dealing 2,156 damage at max charge", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
+                { name: "Charged Smash", description: "Charge hammer for 9 seconds to deal 2,156 damage", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
               ]
             },
             {
@@ -7502,7 +7502,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Ground Smash", description: "Deals 1,250 damage in 25 splash radius and removes 12 shields", imageUrl: "https://i.postimg.cc/Cxs6grN2/transparent-Photoroom-2026-02-02T192832-676.png" },
-                { name: "Charged Smash", description: "Hammer can be charged for 9 seconds, dealing 2,238 damage at max charge", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
+                { name: "Charged Smash", description: "Charge hammer for 9 seconds to deal 2,238 damage", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
               ]
             },
             {
@@ -7514,7 +7514,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Ground Smash", description: "Deals 1,275 damage in 25 splash radius and removes 12 shields", imageUrl: "https://i.postimg.cc/Cxs6grN2/transparent-Photoroom-2026-02-02T192832-676.png" },
-                { name: "Charged Smash", description: "Hammer can be charged for 9 seconds, dealing 2,321 damage at max charge", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
+                { name: "Charged Smash", description: "Charge hammer for 9 seconds to deal 2,321 damage", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
               ]
             },
             {
@@ -7526,7 +7526,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Ground Smash", description: "Deals 1,300 damage in 25 splash radius and removes 13 shields", imageUrl: "https://i.postimg.cc/Cxs6grN2/transparent-Photoroom-2026-02-02T192832-676.png" },
-                { name: "Charged Smash", description: "Hammer can be charged for 9 seconds, dealing 2,405 damage at max charge", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
+                { name: "Charged Smash", description: "Charge hammer for 9 seconds to deal 2,405 damage", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
               ]
             },
             {
@@ -7538,7 +7538,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Ground Smash", description: "Deals 1,325 damage in 25 splash radius and removes 13 shields", imageUrl: "https://i.postimg.cc/Cxs6grN2/transparent-Photoroom-2026-02-02T192832-676.png" },
-                { name: "Charged Smash", description: "Hammer can be charged for 9 seconds, dealing 2,491 damage at max charge", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
+                { name: "Charged Smash", description: "Charge hammer for 9 seconds to deal 2,491 damage", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
               ]
             },
             {
@@ -7550,7 +7550,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Ground Smash", description: "Deals 1,350 damage in 25 splash radius and removes 13 shields", imageUrl: "https://i.postimg.cc/Cxs6grN2/transparent-Photoroom-2026-02-02T192832-676.png" },
-                { name: "Charged Smash", description: "Hammer can be charged for 9 seconds, dealing 2,579 damage at max charge", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
+                { name: "Charged Smash", description: "Charge hammer for 9 seconds to deal 2,579 damage", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
               ]
             },
             {
@@ -7562,7 +7562,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Ground Smash", description: "Deals 1,375 damage in 25 splash radius and removes 14 shields", imageUrl: "https://i.postimg.cc/Cxs6grN2/transparent-Photoroom-2026-02-02T192832-676.png" },
-                { name: "Charged Smash", description: "Hammer can be charged for 9 seconds, dealing 2,668 damage at max charge", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
+                { name: "Charged Smash", description: "Charge hammer for 9 seconds to deal 2,668 damage", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
               ]
             },
             {
@@ -7574,7 +7574,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Ground Smash", description: "Deals 1,400 damage in 25 splash radius and removes 14 shields", imageUrl: "https://i.postimg.cc/Cxs6grN2/transparent-Photoroom-2026-02-02T192832-676.png" },
-                { name: "Charged Smash", description: "Hammer can be charged for 9 seconds, dealing 2,758 damage at max charge", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
+                { name: "Charged Smash", description: "Charge hammer for 9 seconds to deal 2,758 damage", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
               ]
             },
             {
@@ -7586,7 +7586,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Ground Smash", description: "Deals 1,425 damage in 25 splash radius and removes 14 shields", imageUrl: "https://i.postimg.cc/Cxs6grN2/transparent-Photoroom-2026-02-02T192832-676.png" },
-                { name: "Charged Smash", description: "Hammer can be charged for 9 seconds, dealing 2,850 damage at max charge", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
+                { name: "Charged Smash", description: "Charge hammer for 9 seconds to deal 2,850 damage", imageUrl: "https://i.postimg.cc/W4XWD9dN/transparent-Photoroom-2026-02-02T214844-050.png" }
               ]
             },
           ],
