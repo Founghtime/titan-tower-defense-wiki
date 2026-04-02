@@ -19,6 +19,7 @@
   display:flex;
   align-items:center;
   justify-content:center;
+  gap:10px;
   color:#bb86fc;
   font-weight:900;
   letter-spacing:.3px;
@@ -52,6 +53,11 @@
   touch-action:manipulation;
 }
 
+.site-switch-btn i{
+  font-size:1.05rem;
+  opacity:.95;
+}
+
 .site-switch-btn:hover{
   background:#2b2b2b;
   border-color:rgba(255,255,255,.26);
@@ -68,11 +74,19 @@
   box-shadow:0 0 0 2px rgba(100,181,246,.20) inset, 0 10px 26px rgba(0,0,0,.55);
 }
 
-:root {
+:root{
   --nav-gap: 16px;
 }
 
-.nav-spacer {
+.site-switch-panel{
+  margin-bottom: var(--nav-gap) !important;
+}
+
+#site-nav + *{
+  margin-top: var(--nav-gap) !important;
+}
+
+.nav-spacer{
   height: var(--nav-gap);
 }
 
