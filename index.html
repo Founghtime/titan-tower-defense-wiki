@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta id="viewport-meta" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-  <meta name="description" content="Titan Tower Defense Wiki by Suspicious Blob">
+  <meta name="description" content="Titan Tower Defense Wiki by Suspicious Blob with Full and Up-To-Date info">
   <title>Titan Tower Defense Wiki</title>
+  <meta name="google-site-verification" content="0cYgEwDjZgNjyhWVnpCOrVSOcxN9XrNmXDDHt6vcIRE" />
 
-  <link rel="stylesheet" href="./assets/nav.css">
-
+  <!-- Apply saved mode as early as possible (before layout) -->
   <script>
     (function(){
       try{
         var key = 'ttd_layout_mode';
         var saved = localStorage.getItem(key);
 
+        // Backward compatibility: previously "mobile" actually meant the wide desktop-canvas mode.
         if (saved === 'mobile'){
           saved = 'pc';
           localStorage.setItem(key, 'pc');
@@ -26,7 +27,19 @@
     })();
   </script>
 
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JSCZMYRF35"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JSCZMYRF35');
+  </script>
+
   <style>
+    /* =========================
+       Base styles
+       ========================= */
     body {
       background: #393636;
       color: #e0e0e0;
@@ -53,22 +66,10 @@
       border-bottom: 1px solid #333f50;
     }
 
-    .custom-title {
-      font-size: 2.5rem;
-      color: #64b5f6;
-      margin-bottom: 10px;
-    }
-
-    .subtitle {
-      color: #90a4ae;
-      font-size: 1.1rem;
-      margin-bottom: 0;
-    }
-
     .content-section {
       padding: 30px;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 25px;
     }
 
@@ -76,30 +77,103 @@
       background: #2d2d2d;
       border-radius: 12px;
       padding: 25px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
       border: 1px solid #444;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+      transition: transform 0.3s ease;
     }
 
-    .card-title {
-      color: #bb86fc;
-      font-size: 1.5rem;
-      margin-bottom: 14px;
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
     }
 
-    .card-content {
-      line-height: 1.7;
-    }
-
-    .main-link {
+    h1.custom-title {
+      font-size: 2.5rem;
       color: #64b5f6;
-      text-decoration: none;
-      font-weight: 700;
+      text-shadow: 0 0 10px rgba(100, 181, 246, 0.3);
+      margin-bottom: 10px;
     }
 
-    .main-link:hover {
-      text-decoration: underline;
+    .subtitle {
+      color: #90a4ae;
+      font-size: 1.2rem;
+      margin-bottom: 25px;
     }
 
+    h2.card-title {
+      color: #bb86fc;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #444;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .card-content { line-height: 1.7; }
+    .card-content p { margin-bottom: 15px; }
+
+    .highlight-box {
+      background: linear-gradient(135deg, #1a2a3a, #23354d);
+      padding: 25px;
+      border-radius: 10px;
+      margin: 25px 0 0;
+      border: 1px solid #333f50;
+    }
+
+    .feature-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .feature-list li {
+      padding: 12px 0 12px 35px;
+      margin-bottom: 10px;
+      position: relative;
+      border-bottom: 1px dashed #444;
+    }
+
+    .feature-list li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 25px;
+      height: 25px;
+      background: #64b5f6;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 25px;
+      background: #1a1a2e;
+      color: #90a4ae;
+      border-top: 1px solid #333f50;
+    }
+
+    .icon { font-size: 1.5rem; color: #64b5f6; }
+
+    .disclaimer {
+      color: #e74c3c;
+      font-size: 0.9rem;
+      text-align: center;
+      margin-top: 15px;
+      padding: 10px;
+      background: rgba(231, 76, 60, 0.1);
+      border-radius: 8px;
+    }
+
+    /* =========================
+       PC Mode / Mobile Mode toggle
+       ========================= */
     .mode-switch{
       margin-top: 14px;
       display:flex;
@@ -119,9 +193,22 @@
       align-items:center;
       gap:10px;
       font-weight:800;
+      letter-spacing:.2px;
+      transition: transform .12s ease, background .12s ease, border-color .12s ease;
+      box-shadow: 0 8px 24px rgba(0,0,0,.18);
     }
-
-    .mode-badge{
+    .mode-toggle i{ font-size:1.05rem; opacity:.95; }
+    .mode-toggle:hover{
+      background: rgba(255,255,255,.10);
+      transform: translateY(-1px);
+    }
+    .mode-toggle:active{ transform: translateY(0); }
+    .mode-toggle:focus-visible{
+      outline: 2px solid rgba(100,181,246,.55);
+      outline-offset: 2px;
+    }
+    .mode-toggle .mode-label{ font-weight:900; }
+    .mode-toggle .mode-badge{
       font-size:.78rem;
       font-weight:900;
       padding:3px 8px;
@@ -132,50 +219,44 @@
       white-space:nowrap;
     }
 
+    /* Active state: PC Mode (wide canvas) */
+    html.pc-mode .mode-toggle{
+      background: rgba(100,181,246,.18);
+      border-color: rgba(100,181,246,.55);
+    }
+
+    /* =========================
+       PC Mode = wide "desktop-like" canvas + horizontal scroll
+       (IMPORTANT: we do NOT change viewport meta, so nothing "disappears")
+       ========================= */
     html.pc-mode body{
       overflow-x: auto !important;
+      -webkit-overflow-scrolling: touch;
     }
-
     html.pc-mode .custom-container{
-      min-width: 1200px;
+      min-width: 1200px; /* forces horizontal panning on phones */
     }
 
-    .footer {
-      text-align: center;
-      padding: 25px;
-      background: #1a1a2e;
-      color: #90a4ae;
-      border-top: 1px solid #333f50;
-    }
-
-    .disclaimer {
-      color: #e74c3c;
-      font-size: 0.9rem;
-      text-align: center;
-      margin: 20px;
-      padding: 10px;
-      background: rgba(231, 76, 60, 0.1);
-      border-radius: 8px;
-    }
-
+    /* =========================
+       Responsive
+       ========================= */
     @media (max-width: 768px) {
       body { padding: 10px; }
       .custom-header { padding: 25px 20px; }
       .content-section { padding: 20px; grid-template-columns: 1fr; }
-      .custom-title { font-size: 2rem; }
+      h1.custom-title { font-size: 2rem; }
     }
   </style>
 </head>
-<body>
-  <div id="site-nav"></div>
 
+<body>
   <div class="custom-container">
     <header class="custom-header">
-      <h1 class="custom-title">Titan Tower Defense Wiki (INCOMPLETE)</h1>
-      <p class="subtitle">Main page</p>
+      <h1 class="custom-title"><i class="fas fa-rocket"></i> Titan Tower Defense Wiki (INCOMPLETE)</h1>
 
       <div class="mode-switch" id="mode-switch" aria-label="Layout mode switch">
-        <button class="mode-toggle" id="mode-toggle" type="button" aria-pressed="false">
+        <button class="mode-toggle" id="mode-toggle" type="button" title="Toggle PC Mode / Mobile Mode" aria-pressed="false">
+          <i class="fas fa-desktop" aria-hidden="true"></i>
           <span class="mode-label">PC Mode</span>
           <span class="mode-badge">tap to switch</span>
         </button>
@@ -184,33 +265,52 @@
 
     <div class="content-section">
       <div class="card">
-        <h2 class="card-title">Open Wiki</h2>
+        <h2 class="card-title"><i class="fas fa-info-circle icon"></i> Navigation Help</h2>
         <div class="card-content">
-          <p>Open the full wiki page with Units, Items, Maps, Crates, Gears and more.</p>
-          <p><a class="main-link" href="./wiki.html">Go to Wiki</a></p>
+          <div class="highlight-box">
+            <p><strong>If you can't see the tabs with Wiki Page:</strong></p>
+            <ul>
+              <li>Look for the navigation button in the top-left corner (☰ icon)</li>
+              <li>Refresh the page if the button isn't visible</li>
+            </ul>
+          </div>
         </div>
       </div>
 
       <div class="card">
-        <h2 class="card-title">About</h2>
+        <h2 class="card-title"><i class="fas fa-desktop icon"></i> Real PC Mode</h2>
         <div class="card-content">
-          <p><strong>Wiki Creator:</strong> Suspicious Blob</p>
-          <p><strong>Status:</strong> Incomplete</p>
-          <p><strong>Platform:</strong> GitHub Pages</p>
+          <div class="highlight-box" style="margin-top:0;">
+            <p><strong>Enable Desktop site (phones/tablets):</strong></p>
+            <ul>
+              <li><strong>Android (Chrome):</strong> ⋮ → Desktop site</li>
+              <li><strong>iPhone/iPad (Safari):</strong> aA → Request Desktop Website</li>
+              <li><strong>iPhone/iPad (Chrome):</strong> ⋯ → Request Desktop Site</li>
+            </ul>
+            <p style="margin:0;"><strong>If it still looks “mobile”, refresh after enabling it</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 class="card-title"><i class="fas fa-gem icon"></i> Information</h2>
+        <div class="card-content">
+          <p><strong>Wiki Creator:</strong> Suspicious Blob (Founghtime)</p>
+          <p><strong>The Game Link:</strong> <a href="https://www.roblox.com/games/14641667067/Titan-Tower-Defense" style="color: #1E90FF; text-decoration: none;">[ Click Here ]</a></p>
+          <p><strong>Discord Server:</strong> <a href="https://discord.com/invite/titantd" style="color: #1E90FF; text-decoration: none;">[ Click Here ]</a></p>
         </div>
       </div>
     </div>
 
     <div class="disclaimer">
-      This is NOT an official Wiki. All the info was taken from the game.
+      <p>This is NOT an official Wiki. All the info was taken from the game</p>
     </div>
-
-    <footer class="footer">
-      Titan Tower Defense Wiki
-    </footer>
   </div>
 
-  <script src="./assets/nav.js"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- PC/Mobile mode logic -->
   <script>
     (function(){
       const STORAGE_KEY = 'ttd_layout_mode';
@@ -226,25 +326,47 @@
 
         const isPC = document.documentElement.classList.contains('pc-mode');
         btn.setAttribute('aria-pressed', isPC ? 'true' : 'false');
-        btn.querySelector('.mode-label').textContent = isPC ? 'PC Mode' : 'Mobile Mode';
+
+        const icon = btn.querySelector('i');
+        const label = btn.querySelector('.mode-label');
+
+        if (icon) icon.className = isPC ? 'fas fa-desktop' : 'fas fa-mobile-screen-button';
+        if (label) label.textContent = isPC ? 'PC Mode' : 'Mobile Mode';
       }
 
-      function toggleMode(){
-        const isPC = document.documentElement.classList.contains('pc-mode');
-        const next = isPC ? 'mobile' : 'pc';
-        localStorage.setItem(STORAGE_KEY, next);
-        applyMode(next);
-        syncToggleUI();
+      // Initial UI sync (in case mode already applied in <head>)
+      syncToggleUI();
+
+      // Click to toggle
+      const toggleBtn = document.getElementById('mode-toggle');
+      if (toggleBtn){
+        toggleBtn.addEventListener('click', () => {
+          const isPC = document.documentElement.classList.contains('pc-mode');
+          const next = isPC ? 'mobile' : 'pc';
+          localStorage.setItem(STORAGE_KEY, next);
+          applyMode(next);
+          syncToggleUI();
+
+          // Reflow for some mobile browsers / embeds (no hard reload)
+          requestAnimationFrame(() => window.dispatchEvent(new Event('resize')));
+        });
       }
 
-      document.addEventListener('DOMContentLoaded', function(){
-        const saved = localStorage.getItem(STORAGE_KEY) || 'mobile';
-        applyMode(saved);
-        syncToggleUI();
-
-        const btn = document.getElementById('mode-toggle');
-        if (btn) btn.addEventListener('click', toggleMode);
-      });
+      // Enforce saved mode (and migrate old value if needed)
+      try{
+        let saved = localStorage.getItem(STORAGE_KEY);
+        if (saved === 'mobile'){ // legacy
+          saved = 'pc';
+          localStorage.setItem(STORAGE_KEY, 'pc');
+        }
+        if (saved === 'pc'){
+          applyMode('pc');
+          syncToggleUI();
+        } else {
+          applyMode('mobile');
+          syncToggleUI();
+        }
+      }catch(e){}
     })();
   </script>
 </body>
