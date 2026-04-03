@@ -14,14 +14,8 @@
         var key = 'ttd_layout_mode';
         var saved = localStorage.getItem(key);
 
-        /* 
-          New logic:
-          - "pc" = real PC Mode (default wide layout) -> NO class
-          - "mobile" = real Mobile Mode -> add .pc-mode class
-        */
-
         if (!saved) {
-          saved = 'pc'; /* PC Mode by default */
+          saved = 'pc';
           localStorage.setItem(key, 'pc');
         }
 
@@ -44,9 +38,6 @@
   </script>
 
   <style>
-    /* =========================
-       Base styles
-       ========================= */
     body {
       background: #393636;
       color: #e0e0e0;
@@ -178,9 +169,6 @@
       border-radius: 8px;
     }
 
-    /* =========================
-       PC Mode / Mobile Mode toggle
-       ========================= */
     .mode-switch{
       margin-top: 14px;
       display:flex;
@@ -239,15 +227,11 @@
       white-space:nowrap;
     }
 
-    /* Active state: Mobile Mode */
     html.pc-mode .mode-toggle{
       background: rgba(100,181,246,.18);
       border-color: rgba(100,181,246,.55);
     }
 
-    /* =========================
-       Mobile Mode = narrow normal mobile layout
-       ========================= */
     html.pc-mode body{
       overflow-x: hidden !important;
       -webkit-overflow-scrolling: touch;
@@ -259,10 +243,6 @@
       max-width: 1200px;
     }
 
-    /* =========================
-       PC Mode = wide desktop-like canvas
-       default state
-       ========================= */
     html:not(.pc-mode) body{
       overflow-x: auto !important;
       -webkit-overflow-scrolling: touch;
@@ -272,9 +252,6 @@
       min-width: 1200px;
     }
 
-    /* =========================
-       Responsive
-       ========================= */
     @media (max-width: 768px) {
       body { padding: 10px; }
       .custom-header { padding: 25px 20px; }
@@ -294,7 +271,7 @@
       <div class="mode-switch" id="mode-switch" aria-label="Layout mode switch">
         <button class="mode-toggle" id="mode-toggle" type="button" title="Toggle PC Mode / Mobile Mode" aria-pressed="false">
           <i class="fas fa-mobile-screen-button" aria-hidden="true"></i>
-          <span class="mode-label">Mobile Mode</span>
+          <span class="mode-label">PC Mode</span>
           <span class="mode-badge">tap to switch</span>
         </button>
       </div>
@@ -344,11 +321,9 @@
     </div>
   </div>
 
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <script src="./assets/nav.js"></script>
 
-  <!-- PC/Mobile mode logic -->
   <script>
     (function(){
       const STORAGE_KEY = 'ttd_layout_mode';
@@ -368,7 +343,6 @@
         const icon = btn.querySelector('i');
         const label = btn.querySelector('.mode-label');
 
-        /* Button shows the mode it will switch to */
         if (icon) icon.className = isMobile ? 'fas fa-desktop' : 'fas fa-mobile-screen-button';
         if (label) label.textContent = isMobile ? 'PC Mode' : 'Mobile Mode';
       }
@@ -390,7 +364,7 @@
         let saved = localStorage.getItem(STORAGE_KEY);
 
         if (!saved){
-          saved = 'pc'; /* PC Mode enabled by default */
+          saved = 'pc';
           localStorage.setItem(STORAGE_KEY, 'pc');
         }
 
