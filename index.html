@@ -5,11 +5,13 @@
   <meta id="viewport-meta" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
   <meta name="description" content="Titan Tower Defense Wiki by Suspicious Blob">
   <title>Titan Tower Defense Wiki</title>
+
   <link rel="stylesheet" href="./assets/nav.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <script>
-    (function(){
-      try{
+    (function () {
+      try {
         var key = 'ttd_layout_mode';
         var saved = localStorage.getItem(key);
 
@@ -18,12 +20,12 @@
           localStorage.setItem(key, 'pc');
         }
 
-        if (saved === 'mobile'){
-          document.documentElement.classList.add('pc-mode');
+        if (saved === 'mobile') {
+          document.documentElement.classList.add('mobile-mode');
         } else {
-          document.documentElement.classList.remove('pc-mode');
+          document.documentElement.classList.remove('mobile-mode');
         }
-      }catch(e){}
+      } catch (e) {}
     })();
   </script>
 
@@ -167,86 +169,89 @@
       border-radius: 8px;
     }
 
-    .mode-switch{
+    .mode-switch {
       margin-top: 14px;
-      display:flex;
-      justify-content:center;
-      align-items:center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
-    .mode-toggle{
-      appearance:none;
+    .mode-toggle {
+      appearance: none;
       border: 1px solid rgba(255,255,255,.16);
       background: rgba(255,255,255,.06);
       color: #f2f2f2;
-      border-radius:999px;
-      padding:10px 14px;
-      cursor:pointer;
-      display:inline-flex;
-      align-items:center;
-      gap:10px;
-      font-weight:800;
-      letter-spacing:.2px;
+      border-radius: 999px;
+      padding: 10px 14px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      letter-spacing: .2px;
       transition: transform .12s ease, background .12s ease, border-color .12s ease;
       box-shadow: 0 8px 24px rgba(0,0,0,.18);
     }
 
-    .mode-toggle i{
-      font-size:1.05rem;
-      opacity:.95;
+    .mode-toggle i {
+      font-size: 1.05rem;
+      opacity: .95;
     }
 
-    .mode-toggle:hover{
+    .mode-toggle:hover {
       background: rgba(255,255,255,.10);
       transform: translateY(-1px);
     }
 
-    .mode-toggle:active{
+    .mode-toggle:active {
       transform: translateY(0);
     }
 
-    .mode-toggle:focus-visible{
+    .mode-toggle:focus-visible {
       outline: 2px solid rgba(100,181,246,.55);
       outline-offset: 2px;
     }
 
-    .mode-toggle .mode-label{
-      font-weight:900;
+    .mode-toggle .mode-label {
+      font-weight: 900;
     }
 
-    .mode-toggle .mode-badge{
-      font-size:.78rem;
-      font-weight:900;
-      padding:3px 8px;
-      border-radius:999px;
+    .mode-toggle .mode-badge {
+      font-size: .78rem;
+      font-weight: 900;
+      padding: 3px 8px;
+      border-radius: 999px;
       background: rgba(0,0,0,.22);
       border: 1px solid rgba(255,255,255,.14);
       color: rgba(242,242,242,.86);
-      white-space:nowrap;
+      white-space: nowrap;
     }
 
-    html.pc-mode .mode-toggle{
+    /* Синий активный стиль теперь только у Mobile Mode */
+    html.mobile-mode .mode-toggle {
       background: rgba(100,181,246,.18);
       border-color: rgba(100,181,246,.55);
     }
 
-    html.pc-mode body{
+    /* Mobile Mode */
+    html.mobile-mode body {
       overflow-x: hidden !important;
       -webkit-overflow-scrolling: touch;
     }
 
-    html.pc-mode .custom-container{
+    html.mobile-mode .custom-container {
       min-width: 0;
       width: 100%;
       max-width: 1200px;
     }
 
-    html:not(.pc-mode) body{
+    /* PC Mode */
+    html:not(.mobile-mode) body {
       overflow-x: auto !important;
       -webkit-overflow-scrolling: touch;
     }
 
-    html:not(.pc-mode) .custom-container{
+    html:not(.mobile-mode) .custom-container {
       min-width: 1200px;
     }
 
@@ -268,7 +273,7 @@
 
       <div class="mode-switch" id="mode-switch" aria-label="Layout mode switch">
         <button class="mode-toggle" id="mode-toggle" type="button" title="Toggle PC Mode / Mobile Mode" aria-pressed="false">
-          <i class="fas fa-mobile-screen-button" aria-hidden="true"></i>
+          <i class="fas fa-desktop" aria-hidden="true"></i>
           <span class="mode-label">PC Mode</span>
           <span class="mode-badge">tap to switch</span>
         </button>
@@ -306,56 +311,59 @@
     </div>
   </div>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <script src="./assets/nav.js"></script>
 
   <script>
-    (function(){
+    (function () {
       const STORAGE_KEY = 'ttd_layout_mode';
 
-      function applyMode(mode){
+      function applyMode(mode) {
         const isMobile = (mode === 'mobile');
-        document.documentElement.classList.toggle('pc-mode', isMobile);
+        document.documentElement.classList.toggle('mobile-mode', isMobile);
       }
 
-      function syncToggleUI(){
+      function syncToggleUI() {
         const btn = document.getElementById('mode-toggle');
         if (!btn) return;
 
-        const isMobile = document.documentElement.classList.contains('pc-mode');
+        const isMobile = document.documentElement.classList.contains('mobile-mode');
         btn.setAttribute('aria-pressed', isMobile ? 'true' : 'false');
 
         const icon = btn.querySelector('i');
         const label = btn.querySelector('.mode-label');
 
-        if (icon) icon.className = isMobile ? 'fas fa-desktop' : 'fas fa-mobile-screen-button';
-        if (label) label.textContent = isMobile ? 'PC Mode' : 'Mobile Mode';
+        if (icon) icon.className = isMobile ? 'fas fa-mobile-screen-button' : 'fas fa-desktop';
+        if (label) label.textContent = isMobile ? 'Mobile Mode' : 'PC Mode';
       }
 
       const toggleBtn = document.getElementById('mode-toggle');
 
-      if (toggleBtn){
+      if (toggleBtn) {
         toggleBtn.addEventListener('click', () => {
-          const isMobile = document.documentElement.classList.contains('pc-mode');
+          const isMobile = document.documentElement.classList.contains('mobile-mode');
           const next = isMobile ? 'pc' : 'mobile';
-          localStorage.setItem(STORAGE_KEY, next);
+
+          try {
+            localStorage.setItem(STORAGE_KEY, next);
+          } catch (e) {}
+
           applyMode(next);
           syncToggleUI();
           requestAnimationFrame(() => window.dispatchEvent(new Event('resize')));
         });
       }
 
-      try{
+      try {
         let saved = localStorage.getItem(STORAGE_KEY);
 
-        if (!saved){
+        if (!saved) {
           saved = 'pc';
           localStorage.setItem(STORAGE_KEY, 'pc');
         }
 
         applyMode(saved);
         syncToggleUI();
-      }catch(e){
+      } catch (e) {
         applyMode('pc');
         syncToggleUI();
       }
