@@ -227,11 +227,13 @@
       white-space: nowrap;
     }
 
-    /* Синий активный стиль теперь только у Mobile Mode */
+    /* Синий стиль только у Mobile Mode */
     html.mobile-mode .mode-toggle {
       background: rgba(100,181,246,.18);
       border-color: rgba(100,181,246,.55);
     }
+
+    /* PC Mode = ничего не делает, обычный режим */
 
     /* Mobile Mode */
     html.mobile-mode body {
@@ -243,16 +245,6 @@
       min-width: 0;
       width: 100%;
       max-width: 1200px;
-    }
-
-    /* PC Mode */
-    html:not(.mobile-mode) body {
-      overflow-x: auto !important;
-      -webkit-overflow-scrolling: touch;
-    }
-
-    html:not(.mobile-mode) .custom-container {
-      min-width: 1200px;
     }
 
     @media (max-width: 768px) {
@@ -318,8 +310,7 @@
       const STORAGE_KEY = 'ttd_layout_mode';
 
       function applyMode(mode) {
-        const isMobile = (mode === 'mobile');
-        document.documentElement.classList.toggle('mobile-mode', isMobile);
+        document.documentElement.classList.toggle('mobile-mode', mode === 'mobile');
       }
 
       function syncToggleUI() {
@@ -332,8 +323,13 @@
         const icon = btn.querySelector('i');
         const label = btn.querySelector('.mode-label');
 
-        if (icon) icon.className = isMobile ? 'fas fa-mobile-screen-button' : 'fas fa-desktop';
-        if (label) label.textContent = isMobile ? 'Mobile Mode' : 'PC Mode';
+        if (isMobile) {
+          if (icon) icon.className = 'fas fa-mobile-screen-button';
+          if (label) label.textContent = 'Mobile Mode';
+        } else {
+          if (icon) icon.className = 'fas fa-desktop';
+          if (label) label.textContent = 'PC Mode';
+        }
       }
 
       const toggleBtn = document.getElementById('mode-toggle');
@@ -341,13 +337,13 @@
       if (toggleBtn) {
         toggleBtn.addEventListener('click', () => {
           const isMobile = document.documentElement.classList.contains('mobile-mode');
-          const next = isMobile ? 'pc' : 'mobile';
+          const nextMode = isMobile ? 'pc' : 'mobile';
 
           try {
-            localStorage.setItem(STORAGE_KEY, next);
+            localStorage.setItem(STORAGE_KEY, nextMode);
           } catch (e) {}
 
-          applyMode(next);
+          applyMode(nextMode);
           syncToggleUI();
           requestAnimationFrame(() => window.dispatchEvent(new Event('resize')));
         });
