@@ -503,7 +503,7 @@ window.gameData = {
           abilities: [
             {
               name: "Gear Research",
-              description: "Attacks reduce gear cooldown by 1s (1.6s)",
+              description: "Attacks reduce gear timer by 1s (1.6s)",
               onLevel: 1,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -626,7 +626,7 @@ window.gameData = {
           abilities: [
             {
               name: "Gear Research",
-              description: "Attacks reduce gear cooldown by 1s",
+              description: "Attacks reduce gear timer by 1s",
               onLevel: 1,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -2362,7 +2362,7 @@ window.gameData = {
             },
             {
               name: "Final Stand",
-              description: "Lowers ability cooldown of Units within range by 5% (10%), 10% (20%) for cameras",
+              description: "Reduces ability timer of Units within range by 5% (10%), 10% (20%) for cameras",
               onLevel: 7,
               type: "Passive",
               speed: { min: 0, max: 0 },
