@@ -14,14 +14,21 @@
         var key = 'ttd_layout_mode';
         var saved = localStorage.getItem(key);
 
-        // Backward compatibility: previously "mobile" actually meant the wide desktop-canvas mode.
-        if (saved === 'mobile'){
-          saved = 'pc';
+        /* 
+          New logic:
+          - "pc" = real PC Mode (default wide layout) -> NO class
+          - "mobile" = real Mobile Mode -> add .pc-mode class
+        */
+
+        if (!saved) {
+          saved = 'pc'; /* PC Mode by default */
           localStorage.setItem(key, 'pc');
         }
 
-        if (saved === 'pc'){
+        if (saved === 'mobile'){
           document.documentElement.classList.add('pc-mode');
+        } else {
+          document.documentElement.classList.remove('pc-mode');
         }
       }catch(e){}
     })();
@@ -197,17 +204,30 @@
       transition: transform .12s ease, background .12s ease, border-color .12s ease;
       box-shadow: 0 8px 24px rgba(0,0,0,.18);
     }
-    .mode-toggle i{ font-size:1.05rem; opacity:.95; }
+
+    .mode-toggle i{
+      font-size:1.05rem;
+      opacity:.95;
+    }
+
     .mode-toggle:hover{
       background: rgba(255,255,255,.10);
       transform: translateY(-1px);
     }
-    .mode-toggle:active{ transform: translateY(0); }
+
+    .mode-toggle:active{
+      transform: translateY(0);
+    }
+
     .mode-toggle:focus-visible{
       outline: 2px solid rgba(100,181,246,.55);
       outline-offset: 2px;
     }
-    .mode-toggle .mode-label{ font-weight:900; }
+
+    .mode-toggle .mode-label{
+      font-weight:900;
+    }
+
     .mode-toggle .mode-badge{
       font-size:.78rem;
       font-weight:900;
@@ -219,22 +239,37 @@
       white-space:nowrap;
     }
 
-    /* Active state: PC Mode (wide canvas) */
+    /* Active state: Mobile Mode */
     html.pc-mode .mode-toggle{
       background: rgba(100,181,246,.18);
       border-color: rgba(100,181,246,.55);
     }
 
     /* =========================
-       PC Mode = wide "desktop-like" canvas + horizontal scroll
-       (IMPORTANT: we do NOT change viewport meta, so nothing "disappears")
+       Mobile Mode = narrow normal mobile layout
        ========================= */
     html.pc-mode body{
+      overflow-x: hidden !important;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    html.pc-mode .custom-container{
+      min-width: 0;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    /* =========================
+       PC Mode = wide desktop-like canvas
+       default state
+       ========================= */
+    html:not(.pc-mode) body{
       overflow-x: auto !important;
       -webkit-overflow-scrolling: touch;
     }
-    html.pc-mode .custom-container{
-      min-width: 1200px; /* forces horizontal panning on phones */
+
+    html:not(.pc-mode) .custom-container{
+      min-width: 1200px;
     }
 
     /* =========================
@@ -251,15 +286,15 @@
 
 <body>
   <div id="site-nav"></div>
-  
+
   <div class="custom-container">
     <header class="custom-header">
       <h1 class="custom-title">Titan Tower Defense Wiki (INCOMPLETE)</h1>
 
       <div class="mode-switch" id="mode-switch" aria-label="Layout mode switch">
         <button class="mode-toggle" id="mode-toggle" type="button" title="Toggle PC Mode / Mobile Mode" aria-pressed="false">
-          <i class="fas fa-desktop" aria-hidden="true"></i>
-          <span class="mode-label">PC Mode</span>
+          <i class="fas fa-mobile-screen-button" aria-hidden="true"></i>
+          <span class="mode-label">Mobile Mode</span>
           <span class="mode-badge">tap to switch</span>
         </button>
       </div>
@@ -319,57 +354,52 @@
       const STORAGE_KEY = 'ttd_layout_mode';
 
       function applyMode(mode){
-        const isPC = (mode === 'pc');
-        document.documentElement.classList.toggle('pc-mode', isPC);
+        const isMobile = (mode === 'mobile');
+        document.documentElement.classList.toggle('pc-mode', isMobile);
       }
 
       function syncToggleUI(){
         const btn = document.getElementById('mode-toggle');
         if (!btn) return;
 
-        const isPC = document.documentElement.classList.contains('pc-mode');
-        btn.setAttribute('aria-pressed', isPC ? 'true' : 'false');
+        const isMobile = document.documentElement.classList.contains('pc-mode');
+        btn.setAttribute('aria-pressed', isMobile ? 'true' : 'false');
 
         const icon = btn.querySelector('i');
         const label = btn.querySelector('.mode-label');
 
-        if (icon) icon.className = isPC ? 'fas fa-mobile-screen-button' : 'fas fa-desktop';
-        if (label) label.textContent = isPC ? 'Mobile Mode' : 'PC Mode';
+        /* Button shows the mode it will switch to */
+        if (icon) icon.className = isMobile ? 'fas fa-desktop' : 'fas fa-mobile-screen-button';
+        if (label) label.textContent = isMobile ? 'PC Mode' : 'Mobile Mode';
       }
 
-      // Initial UI sync (in case mode already applied in <head>)
-      syncToggleUI();
-
-      // Click to toggle
       const toggleBtn = document.getElementById('mode-toggle');
+
       if (toggleBtn){
         toggleBtn.addEventListener('click', () => {
-          const isPC = document.documentElement.classList.contains('pc-mode');
-          const next = isPC ? 'mobile' : 'pc';
+          const isMobile = document.documentElement.classList.contains('pc-mode');
+          const next = isMobile ? 'pc' : 'mobile';
           localStorage.setItem(STORAGE_KEY, next);
           applyMode(next);
           syncToggleUI();
-
-          // Reflow for some mobile browsers / embeds (no hard reload)
           requestAnimationFrame(() => window.dispatchEvent(new Event('resize')));
         });
       }
 
-      // Enforce saved mode (and migrate old value if needed)
       try{
         let saved = localStorage.getItem(STORAGE_KEY);
-        if (saved === 'mobile'){ // legacy
-          saved = 'pc';
+
+        if (!saved){
+          saved = 'pc'; /* PC Mode enabled by default */
           localStorage.setItem(STORAGE_KEY, 'pc');
         }
-        if (saved === 'pc'){
-          applyMode('pc');
-          syncToggleUI();
-        } else {
-          applyMode('mobile');
-          syncToggleUI();
-        }
-      }catch(e){}
+
+        applyMode(saved);
+        syncToggleUI();
+      }catch(e){
+        applyMode('pc');
+        syncToggleUI();
+      }
     })();
   </script>
 </body>
