@@ -254,7 +254,7 @@
   
   <div class="custom-container">
     <header class="custom-header">
-      <h1 class="custom-title"><i class="fas fa-rocket"></i> Titan Tower Defense Wiki (INCOMPLETE)</h1>
+      <h1 class="custom-title">Titan Tower Defense Wiki (INCOMPLETE)</h1>
 
       <div class="mode-switch" id="mode-switch" aria-label="Layout mode switch">
         <button class="mode-toggle" id="mode-toggle" type="button" title="Toggle PC Mode / Mobile Mode" aria-pressed="false">
@@ -267,7 +267,7 @@
 
     <div class="content-section">
       <div class="card">
-        <h2 class="card-title"><i class="fas fa-info-circle icon"></i> Navigation Help</h2>
+        <h2 class="card-title">Navigation Help</h2>
         <div class="card-content">
           <div class="highlight-box">
             <p><strong>If you can't see the tabs with Wiki Page:</strong></p>
@@ -280,7 +280,7 @@
       </div>
 
       <div class="card">
-        <h2 class="card-title"><i class="fas fa-desktop icon"></i> Real PC Mode</h2>
+        <h2 class="card-title">Real PC Mode</h2>
         <div class="card-content">
           <div class="highlight-box" style="margin-top:0;">
             <p><strong>Enable Desktop site (phones/tablets):</strong></p>
@@ -295,7 +295,7 @@
       </div>
 
       <div class="card">
-        <h2 class="card-title"><i class="fas fa-gem icon"></i> Information</h2>
+        <h2 class="card-title">Information</h2>
         <div class="card-content">
           <p><strong>Wiki Creator:</strong> Suspicious Blob (Founghtime)</p>
           <p><strong>The Game Link:</strong> <a href="https://www.roblox.com/games/14641667067/Titan-Tower-Defense" style="color: #1E90FF; text-decoration: none;">[ Click Here ]</a></p>
@@ -333,8 +333,8 @@
         const icon = btn.querySelector('i');
         const label = btn.querySelector('.mode-label');
 
-        if (icon) icon.className = isPC ? 'fas fa-desktop' : 'fas fa-mobile-screen-button';
-        if (label) label.textContent = isPC ? 'PC Mode' : 'Mobile Mode';
+        if (icon) icon.className = isPC ? 'fas fa-mobile-screen-button' : 'fas fa-desktop';
+        if (label) label.textContent = isPC ? 'Mobile Mode' : 'PC Mode';
       }
 
       // Initial UI sync (in case mode already applied in <head>)
