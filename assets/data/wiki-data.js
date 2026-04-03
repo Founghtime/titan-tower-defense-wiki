@@ -503,7 +503,7 @@ window.gameData = {
           abilities: [
             {
               name: "Gear Research",
-              description: "Attacks reduce gear timer by 1s (1.6s)",
+              description: "Attacks reduce gear cooldown by 1s (1.6s)",
               onLevel: 1,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -626,7 +626,7 @@ window.gameData = {
           abilities: [
             {
               name: "Gear Research",
-              description: "Attacks reduce gear timer by 1s",
+              description: "Attacks reduce gear cooldown by 1s",
               onLevel: 1,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -962,7 +962,7 @@ window.gameData = {
             },
             {
               name: "Damage Potion",
-              description: "Every 30 seconds: buff a random nearby unit by 30% damage",
+              description: "Buffs a random nearby unit by 30% damage",
               onLevel: 9,
               type: "Passive",
               speed: { min: 30, max: 30 },
@@ -1447,7 +1447,7 @@ window.gameData = {
             },
             {
               name: "Smoke Bomb",
-              description: "Every 16 seconds: stun enemies for 3 seconds",
+              description: "Stuns enemies for 3 seconds",
               onLevel: 5,
               type: "Passive",
               speed: { min: 16, max: 16 },
@@ -2362,7 +2362,7 @@ window.gameData = {
             },
             {
               name: "Final Stand",
-              description: "Reduces ability timer of Units within range by 5% (10%), 10% (20%) for cameras",
+              description: "Lowers ability cooldown of Units within range by 5% (10%), 10% (20%) for cameras",
               onLevel: 7,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -2399,7 +2399,7 @@ window.gameData = {
           abilities: [
             {
               name: "Drone Command",
-              description: "Attacks summon a drone that deals 25% damage every 0.5 seconds",
+              description: "Summons a drone that deals 25% damage",
               onLevel: 4,
               type: "Passive",
               speed: { min: 0.5, max: 0.5 },
@@ -2804,7 +2804,7 @@ window.gameData = {
           abilities: [
             {
               name: "Raging Speakers",
-              description: "Attacks with his speakers every 10 seconds",
+              description: "Attacks with his speakers",
               onLevel: 5,
               type: "Passive",
               speed: { min: 10, max: 10 },
@@ -2813,7 +2813,7 @@ window.gameData = {
             },
             {
               name: "Core Beam",
-              description: "Shoots with his core beam every 30 seconds",
+              description: "Shoots with his core beam",
               onLevel: 8,
               type: "Passive",
               speed: { min: 30, max: 30 },
@@ -2862,7 +2862,7 @@ window.gameData = {
           abilities: [
             {
               name: "Camera Missile",
-              description: "Launches missiles every 10 seconds dealing 1.5x damage",
+              description: "Launches missiles dealing 1.5x damage",
               onLevel: 4,
               type: "Passive",
               speed: { min: 10, max: 10 },
@@ -2870,7 +2870,7 @@ window.gameData = {
             },
             {
               name: "Mechanical Hammer",
-              description: "Attacks with his hammer every 3.25 seconds dealing 1.25x damage",
+              description: "Attacks with his hammer, dealing 1.25x damage",
               onLevel: 6,
               type: "Passive",
               speed: { min: 3.25, max: 3.25 },
@@ -2878,7 +2878,7 @@ window.gameData = {
             },
             {
               name: "Core Flames",
-              description: "Attacks with his core every 25 seconds applying burn status effect to toilets",
+              description: "Attacks with his core, applying Burn to toilets",
               onLevel: 8,
               type: "Passive",
               speed: { min: 25, max: 25 },
@@ -2926,7 +2926,7 @@ window.gameData = {
           abilities: [
             {
               name: "Cinema Speakers",
-              description: "Attacks with his speakers every 15 seconds dealing 2x damage",
+              description: "Attacks with his speakers, dealing 2x damage",
               onLevel: 3,
               type: "Passive",
               speed: { min: 15, max: 15 },
@@ -3007,7 +3007,7 @@ window.gameData = {
             },
             {
               name: "Gnaw",
-              description: "Every 20 seconds: bite enemies for 2x damage in splash radius",
+              description: "Bites enemies for 2x damage in splash radius",
               onLevel: 4,
               type: "Passive",
               speed: { min: 20, max: 20 },
@@ -3016,7 +3016,7 @@ window.gameData = {
             },
             {
               name: "Horror Scream",
-              description: "Every 30 seconds: deal 1.5x damage in Full AOE",
+              description: "Deals 1.5x damage in Full AOE",
               onLevel: 6,
               type: "Passive",
               speed: { min: 30, max: 30 },
@@ -3061,7 +3061,7 @@ window.gameData = {
           abilities: [
             {
               name: "Gnaw",
-              description: "Every 20 seconds: bite enemies for 2x damage in splash radius",
+              description: "Bites enemies for 2x damage in splash radius",
               onLevel: 4,
               type: "Passive",
               speed: { min: 20, max: 20 },
@@ -3070,7 +3070,7 @@ window.gameData = {
             },
             {
               name: "Horror Scream",
-              description: "Every 30 seconds: deal 1.5x damage in Full AOE",
+              description: "Deals 1.5x damage in Full AOE",
               onLevel: 6,
               type: "Passive",
               speed: { min: 30, max: 30 },
@@ -3233,7 +3233,7 @@ window.gameData = {
             },
             {
               name: "Ticked Off",
-              description: "Every 20s: launch head for 200% damage per bounce",
+              description: "Launches head for 200% damage per bounce",
               onLevel: 3,
               type: "Passive",
               speed: { min: 15, max: 15 },
