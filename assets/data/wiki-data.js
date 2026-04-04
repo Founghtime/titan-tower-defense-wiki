@@ -2952,6 +2952,119 @@ window.gameData = {
           }
         },
         { 
+          name: "Frankengineer", 
+          imageUrl: "https://i.postimg.cc/vT0XW6VC/transparent_Photoroom_(15).png",
+          rarity: 'mythic',
+          type: 'Splash',
+          obtainment: 'Zombie Crate (0.01% chance)',
+          stats: {
+            cost: { min: "25 Scrap", max: "70 Scrap" },
+            placements: { min: 1, max: 1 },
+            range: { min: 54, max: 80 },
+            speed: { min: 6, max: 12 },
+            damage: { min: 140, max: 275 },
+            splash: { min: 18, max: 26 }
+          },
+          abilities: [
+            {
+              name: "Reanimate",
+              description: "Summons a temporary Unit",
+              onLevel: 4,
+              type: "Passive",
+              speed: { min: 30, max: 30 },
+              damage: { min: 100, max: 100 }
+            },
+            {
+              name: "Shocking Slam!",
+              description: "Undead Crusher stuns for 3 seconds when landing",
+              onLevel: 6,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: "0", max: "0" },
+              dps: { min: 0, max: "0" }
+            }
+          ]
+        },    
+        { 
+          name: "Frankengineer (shocked)", 
+          imageUrl: "https://i.postimg.cc/vT0XW6VC/transparent_Photoroom_(15).png",
+          rarity: 'mythic',
+          type: 'Splash',
+          obtainmentInfo: {
+            mode: 'craft',
+            craft: [
+              {
+                name: 'Frankengineer',
+                rarity: 'mythic',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/vT0XW6VC/transparent_Photoroom_(15).png'
+              },
+              {
+                name: 'Charged Screw',
+                rarity: 'mythic',
+                quantity: 2,
+                imageUrl: 'https://i.postimg.cc/vBz3pHQT/transparent_Photoroom_(48).png'
+              },
+              {
+                name: "Eyeball",
+                rarity: 'common',
+                quantity: 150,
+                imageUrl: 'https://i.postimg.cc/vmDcVhHL/Eyeball.png'
+              },
+              {
+                name: "Screw",
+                rarity: 'common',
+                quantity: 75,
+                imageUrl: 'https://i.postimg.cc/hG80hNdw/Screw.png'
+              }
+            ]
+          },
+          stats: {
+            cost: { min: "25 Scrap", max: "105 Scrap" },
+            placements: { min: 1, max: 1 },
+            range: { min: 54, max: 84 },
+            speed: { min: 6, max: 12 },
+            damage: { min: 140, max: 300 },
+            splash: { min: 18, max: 26 }
+          },
+          abilities: [
+            {
+              name: "Reanimate",
+              description: "Summons a temporary Unit - Undead Crusher",
+              onLevel: 4,
+              type: "Passive",
+              speed: { min: 30, max: 30 },
+              damage: { min: 100, max: 100 }
+            },
+            {
+              name: "Shocking Slam!",
+              description: "Undead Crusher stuns for 3 seconds when landing",
+              onLevel: 6,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: "0", max: "0" },
+              dps: { min: 0, max: "0" }
+            },
+            {
+              name: "Shocked!",
+              description: "Undead Crusher deals x2 damage when Frankengineer is stunned",
+              onLevel: 8,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: "0", max: "0" },
+              dps: { min: 0, max: "0" }
+            },    
+          ],
+          scrapUpgrades: {
+            levels: 4,
+            prices: [5, 10, 15, 15],
+            abilities: [
+              { ability: "Undead Crusher (health)", values: ["100% → 150%", "150% → 200%", "200% → 250%", "250% → 300%"] },
+              { ability: "Undead Crusher (damage)", values: ["100% → 110%", "110% → 120%", "120% → 135%", "135% → 150%"] }
+            ]
+          }
+        },
+        { 
           name: "Zombie Titan TV Guy (enraged)", 
           imageUrl: "https://i.postimg.cc/ryRJxwrP/transparent-Photoroom-2026-01-27T200250-157.png",
           rarity: 'secret',
