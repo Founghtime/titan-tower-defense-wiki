@@ -2994,7 +2994,7 @@ window.gameData = {
             mode: 'craft',
             craft: [
               {
-                name: 'Frankengine12413er',
+                name: 'Frankengineer',
                 rarity: 'mythic',
                 quantity: 1,
                 imageUrl: 'https://i.postimg.cc/vT0XW6VC/transparent_Photoroom_(15).png'
@@ -3053,7 +3053,7 @@ window.gameData = {
               speed: { min: 0, max: 0 },
               damage: { min: "0", max: "0" },
               dps: { min: 0, max: "0" }
-            },    
+            }    
           ],
           scrapUpgrades: {
             levels: 4,
