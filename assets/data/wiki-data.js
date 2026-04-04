@@ -3065,6 +3065,69 @@ window.gameData = {
           }
         },
         { 
+          name: "Glitch Camera Guy", 
+          imageUrl: "https://i.postimg.cc/tTngLrJg/Glitch_Cameraman.png",
+          rarity: 'mythic',
+          type: 'Single Target → Line AOE',
+          obtainmentInfo: {
+            mode: 'craft',
+            craft: [
+              {
+                name: 'Glitch Mainframe',
+                rarity: 'mythic',
+                quantity: 2,
+                imageUrl: 'https://i.postimg.cc/Y9dKVV1s/image.png'
+              },
+              {
+                name: 'Lost Plunger',
+                rarity: 'rare',
+                quantity: 4,
+                imageUrl: 'https://i.postimg.cc/dtTTRyrN/transparent_Photoroom_(16).png'
+              },
+              {
+                name: "Metal Plating",
+                rarity: 'common',
+                quantity: 36,
+                imageUrl: 'https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png'
+              }
+            ]
+          },
+          stats: {
+            cost: { min: "700", max: "20,000" },
+            placements: { min: 1, max: 1 },
+            range: { min: 36, max: 74 },
+            speed: { min: 2, max: 0.7 },
+            damage: { min: 15, max: 105 },
+            strokes: { min: 2, max: 1 }
+          },
+          abilities: [
+            {
+              name: "Teleport",
+              description: "Placing down this Unit (for 100 Cash) instead teleports it, gaining temporary 25% damage buff",
+              onLevel: 1,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 }
+            },
+            {
+              name: "Toilet Armor",
+              description: "Immune to stun",
+              onLevel: 1,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: "0", max: "0" },
+              dps: { min: 0, max: "0" }
+            }    
+          ],
+          scrapUpgrades: {
+            levels: 3,
+            prices: [10, 15, 25],
+            abilities: [
+              { ability: "Teleporting (damage buff)", values: ["25% → 35%", "35% → 50%", "50% → 75%"] }
+            ]
+          }
+        },
+        { 
           name: "Zombie Titan TV Guy (enraged)", 
           imageUrl: "https://i.postimg.cc/ryRJxwrP/transparent-Photoroom-2026-01-27T200250-157.png",
           rarity: 'secret',
