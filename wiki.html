@@ -2555,7 +2555,7 @@
               <!-- Scrap Upgrades Table Accordion (Units optional) -->
               <div class="stats-accordion" id="scrap-upgrades-table-accordion" style="display: none;">
                 <div class="accordion-header">
-                  <span>Scrap Upgrade</span>
+                  <span>Scrap Upgrades</span>
                   <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="accordion-content" id="scrap-upgrades-table-content"></div>
@@ -3435,10 +3435,11 @@ function createUnitObtainmentTable(item) {
         }
 
 
-        createStatsTable(item.stats); // read-only, always visible
+        const hasScrapUpgrades = !!(item.scrapUpgrades && ((Array.isArray(item.scrapUpgrades.abilities) && item.scrapUpgrades.abilities.length > 0) || (Array.isArray(item.scrapUpgrades.prices) && item.scrapUpgrades.prices.length > 0)));
+        createStatsTable(item.stats, { sanitizeScrapValues: hasScrapUpgrades }); // read-only, always visible
         if (item.abilities && item.abilities.length > 0) {
           abilitiesTableAccordion.style.display = 'block';
-          createAbilitiesTable(item.abilities);
+          createAbilitiesTable(item.abilities, { sanitizeScrapValues: hasScrapUpgrades });
         }
         if (item.scrapUpgrades && item.scrapUpgrades.abilities && item.scrapUpgrades.abilities.length > 0) {
           scrapUpgradesTableAccordion.style.display = 'block';
@@ -4036,8 +4037,58 @@ _refreshDisp();
 
     
 
+
+    function sanitizeScrapDisplayText(value) {
+      if (value === null || value === undefined) return '';
+      const str = String(value).trim();
+      if (!str) return '';
+
+      // Remove bracketed scrap-upgrade values like: 30 (31), +20% (26%), 675 (750), 5% (8%), 800 (1,000)
+      // Also remove explicit scrap-cost notes like: 4,600 (45 scrap)
+      let cleaned = str
+        .replace(/\s*\(([^()]*)\)/g, (match, inner) => {
+          const content = String(inner || '').trim();
+          if (!content) return '';
+          if (/scrap/i.test(content)) return '';
+          if (/[\d%.,+\-x]/i.test(content)) return '';
+          return match;
+        })
+        .replace(/\s{2,}/g, ' ')
+        .replace(/\s+([,.;:!?])/g, '$1')
+        .trim();
+
+      cleaned = cleaned
+        .replace(/\+\s+/g, '+')
+        .replace(/-\s+/g, '-')
+        .trim();
+
+      return cleaned;
+    }
+
+    function sanitizeAbilityForDisplay(ability) {
+      if (!ability || typeof ability !== 'object') return ability;
+      const clone = {
+        ...ability,
+        description: sanitizeScrapDisplayText(ability.description)
+      };
+
+      ['speed', 'damage', 'dps'].forEach((key) => {
+        const value = ability[key];
+        if (value && typeof value === 'object') {
+          clone[key] = {
+            ...value,
+            min: sanitizeScrapDisplayText(value.min),
+            max: sanitizeScrapDisplayText(value.max)
+          };
+        }
+      });
+
+      return clone;
+    }
+
 // ====== UPDATED: READ-ONLY stats table (Units; динамическая) ======
-    function createStatsTable(stats) {
+    function createStatsTable(stats, options = {}) {
+      const { sanitizeScrapValues = false } = options;
       const table = document.createElement('table');
       table.className = 'stats-table';
 
@@ -4096,23 +4147,34 @@ _refreshDisp();
         const label = labelMap[k] || pretty(k);
 
         if (v && typeof v === 'object' && ('min' in v || 'max' in v)) {
-          const min = (v && 'min' in v) ? v.min : '';
-          const max = (v && 'max' in v) ? v.max : '';
+          const minRaw = (v && 'min' in v) ? v.min : '';
+          const maxRaw = (v && 'max' in v) ? v.max : '';
+          const min = sanitizeScrapValues ? sanitizeScrapDisplayText(minRaw) : minRaw;
+          const max = sanitizeScrapValues ? sanitizeScrapDisplayText(maxRaw) : maxRaw;
           html += `<tr><td>${label}</td><td>${fmtRange(min, max)}</td></tr>`;
         } else if (v !== undefined && v !== null) {
-          // fallback на случай простого значения вместо {min,max}
-          html += `<tr><td>${label}</td><td>${v}</td></tr>`;
+          const value = sanitizeScrapValues ? sanitizeScrapDisplayText(v) : v;
+          html += `<tr><td>${label}</td><td>${value}</td></tr>`;
         }
       });
 
       html += `</tbody>`;
       table.innerHTML = html;
       statsTableContent.appendChild(table);
+
+      if (sanitizeScrapValues) {
+        const note = document.createElement('div');
+        note.className = 'counts-bar';
+        note.style.marginTop = '12px';
+        note.textContent = 'Base stats are shown here. Scrap-upgraded values are listed in the Scrap Upgrades section below.';
+        statsTableContent.appendChild(note);
+      }
     }
     // ====== /UPDATED ======
     
     // READ-ONLY abilities table (Units)
-    function createAbilitiesTable(abilities) {
+    function createAbilitiesTable(abilities, options = {}) {
+      const { sanitizeScrapValues = false } = options;
       const table = document.createElement('table');
       table.className = 'stats-table';
       let html = `
@@ -4129,14 +4191,15 @@ _refreshDisp();
         <tbody>
       `;
       abilities.forEach(a => {
+        const ability = sanitizeScrapValues ? sanitizeAbilityForDisplay(a) : a;
         html += `
           <tr>
-            <td>${a.name || ''}</td>
-            <td>${a.description || ''}</td>
-            <td>${a.onLevel ?? ''}</td>
-            <td>${a.type || ''}</td>
-            <td>${a.speed ? fmtRange(a.speed.min, a.speed.max) : ''}</td>
-            <td>${a.damage ? fmtRange(a.damage.min, a.damage.max) : ''}</td>
+            <td>${ability.name || ''}</td>
+            <td>${ability.description || ''}</td>
+            <td>${ability.onLevel ?? ''}</td>
+            <td>${ability.type || ''}</td>
+            <td>${ability.speed ? fmtRange(ability.speed.min, ability.speed.max) : ''}</td>
+            <td>${ability.damage ? fmtRange(ability.damage.min, ability.damage.max) : ''}</td>
           </tr>
         `;
       });
