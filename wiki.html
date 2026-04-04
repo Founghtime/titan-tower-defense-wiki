@@ -4162,13 +4162,6 @@ _refreshDisp();
       table.innerHTML = html;
       statsTableContent.appendChild(table);
 
-      if (sanitizeScrapValues) {
-        const note = document.createElement('div');
-        note.className = 'counts-bar';
-        note.style.marginTop = '12px';
-        note.textContent = '';
-        statsTableContent.appendChild(note);
-      }
     }
     // ====== /UPDATED ======
     
