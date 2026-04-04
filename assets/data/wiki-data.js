@@ -2994,7 +2994,7 @@ window.gameData = {
             mode: 'craft',
             craft: [
               {
-                name: 'Frankengineer',
+                name: 'Frankengine12413er',
                 rarity: 'mythic',
                 quantity: 1,
                 imageUrl: 'https://i.postimg.cc/vT0XW6VC/transparent_Photoroom_(15).png'
