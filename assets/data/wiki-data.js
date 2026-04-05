@@ -3352,15 +3352,15 @@ window.gameData = {
               name: "Fast Hands",
               description: "Arsenal ability cooldown reduced to 3 seconds",
               onLevel: 6,
-              type: "Active",
+              type: "Passive",
               speed: { min: 0, max: 0 },
               damage: { min: 0, max: 0 }
             },
             {
               name: "Momentum",
-              description: "Gain 25% damage for 15 seconds after using Arsenal ability",
+              description: "Gains +25% damage for 15 seconds after using Arsenal ability",
               onLevel: 10,
-              type: "Active",
+              type: "Passive",
               speed: { min: 0, max: 0 },
               damage: { min: 0, max: 0 }
             },    
