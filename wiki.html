@@ -2589,7 +2589,7 @@
               <!-- Scrap Upgrades Table Accordion (Units optional) -->
               <div class="stats-accordion" id="scrap-upgrades-table-accordion" style="display: none;">
                 <div class="accordion-header">
-                  <span>Scrap Upgrades</span>
+                  <span id="unit-upgrades-title">Scrap Upgrades</span>
                   <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="accordion-content" id="scrap-upgrades-table-content"></div>
@@ -2868,6 +2868,7 @@
     const abilitiesTableContent = document.getElementById('abilities-table-content');
     const scrapUpgradesTableAccordion = document.getElementById('scrap-upgrades-table-accordion');
     const scrapUpgradesTableContent = document.getElementById('scrap-upgrades-table-content');
+    const unitUpgradesTitle = document.getElementById('unit-upgrades-title');
 
     // GEARS: levels + skins
     const gearLevelsSection  = document.getElementById('gear-levels-section');
@@ -3469,15 +3470,24 @@ function createUnitObtainmentTable(item) {
         }
 
 
-        const hasScrapUpgrades = !!(item.scrapUpgrades && ((Array.isArray(item.scrapUpgrades.abilities) && item.scrapUpgrades.abilities.length > 0) || (Array.isArray(item.scrapUpgrades.prices) && item.scrapUpgrades.prices.length > 0)));
-        createStatsTable(item.stats, { sanitizeScrapValues: hasScrapUpgrades }); // read-only, always visible
+        const unitUpgrades = item.additionalUpgrades || item.scrapUpgrades || null;
+        const hasUnitUpgrades = !!(unitUpgrades && ((Array.isArray(unitUpgrades.abilities) && unitUpgrades.abilities.length > 0) || (Array.isArray(unitUpgrades.prices) && unitUpgrades.prices.length > 0)));
+        createStatsTable(item.stats, { sanitizeScrapValues: hasUnitUpgrades }); // read-only, always visible
         if (item.abilities && item.abilities.length > 0) {
           abilitiesTableAccordion.style.display = 'block';
-          createAbilitiesTable(item.abilities, { sanitizeScrapValues: hasScrapUpgrades });
+          createAbilitiesTable(item.abilities, { sanitizeScrapValues: hasUnitUpgrades });
         }
-        if (item.scrapUpgrades && item.scrapUpgrades.abilities && item.scrapUpgrades.abilities.length > 0) {
+        if (hasUnitUpgrades) {
           scrapUpgradesTableAccordion.style.display = 'block';
-          createScrapUpgradesTable(item.scrapUpgrades);
+          const upgradesTitle = unitUpgrades.title || (item.additionalUpgrades ? 'Additional Upgrades' : 'Scrap Upgrades');
+          const currencyLabel = unitUpgrades.currencyLabel || (item.additionalUpgrades ? 'Cash' : 'Scrap');
+          if (unitUpgradesTitle) unitUpgradesTitle.textContent = upgradesTitle;
+          createUnitUpgradesTable(unitUpgrades, {
+            currencyLabel,
+            totalLabel: `Total ${currencyLabel} Cost`
+          });
+        } else if (unitUpgradesTitle) {
+          unitUpgradesTitle.textContent = 'Scrap Upgrades';
         }
 
       } else if (section === 'items') {
@@ -4235,38 +4245,34 @@ _refreshDisp();
       abilitiesTableContent.appendChild(table);
     }
     
-    // READ-ONLY scrap upgrades table (Units) with prices set only via code
-    function createScrapUpgradesTable(scrapUpgrades) {
+    // READ-ONLY unit upgrades table (Units) with prices set only via code
+    function createUnitUpgradesTable(upgrades, options = {}) {
       const table = document.createElement('table');
       table.className = 'stats-table';
 
-      const levels = Number(scrapUpgrades.levels || 0);
+      const currencyLabel = options.currencyLabel || upgrades.currencyLabel || 'Scrap';
+      const totalLabel = options.totalLabel || `Total ${currencyLabel} Cost`;
+      const levels = Number(upgrades.levels || 0);
+      const prices = Array.isArray(upgrades.prices)
+        ? [...upgrades.prices]
+        : Array(levels).fill('');
 
-      // гарантируем массив цен
-      if (!Array.isArray(scrapUpgrades.prices)) {
-        scrapUpgrades.prices = Array(levels).fill('');
-      } else if (scrapUpgrades.prices.length < levels) {
-        scrapUpgrades.prices = [
-          ...scrapUpgrades.prices,
-          ...Array(levels - scrapUpgrades.prices.length).fill('')
-        ];
+      if (prices.length < levels) {
+        prices.push(...Array(levels - prices.length).fill(''));
       }
 
-      // Заголовки уровней
       let html = `<thead><tr><th>Ability</th>`;
       for (let i = 1; i <= levels; i++) html += `<th>LVL ${i}</th>`;
       html += `</tr>`;
 
-      // Вторая строка — цены (только отображение)
-      html += `<tr><th>Price (Scrap)</th>`;
+      html += `<tr><th>Price (${currencyLabel})</th>`;
       for (let i = 0; i < levels; i++) {
-        const val = scrapUpgrades.prices[i] ?? '';
+        const val = prices[i] ?? '';
         html += `<th style="color:#64b5f6;font-weight:600;">${val}</th>`;
       }
       html += `</tr></thead><tbody>`;
 
-      // Строки способностей
-      (scrapUpgrades.abilities || []).forEach(upg => {
+      (upgrades.abilities || []).forEach(upg => {
         html += `<tr><td>${upg.ability || ''}</td>`;
         for (let i = 0; i < levels; i++) {
           const value = (upg.values && i < upg.values.length) ? upg.values[i] : '';
@@ -4279,11 +4285,13 @@ _refreshDisp();
       table.innerHTML = html;
       scrapUpgradesTableContent.appendChild(table);
 
-      // Итоговая сумма всех цен
-      const total = (scrapUpgrades.prices || []).reduce((acc, v) => acc + (Number(v) || 0), 0);
+      const total = prices.reduce((acc, v) => {
+        const num = Number(String(v ?? '').replace(/[^\d.]/g, '')) || 0;
+        return acc + num;
+      }, 0);
       const totalEl = document.createElement('div');
       totalEl.className = 'scrap-total';
-      totalEl.textContent = `Total Scrap Cost: ${total}`;
+      totalEl.textContent = `${totalLabel}: ${total.toLocaleString('en-US')}`;
       scrapUpgradesTableContent.appendChild(totalEl);
     }
     
