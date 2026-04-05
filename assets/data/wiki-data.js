@@ -3484,6 +3484,80 @@ window.gameData = {
           }
         },
         { 
+          name: "Overcharged Titan Speaker Guy", 
+          imageUrl: "https://i.postimg.cc/cLszvTLM/transparent_Photoroom_(96).png",
+          rarity: 'mythic',
+          type: 'Splash',
+          obtainmentInfo: {
+            mode: 'craft',
+            craft: [
+              {
+                name: 'Upgraded Titan Speaker Guy',
+                rarity: 'mythic',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/KYJ5mKgB/transparent_Photoroom_2026_01_27T203432_454.png'
+              },
+              {
+                name: 'Overcharged Blaster',
+                rarity: 'mythic',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/nc6hnSs9/transparent_Photoroom_(12).png'
+              },
+              {
+                name: "Reinforced Plating",
+                rarity: 'epic',
+                quantity: 8,
+                imageUrl: 'https://i.postimg.cc/FKJHZQZD/Reinforced_Plating.png'
+              }
+            ]
+          },
+          stats: {
+            cost: { min: "2,650", max: "42,050" },
+            placements: { min: 1, max: 1 },
+            range: { min: 50, max: 92 },
+            speed: { min: 2.5, max: 2 },
+            damage: { min: 75, max: 245 },
+            splash: { min: 36, max: 36 },
+            crit: { min: 30, max: 75 }
+          },
+          abilities: [
+            {
+              name: "Dual Shot",
+              description: "Shoots two energy blasts, dealing 2x damage",
+              onLevel: 4,
+              type: "Passive",
+              speed: { min: 10, max: 10 },
+              damage: { min: 280, max: 490 }
+            },
+            {
+              name: "Charged Speakers",
+              description: "Emits a sound wave that pushes enemies back, dealing 2x damage",
+              onLevel: 6,
+              type: "Passive",
+              speed: { min: 15, max: 15 },
+              damage: { min: "370", max: "490" },
+              dps: { min: 0, max: "0" }
+            },
+            {
+              name: "Charged Core",
+              description: "Unleashes an infernal laser, dealing 3x damage and applying burn",
+              onLevel: 9,
+              type: "Passive",
+              speed: { min: 30, max: 30 },
+              damage: { min: "735", max: "735" },
+              dps: { min: 0, max: "0" }
+            }
+          ],
+          scrapUpgrades: {
+            levels: 1,
+            prices: [150],
+            abilities: [
+              { ability: "Stun Immunity", values: ["100%"] },
+              { ability: "🎯✨ Crit %", values: ["75% → 100%"] },
+            ]
+          }
+        },    
+        { 
           name: "Dave", 
           imageUrl: "https://i.postimg.cc/3rpY2zb7/transparent_Photoroom_(84).png",
           rarity: 'mythic',
