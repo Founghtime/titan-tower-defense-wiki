@@ -3422,7 +3422,7 @@ window.gameData = {
         },
         { 
           name: "Glitch Camera Guy", 
-          imageUrl: "https://i.postimg.cc/tTngLrJg/Glitch_Cameraman.png",
+          imageUrl: "https://i.postimg.cc/CLfvdX0L/transparent_Photoroom_2026_01_22T220717_805.png",
           rarity: 'mythic',
           type: 'Single Target → Line AOE',
           obtainmentInfo: {
