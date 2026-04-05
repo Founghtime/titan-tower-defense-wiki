@@ -341,7 +341,7 @@ window.gameData = {
           abilities: [
             {
               name: "Toxic",
-              description: "Applies Toxic: toilets take 25% more damage",
+              description: "Applies Toxic: enemies take 25% more damage",
               onLevel: 4,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -801,7 +801,7 @@ window.gameData = {
           abilities: [
             {
               name: "Toxic",
-              description: "Applies Toxic: toilets take 25% more damage",
+              description: "Applies Toxic: enemies take 25% more damage",
               onLevel: 1,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -1022,7 +1022,7 @@ window.gameData = {
           abilities: [
             {
               name: "Flush",
-              description: "Attacks knock toilets back",
+              description: "Attacks knock enemies back",
               onLevel: 1,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -1062,7 +1062,7 @@ window.gameData = {
           abilities: [
             {
               name: "Flush",
-              description: "Attacks knock toilets back",
+              description: "Attacks knock enemies back",
               onLevel: 1,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -1417,7 +1417,7 @@ window.gameData = {
           abilities: [
             {
               name: "BOUNCE!",
-              description: "Attacks stun toilets for 1.5 seconds",
+              description: "Attacks stun enemies for 1.5 seconds",
               onLevel: 7,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -1652,7 +1652,7 @@ window.gameData = {
             },
             {
               name: "Stun Gun",
-              description: "Attacks stun toilets for 1 second",
+              description: "Attacks stun enemies for 1 second",
               onLevel: 6,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -1788,7 +1788,7 @@ window.gameData = {
             },
             {
               name: "Heavy Blows",
-              description: "+30% damage to toilets above 50% (40%) HP",
+              description: "+30% damage to enemies above 50% (40%) HP",
               onLevel: 7,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -2063,7 +2063,7 @@ window.gameData = {
           abilities: [
             {
               name: "Midas Touch",
-              description: "Applies Midas: toilets take 30% more damage from golden units",
+              description: "Applies Midas: enemies take 30% more damage from golden units",
               onLevel: 1,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -2271,7 +2271,7 @@ window.gameData = {
           abilities: [
             {
               name: "Assassin",
-              description: "5% (9%) chance to deal x1000 damage to toilets under 25% (29%) health",
+              description: "5% (9%) chance to deal x1000 damage to enemies under 25% (29%) health",
               onLevel: 6,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -2309,7 +2309,7 @@ window.gameData = {
           abilities: [
             {
               name: "Assassin",
-              description: "5% chance to deal x1000 damage to toilets under 25% health",
+              description: "5% chance to deal x1000 damage to enemies under 25% health",
               onLevel: 6,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -2517,7 +2517,7 @@ window.gameData = {
           abilities: [
             {
               name: "Crushing Blow",
-              description: "+30% damage to toilets below 50% HP",
+              description: "+30% damage to enemies below 50% HP",
               onLevel: 7,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -2888,7 +2888,7 @@ window.gameData = {
             },
             {
               name: "Core Flames",
-              description: "Attacks with his core, applying Burn to toilets",
+              description: "Attacks with his core, applying Burn to enemies",
               onLevel: 8,
               type: "Passive",
               speed: { min: 25, max: 25 },
@@ -2944,7 +2944,7 @@ window.gameData = {
             },
             {
               name: "Flying Speakers",
-              description: "Cinema Speakers ability knocks toilets back",
+              description: "Cinema Speakers ability knocks enemies back",
               onLevel: 8,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -3286,6 +3286,139 @@ window.gameData = {
               { ability: "💸Cash", values: ["50 → 225", "225 → 500", "500 → 825", "825 → 1,150", "1,150 → 1,550"] }
             ]
           }
+        },
+        { 
+          name: "Golden Hero Speaker Guy (revived)", 
+          imageUrl: "https://i.postimg.cc/hP8w4Nch/transparent_Photoroom_(95).png",
+          rarity: 'mythic',
+          type: 'Single Target → AOE & Booster',
+          obtainmentInfo: {
+            mode: 'craft',
+            craft: [
+              {
+                name: 'Hero Speaker Guy',
+                rarity: 'mythic',
+                quantity: 3,
+                imageUrl: 'https://i.postimg.cc/WbJ9tCV2/transparent_Photoroom_2026_01_22T220534_143.png'
+              },
+              {
+                name: 'Gold Bar',
+                rarity: 'legendary',
+                quantity: 12,
+                imageUrl: 'https://i.postimg.cc/90PTCdQK/image.png'
+              },
+              {
+                name: "Reinforced Plating",
+                rarity: 'epic',
+                quantity: 25,
+                imageUrl: 'https://i.postimg.cc/FKJHZQZD/Reinforced_Plating.png'
+              }
+            ]
+          },
+          stats: {
+            cost: { min: 600, max: "9,150" },
+            cash: { min: 200, max: "700" },
+            placements: { min: 3, max: 3 },
+            range: { min: 28, max: 75 },
+            speed: { min: 3.5, max: 3 },
+            damage: { min: 75, max: 185 },
+            angle: { min: 0, max: 48 }
+          },
+          abilities: [
+            {
+              name: "Adrenaline",
+              description: "Immune to stun",
+              onLevel: 1,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 }
+            },
+            {
+              name: "Gold Thumb",
+              description: "Units in range generate +20% more cash",
+              onLevel: 3,
+              type: "Passive",
+              speed: { min: 3, max: 3 },
+              damage: { min: "0", max: "0" },
+              dps: { min: 0, max: "0" }
+            },
+            {
+              name: "Shock Wave",
+              description: "Stuns enemies for 5 seconds",
+              onLevel: 9,
+              type: "Passive",
+              speed: { min: 3, max: 3 },
+              damage: { min: "0", max: "0" },
+              dps: { min: 0, max: "0" }
+            }
+          ],
+          additionalUpgrades: {
+            title: 'Additional Upgrades',
+            currencyLabel: 'Cash',
+            levels: 2,
+            prices: ["1,250", "1,800"],
+            abilities: [
+              { ability: "Shock Wave", values: ["5s → 5.5s", "5.5 → 6"] }
+            ]
+          }
+        },
+        { 
+          name: `Neko TV Woman`, 
+          imageUrl: "https://i.postimg.cc/N009f1FG/transparent_Photoroom_2026_01_28T155403_161.png",
+          rarity: 'mythic',
+          type: 'Splash & Booster',
+          obtainmentStats: 
+          [
+            { from: "Endless Leaderboard", chance: "Getting into the top 11-100", imageUrl: "https://i.postimg.cc/y8tDPz5r/image.png" }
+          ],
+          stats: {
+            cost: { min: 360, max: "2,160" },
+            placements: { min: 3, max: 3 },
+            range: { min: 18, max: 24 },
+            speed: { min: 12, max: 12 },
+            damage: { min: 36, max: 50 },
+            splash: { min: 20, max: 20 }
+          },
+          abilities: [
+            {
+              name: "Friendly Service",
+              description: "Units in range without buffs gain +15% damage",
+              onLevel: 4,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            }
+          ]
+        },
+        { 
+          name: `Neko TV Woman (Fallen)`, 
+          imageUrl: "https://i.postimg.cc/R006Vchq/transparent_Photoroom_2026_01_28T155411_641.png",
+          rarity: 'mythic',
+          type: 'Splash & Booster',
+          obtainmentStats: 
+          [
+            { from: "Endless Leaderboard", chance: "Getting into the top 11-100", imageUrl: "https://i.postimg.cc/y8tDPz5r/image.png" }
+          ],
+          stats: {
+            cost: { min: 360, max: "2,160" },
+            placements: { min: 3, max: 3 },
+            range: { min: 18, max: 24 },
+            speed: { min: 12, max: 12 },
+            damage: { min: 36, max: 50 },
+            splash: { min: 20, max: 20 }
+          },
+          abilities: [
+            {
+              name: "Friendly Service",
+              description: "Units in range without buffs gain +15% damage",
+              onLevel: 4,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            }
+          ]
         },
         { 
           name: "Glitch Camera Guy", 
@@ -3862,7 +3995,7 @@ window.gameData = {
             },
             {
               name: "Energy Pulse",
-              description: "Knocks toilets back in a large Cone AOE",
+              description: "Knocks enemies back in a large Cone AOE",
               onLevel: 2,
               type: "Passive",
               speed: { min: 10, max: 10 },
@@ -3919,7 +4052,7 @@ window.gameData = {
             },
             {
               name: "Energy Pulse",
-              description: "Knocks toilets back in a large Cone AOE",
+              description: "Knocks enemies back in a large Cone AOE",
               onLevel: 2,
               type: "Passive",
               speed: { min: 10, max: 10 },
@@ -8463,7 +8596,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Whirling Flurry", description: "Spin rapidly at 7.8 speed, dealing 48.4 damage in 17 radius with Full AOE for 7.8 seconds", imageUrl: "https://i.postimg.cc/q7Km55p4/transparent-Photoroom-2026-02-03T170225-249.png" },
-                { name: "Bleeding Flurry", description: "Apply bleed status effect on toilets hit, dealing 12.4 damage 8 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
+                { name: "Bleeding Flurry", description: "Apply bleed status effect on enemies hit, dealing 12.4 damage 8 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
               ]
             },
             {
@@ -8476,7 +8609,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Whirling Flurry", description: "Spin rapidly at 8 speed, dealing 50 damage in 17 radius with Full AOE for 8 seconds", imageUrl: "https://i.postimg.cc/q7Km55p4/transparent-Photoroom-2026-02-03T170225-249.png" },
-                { name: "Bleeding Flurry", description: "Apply bleed status effect on toilets hit, dealing 12.5 damage 8 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
+                { name: "Bleeding Flurry", description: "Apply bleed status effect on enemies hit, dealing 12.5 damage 8 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
               ]
             },
             {
@@ -8488,7 +8621,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Whirling Flurry", description: "Spin rapidly at 8.2 speed, dealing 51.6 damage in 17 radius with Full AOE for 8.2 seconds", imageUrl: "https://i.postimg.cc/q7Km55p4/transparent-Photoroom-2026-02-03T170225-249.png" },
-                { name: "Bleeding Flurry", description: "Apply bleed status effect on toilets hit, dealing 12.6 damage 8 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
+                { name: "Bleeding Flurry", description: "Apply bleed status effect on enemies hit, dealing 12.6 damage 8 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
               ]
             },
             {
@@ -8500,7 +8633,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Whirling Flurry", description: "Spin rapidly at 8.4 speed, dealing 53.2 damage in 17 radius with Full AOE for 8.4 seconds", imageUrl: "https://i.postimg.cc/q7Km55p4/transparent-Photoroom-2026-02-03T170225-249.png" },
-                { name: "Bleeding Flurry", description: "Apply bleed status effect on toilets hit, dealing 12.7 damage 9 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
+                { name: "Bleeding Flurry", description: "Apply bleed status effect on enemies hit, dealing 12.7 damage 9 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
               ]
             },
             {
@@ -8512,7 +8645,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Whirling Flurry", description: "Spin rapidly at 8.6 speed, dealing 54.8 damage in 17 radius with Full AOE for 8.6 seconds", imageUrl: "https://i.postimg.cc/q7Km55p4/transparent-Photoroom-2026-02-03T170225-249.png" },
-                { name: "Bleeding Flurry", description: "Apply bleed status effect on toilets hit, dealing 12.8 damage 9 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
+                { name: "Bleeding Flurry", description: "Apply bleed status effect on enemies hit, dealing 12.8 damage 9 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
               ]
             },
             {
@@ -8524,7 +8657,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Whirling Flurry", description: "Spin rapidly at 8.8 speed, dealing 56.4 damage in 17 radius with Full AOE for 8.8 seconds", imageUrl: "https://i.postimg.cc/q7Km55p4/transparent-Photoroom-2026-02-03T170225-249.png" },
-                { name: "Bleeding Flurry", description: "Apply bleed status effect on toilets hit, dealing 12.9 damage 9 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
+                { name: "Bleeding Flurry", description: "Apply bleed status effect on enemies hit, dealing 12.9 damage 9 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
               ]
             },
             {
@@ -8537,7 +8670,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Whirling Flurry", description: "Spin rapidly at 9 speed, dealing 58 damage in 17 radius with Full AOE for 9 seconds", imageUrl: "https://i.postimg.cc/q7Km55p4/transparent-Photoroom-2026-02-03T170225-249.png" },
-                { name: "Bleeding Flurry", description: "Apply bleed status effect on toilets hit, dealing 13 damage 9 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
+                { name: "Bleeding Flurry", description: "Apply bleed status effect on enemies hit, dealing 13 damage 9 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
               ]
             },
             {
@@ -8549,7 +8682,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Whirling Flurry", description: "Spin rapidly at 9.2 speed, dealing 59.6 damage in 17 radius with Full AOE for 9.2 seconds", imageUrl: "https://i.postimg.cc/q7Km55p4/transparent-Photoroom-2026-02-03T170225-249.png" },
-                { name: "Bleeding Flurry", description: "Apply bleed status effect on toilets hit, dealing 13.1 damage 9 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
+                { name: "Bleeding Flurry", description: "Apply bleed status effect on enemies hit, dealing 13.1 damage 9 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
               ]
             },
             {
@@ -8561,7 +8694,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Whirling Flurry", description: "Spin rapidly at 9.4 speed, dealing 61.2 damage in 17 radius with Full AOE for 9.4 seconds", imageUrl: "https://i.postimg.cc/q7Km55p4/transparent-Photoroom-2026-02-03T170225-249.png" },
-                { name: "Bleeding Flurry", description: "Apply bleed status effect on toilets hit, dealing 13.2 damage 9 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
+                { name: "Bleeding Flurry", description: "Apply bleed status effect on enemies hit, dealing 13.2 damage 9 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
               ]
             },
             {
@@ -8573,7 +8706,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Whirling Flurry", description: "Spin rapidly at 9.6 speed, dealing 62.8 damage in 17 radius with Full AOE for 9.6 seconds", imageUrl: "https://i.postimg.cc/q7Km55p4/transparent-Photoroom-2026-02-03T170225-249.png" },
-                { name: "Bleeding Flurry", description: "Apply bleed status effect on toilets hit, dealing 13.3 damage 9 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
+                { name: "Bleeding Flurry", description: "Apply bleed status effect on enemies hit, dealing 13.3 damage 9 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
               ]
             },
             {
@@ -8585,7 +8718,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Whirling Flurry", description: "Spin rapidly at 9.8 speed, dealing 64.4 damage in 17 radius with Full AOE for 9.8 seconds", imageUrl: "https://i.postimg.cc/q7Km55p4/transparent-Photoroom-2026-02-03T170225-249.png" },
-                { name: "Bleeding Flurry", description: "Apply bleed status effect on toilets hit, dealing 13.4 damage 10 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
+                { name: "Bleeding Flurry", description: "Apply bleed status effect on enemies hit, dealing 13.4 damage 10 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
               ]
             },
             {
@@ -8598,7 +8731,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Whirling Flurry", description: "Spin rapidly at 10 speed, dealing 66 damage in 17 radius with Full AOE for 10 seconds", imageUrl: "https://i.postimg.cc/q7Km55p4/transparent-Photoroom-2026-02-03T170225-249.png" },
-                { name: "Bleeding Flurry", description: "Apply bleed status effect on toilets hit, dealing 13.5 damage 10 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
+                { name: "Bleeding Flurry", description: "Apply bleed status effect on enemies hit, dealing 13.5 damage 10 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
               ]
             },
             {
@@ -8610,7 +8743,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Whirling Flurry", description: "Spin rapidly at 10.2 speed, dealing 67.6 damage in 17 radius with Full AOE for 10.2 seconds", imageUrl: "https://i.postimg.cc/q7Km55p4/transparent-Photoroom-2026-02-03T170225-249.png" },
-                { name: "Bleeding Flurry", description: "Apply bleed status effect on toilets hit, dealing 13.6 damage 10 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
+                { name: "Bleeding Flurry", description: "Apply bleed status effect on enemies hit, dealing 13.6 damage 10 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
               ]
             },
             {
@@ -8622,7 +8755,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Whirling Flurry", description: "Spin rapidly at 10.4 speed, dealing 69.2 damage in 17 radius with Full AOE for 10.4 seconds", imageUrl: "https://i.postimg.cc/q7Km55p4/transparent-Photoroom-2026-02-03T170225-249.png" },
-                { name: "Bleeding Flurry", description: "Apply bleed status effect on toilets hit, dealing 13.7 damage 10 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
+                { name: "Bleeding Flurry", description: "Apply bleed status effect on enemies hit, dealing 13.7 damage 10 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
               ]
             },
             {
@@ -8634,7 +8767,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Whirling Flurry", description: "Spin rapidly at 10.6 speed, dealing 70.8 damage in 17 radius with Full AOE for 10.6 seconds", imageUrl: "https://i.postimg.cc/q7Km55p4/transparent-Photoroom-2026-02-03T170225-249.png" },
-                { name: "Bleeding Flurry", description: "Apply bleed status effect on toilets hit, dealing 13.8 damage 10 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
+                { name: "Bleeding Flurry", description: "Apply bleed status effect on enemies hit, dealing 13.8 damage 10 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
               ]
             },
             {
@@ -8646,7 +8779,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Whirling Flurry", description: "Spin rapidly at 10.8 speed, dealing 72.4 damage in 17 radius with Full AOE for 10.8 seconds", imageUrl: "https://i.postimg.cc/q7Km55p4/transparent-Photoroom-2026-02-03T170225-249.png" },
-                { name: "Bleeding Flurry", description: "Apply bleed status effect on toilets hit, dealing 13.9 damage 10 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
+                { name: "Bleeding Flurry", description: "Apply bleed status effect on enemies hit, dealing 13.9 damage 10 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
               ]
             },
             {
@@ -8659,7 +8792,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Whirling Flurry", description: "Spin rapidly at 11 speed, dealing 74 damage in 17 radius with Full AOE for 11 seconds", imageUrl: "https://i.postimg.cc/q7Km55p4/transparent-Photoroom-2026-02-03T170225-249.png" },
-                { name: "Bleeding Flurry", description: "Apply bleed status effect on toilets hit, dealing 14 damage 11 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
+                { name: "Bleeding Flurry", description: "Apply bleed status effect on enemies hit, dealing 14 damage 11 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
               ]
             },
             {
@@ -8671,7 +8804,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Whirling Flurry", description: "Spin rapidly at 11.2 speed, dealing 75.6 damage in 17 radius with Full AOE for 11.2 seconds", imageUrl: "https://i.postimg.cc/q7Km55p4/transparent-Photoroom-2026-02-03T170225-249.png" },
-                { name: "Bleeding Flurry", description: "Apply bleed status effect on toilets hit, dealing 14.1 damage 11 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
+                { name: "Bleeding Flurry", description: "Apply bleed status effect on enemies hit, dealing 14.1 damage 11 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
               ]
             },
             {
@@ -8683,7 +8816,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Whirling Flurry", description: "Spin rapidly at 11.4 speed, dealing 77.2 damage in 17 radius with Full AOE for 11.4 seconds", imageUrl: "https://i.postimg.cc/q7Km55p4/transparent-Photoroom-2026-02-03T170225-249.png" },
-                { name: "Bleeding Flurry", description: "Apply bleed status effect on toilets hit, dealing 14.2 damage 11 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
+                { name: "Bleeding Flurry", description: "Apply bleed status effect on enemies hit, dealing 14.2 damage 11 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
               ]
             },
             {
@@ -8695,7 +8828,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Whirling Flurry", description: "Spin rapidly at 11.6 speed, dealing 78.8 damage in 17 radius with Full AOE for 11.6 seconds", imageUrl: "https://i.postimg.cc/q7Km55p4/transparent-Photoroom-2026-02-03T170225-249.png" },
-                { name: "Bleeding Flurry", description: "Apply bleed status effect on toilets hit, dealing 14.3 damage 11 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
+                { name: "Bleeding Flurry", description: "Apply bleed status effect on enemies hit, dealing 14.3 damage 11 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
               ]
             },
             {
@@ -8707,7 +8840,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Whirling Flurry", description: "Spin rapidly at 11.8 speed, dealing 80.4 damage in 17 radius with Full AOE for 11.8 seconds", imageUrl: "https://i.postimg.cc/q7Km55p4/transparent-Photoroom-2026-02-03T170225-249.png" },
-                { name: "Bleeding Flurry", description: "Apply bleed status effect on toilets hit, dealing 14.4 damage 11 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
+                { name: "Bleeding Flurry", description: "Apply bleed status effect on enemies hit, dealing 14.4 damage 11 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
               ]
             },
             {
@@ -8720,7 +8853,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Whirling Flurry", description: "Spin rapidly at 12 speed, dealing 80.4 damage in 17 radius with Full AOE for 12 seconds", imageUrl: "https://i.postimg.cc/q7Km55p4/transparent-Photoroom-2026-02-03T170225-249.png" },
-                { name: "Bleeding Flurry", description: "Apply bleed status effect on toilets hit, dealing 14.5 damage 11 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
+                { name: "Bleeding Flurry", description: "Apply bleed status effect on enemies hit, dealing 14.5 damage 11 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
               ]
             },
             {
@@ -8732,7 +8865,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Whirling Flurry", description: "Spin rapidly at 12.2 speed, dealing 83.6 damage in 17 radius with Full AOE for 12.2 seconds", imageUrl: "https://i.postimg.cc/q7Km55p4/transparent-Photoroom-2026-02-03T170225-249.png" },
-                { name: "Bleeding Flurry", description: "Apply bleed status effect on toilets hit, dealing 14.6 damage 11 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
+                { name: "Bleeding Flurry", description: "Apply bleed status effect on enemies hit, dealing 14.6 damage 11 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
               ]
             },
             {
@@ -8744,7 +8877,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Whirling Flurry", description: "Spin rapidly at 12.4 speed, dealing 85.2 damage in 17 radius with Full AOE for 12.4 seconds", imageUrl: "https://i.postimg.cc/q7Km55p4/transparent-Photoroom-2026-02-03T170225-249.png" },
-                { name: "Bleeding Flurry", description: "Apply bleed status effect on toilets hit, dealing 14.7 damage 12 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
+                { name: "Bleeding Flurry", description: "Apply bleed status effect on enemies hit, dealing 14.7 damage 12 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
               ]
             },
             {
@@ -8756,7 +8889,7 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Whirling Flurry", description: "Spin rapidly at 12.6 speed, dealing 86.8 damage in 17 radius with Full AOE for 12.6 seconds", imageUrl: "https://i.postimg.cc/q7Km55p4/transparent-Photoroom-2026-02-03T170225-249.png" },
-                { name: "Bleeding Flurry", description: "Apply bleed status effect on toilets hit, dealing 14.8 damage 12 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
+                { name: "Bleeding Flurry", description: "Apply bleed status effect on enemies hit, dealing 14.8 damage 12 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" }
               ]
             },
             {
@@ -8771,8 +8904,8 @@ overallTierList: {
               ],
               abilities: [
                 { name: "Whirling Flurry", description: "Spin rapidly at 12.8 speed, dealing 88.4 damage in 17 radius with Full AOE for 12.8 seconds", imageUrl: "https://i.postimg.cc/q7Km55p4/transparent-Photoroom-2026-02-03T170225-249.png" },
-                { name: "Bleeding Flurry", description: "Apply bleed status effect on toilets hit, dealing 14.9 damage 12 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" },
-                { name: "Burning Flurry", description: "Apply burn status effect on toilets hit, dealing 24.7 damage 9 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent_Photoroom_2026_02_03T173557_315.png" }
+                { name: "Bleeding Flurry", description: "Apply bleed status effect on enemies hit, dealing 14.9 damage 12 times", imageUrl: "https://i.postimg.cc/j5KwPZcS/transparent-Photoroom-2026-02-03T183527-024.png" },
+                { name: "Burning Flurry", description: "Apply burn status effect on enemies hit, dealing 24.7 damage 9 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent_Photoroom_2026_02_03T173557_315.png" }
               ]
             },
           ],
@@ -9444,7 +9577,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 20, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 3 seconds at 25 speed, dealing 10 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
+                { name: "Energy Dash", description: "Run for 3 seconds at 25 speed, dealing 10 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
               ]
             },
             {
@@ -9455,7 +9588,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 4, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 3.2 seconds at 25.15 speed, dealing 11.5 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
+                { name: "Energy Dash", description: "Run for 3.2 seconds at 25.15 speed, dealing 11.5 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
               ]
             },
             {
@@ -9466,7 +9599,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 6, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 3.4 seconds at 25.3 speed, dealing 13 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
+                { name: "Energy Dash", description: "Run for 3.4 seconds at 25.3 speed, dealing 13 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
               ]
             },
             {
@@ -9477,7 +9610,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 7, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 3.6 seconds at 25.45 speed, dealing 14.5 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
+                { name: "Energy Dash", description: "Run for 3.6 seconds at 25.45 speed, dealing 14.5 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
               ]
             },
             {
@@ -9488,7 +9621,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 8, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 3.8 seconds at 25.6 speed, dealing 16 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
+                { name: "Energy Dash", description: "Run for 3.8 seconds at 25.6 speed, dealing 16 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
               ]
             },
             {
@@ -9500,7 +9633,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 9, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 4 seconds at 25.75 speed, dealing 17.5 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
+                { name: "Energy Dash", description: "Run for 4 seconds at 25.75 speed, dealing 17.5 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
               ]
             },
             {
@@ -9511,7 +9644,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 10, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 4.2 seconds at 25.9 speed, dealing 19 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
+                { name: "Energy Dash", description: "Run for 4.2 seconds at 25.9 speed, dealing 19 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
               ]
             },
             {
@@ -9522,7 +9655,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 11, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 4.4 seconds at 26.05 speed, dealing 20.5 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
+                { name: "Energy Dash", description: "Run for 4.4 seconds at 26.05 speed, dealing 20.5 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
               ]
             },
             {
@@ -9533,7 +9666,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 12, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 4.6 seconds at 26.2 speed, dealing 22 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
+                { name: "Energy Dash", description: "Run for 4.6 seconds at 26.2 speed, dealing 22 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
               ]
             },
             {
@@ -9544,7 +9677,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 12, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 4.8 seconds at 26.35 speed, dealing 23.5 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
+                { name: "Energy Dash", description: "Run for 4.8 seconds at 26.35 speed, dealing 23.5 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
               ]
             },
             {
@@ -9556,7 +9689,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 13, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 5 seconds at 26.5 speed, dealing 25 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
+                { name: "Energy Dash", description: "Run for 5 seconds at 26.5 speed, dealing 25 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
               ]
             },
             {
@@ -9567,7 +9700,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 14, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 5.2 seconds at 26.65 speed, dealing 26.5 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
+                { name: "Energy Dash", description: "Run for 5.2 seconds at 26.65 speed, dealing 26.5 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
               ]
             },
             {
@@ -9578,7 +9711,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 14, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 5.4 seconds at 26.8 speed, dealing 28 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
+                { name: "Energy Dash", description: "Run for 5.4 seconds at 26.8 speed, dealing 28 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
               ]
             },
             {
@@ -9589,7 +9722,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 15, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 5.6 seconds at 26.95 speed, dealing 29.5 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
+                { name: "Energy Dash", description: "Run for 5.6 seconds at 26.95 speed, dealing 29.5 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
               ]
             },
             {
@@ -9600,7 +9733,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 15, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 5.8 seconds at 27.1 speed, dealing 31 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
+                { name: "Energy Dash", description: "Run for 5.8 seconds at 27.1 speed, dealing 31 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
               ]
             },
             {
@@ -9612,7 +9745,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 16, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 6 seconds at 27.25 speed, dealing 32.5 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
+                { name: "Energy Dash", description: "Run for 6 seconds at 27.25 speed, dealing 32.5 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
               ]
             },
             {
@@ -9623,7 +9756,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 16, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 6.2 seconds at 27.4 speed, dealing 34 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
+                { name: "Energy Dash", description: "Run for 6.2 seconds at 27.4 speed, dealing 34 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
               ]
             },
             {
@@ -9634,7 +9767,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 17, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 6.4 seconds at 27.55 speed, dealing 35.5 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
+                { name: "Energy Dash", description: "Run for 6.4 seconds at 27.55 speed, dealing 35.5 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
               ]
             },
             {
@@ -9645,7 +9778,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 17, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 6.6 seconds at 27.7 speed, dealing 37 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
+                { name: "Energy Dash", description: "Run for 6.6 seconds at 27.7 speed, dealing 37 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
               ]
             },
             {
@@ -9656,7 +9789,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 18, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 6.8 seconds at 27.85 speed, dealing 38.5 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
+                { name: "Energy Dash", description: "Run for 6.8 seconds at 27.85 speed, dealing 38.5 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
               ]
             },
             {
@@ -9668,7 +9801,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 18, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 7 seconds at 28 speed, dealing 40 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
+                { name: "Energy Dash", description: "Run for 7 seconds at 28 speed, dealing 40 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
               ]
             },
             {
@@ -9679,7 +9812,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 19, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 7.2 seconds at 28.15 speed, dealing 41.5 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
+                { name: "Energy Dash", description: "Run for 7.2 seconds at 28.15 speed, dealing 41.5 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
               ]
             },
             {
@@ -9690,7 +9823,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 19, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 7.4 seconds at 28.3 speed, dealing 43 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
+                { name: "Energy Dash", description: "Run for 7.4 seconds at 28.3 speed, dealing 43 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
               ]
             },
             {
@@ -9701,7 +9834,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 20, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 7.6 seconds at 28.45 speed, dealing 44.5 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
+                { name: "Energy Dash", description: "Run for 7.6 seconds at 28.45 speed, dealing 44.5 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" }
               ]
             },
             {
@@ -9714,7 +9847,7 @@ overallTierList: {
                 { name: "Stolen Spear", rarity: "epic", quantity: 2, imageUrl: "https://i.postimg.cc/br0rMQgX/transparent_Photoroom_(17).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 7.8 seconds at 28.6 speed, dealing 46 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
+                { name: "Energy Dash", description: "Run for 7.8 seconds at 28.6 speed, dealing 46 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
                 { name: "Energy Shockwave", description: "Emit a shockwave at the end of the run, dealing 500 splash damage in 30 radius", imageUrl: "https://i.postimg.cc/wx4pRzhS/transparent-Photoroom-2026-02-03T213315-477.png" }
               ]
             },
@@ -9727,7 +9860,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 20, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 8 seconds at 28.75 speed, dealing 47.5 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
+                { name: "Energy Dash", description: "Run for 8 seconds at 28.75 speed, dealing 47.5 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
                 { name: "Energy Shockwave", description: "Emit a shockwave at the end of the run, dealing 520 splash damage in 30 radius", imageUrl: "https://i.postimg.cc/wx4pRzhS/transparent-Photoroom-2026-02-03T213315-477.png" }
               ]
             },
@@ -9739,7 +9872,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 21, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 8.2 seconds at 28.9 speed, dealing 49 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
+                { name: "Energy Dash", description: "Run for 8.2 seconds at 28.9 speed, dealing 49 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
                 { name: "Energy Shockwave", description: "Emit a shockwave at the end of the run, dealing 540 splash damage in 30 radius", imageUrl: "https://i.postimg.cc/wx4pRzhS/transparent-Photoroom-2026-02-03T213315-477.png" }
               ]
             },
@@ -9751,7 +9884,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 21, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 8.4 seconds at 29.05 speed, dealing 50.5 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
+                { name: "Energy Dash", description: "Run for 8.4 seconds at 29.05 speed, dealing 50.5 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
                 { name: "Energy Shockwave", description: "Emit a shockwave at the end of the run, dealing 560 splash damage in 30 radius", imageUrl: "https://i.postimg.cc/wx4pRzhS/transparent-Photoroom-2026-02-03T213315-477.png" }
               ]
             },
@@ -9763,7 +9896,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 22, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 8.6 seconds at 29.2 speed, dealing 52 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
+                { name: "Energy Dash", description: "Run for 8.6 seconds at 29.2 speed, dealing 52 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
                 { name: "Energy Shockwave", description: "Emit a shockwave at the end of the run, dealing 580 splash damage in 30 radius", imageUrl: "https://i.postimg.cc/wx4pRzhS/transparent-Photoroom-2026-02-03T213315-477.png" }
               ]
             },
@@ -9775,7 +9908,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 22, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 8.8 seconds at 29.35 speed, dealing 53.5 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
+                { name: "Energy Dash", description: "Run for 8.8 seconds at 29.35 speed, dealing 53.5 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
                 { name: "Energy Shockwave", description: "Emit a shockwave at the end of the run, dealing 600 splash damage in 30 radius", imageUrl: "https://i.postimg.cc/wx4pRzhS/transparent-Photoroom-2026-02-03T213315-477.png" }
               ]
             },
@@ -9788,7 +9921,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 22, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 9 seconds at 29.5 speed, dealing 55 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
+                { name: "Energy Dash", description: "Run for 9 seconds at 29.5 speed, dealing 55 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
                 { name: "Energy Shockwave", description: "Emit a shockwave at the end of the run, dealing 620 splash damage in 30 radius", imageUrl: "https://i.postimg.cc/wx4pRzhS/transparent-Photoroom-2026-02-03T213315-477.png" }
               ]
             },
@@ -9800,7 +9933,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 23, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 9.2 seconds at 29.65 speed, dealing 56.5 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
+                { name: "Energy Dash", description: "Run for 9.2 seconds at 29.65 speed, dealing 56.5 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
                 { name: "Energy Shockwave", description: "Emit a shockwave at the end of the run, dealing 640 splash damage in 30 radius", imageUrl: "https://i.postimg.cc/wx4pRzhS/transparent-Photoroom-2026-02-03T213315-477.png" }
               ]
             },
@@ -9812,7 +9945,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 23, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 9.4 seconds at 29.8 speed, dealing 58 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
+                { name: "Energy Dash", description: "Run for 9.4 seconds at 29.8 speed, dealing 58 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
                 { name: "Energy Shockwave", description: "Emit a shockwave at the end of the run, dealing 660 splash damage in 30 radius", imageUrl: "https://i.postimg.cc/wx4pRzhS/transparent-Photoroom-2026-02-03T213315-477.png" }
               ]
             },
@@ -9824,7 +9957,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 23, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 9.6 seconds at 29.95 speed, dealing 59.5 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
+                { name: "Energy Dash", description: "Run for 9.6 seconds at 29.95 speed, dealing 59.5 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
                 { name: "Energy Shockwave", description: "Emit a shockwave at the end of the run, dealing 680 splash damage in 30 radius", imageUrl: "https://i.postimg.cc/wx4pRzhS/transparent-Photoroom-2026-02-03T213315-477.png" }
               ]
             },
@@ -9836,7 +9969,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 24, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 9.8 seconds at 30.1 speed, dealing 61 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
+                { name: "Energy Dash", description: "Run for 9.8 seconds at 30.1 speed, dealing 61 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
                 { name: "Energy Shockwave", description: "Emit a shockwave at the end of the run, dealing 700 splash damage in 30 radius", imageUrl: "https://i.postimg.cc/wx4pRzhS/transparent-Photoroom-2026-02-03T213315-477.png" }
               ]
             },
@@ -9849,7 +9982,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 24, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 10 seconds at 30.25 speed, dealing 62.5 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
+                { name: "Energy Dash", description: "Run for 10 seconds at 30.25 speed, dealing 62.5 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
                 { name: "Energy Shockwave", description: "Emit a shockwave at the end of the run, dealing 720 splash damage in 30 radius", imageUrl: "https://i.postimg.cc/wx4pRzhS/transparent-Photoroom-2026-02-03T213315-477.png" }
               ]
             },
@@ -9861,7 +9994,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 24, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 10.2 seconds at 30.4 speed, dealing 64 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
+                { name: "Energy Dash", description: "Run for 10.2 seconds at 30.4 speed, dealing 64 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
                 { name: "Energy Shockwave", description: "Emit a shockwave at the end of the run, dealing 740 splash damage in 30 radius", imageUrl: "https://i.postimg.cc/wx4pRzhS/transparent-Photoroom-2026-02-03T213315-477.png" }
               ]
             },
@@ -9873,7 +10006,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 25, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 10.4 seconds at 30.55 speed, dealing 65.5 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
+                { name: "Energy Dash", description: "Run for 10.4 seconds at 30.55 speed, dealing 65.5 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
                 { name: "Energy Shockwave", description: "Emit a shockwave at the end of the run, dealing 760 splash damage in 30 radius", imageUrl: "https://i.postimg.cc/wx4pRzhS/transparent-Photoroom-2026-02-03T213315-477.png" }
               ]
             },
@@ -9885,7 +10018,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 25, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 10.6 seconds at 30.7 speed, dealing 67 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
+                { name: "Energy Dash", description: "Run for 10.6 seconds at 30.7 speed, dealing 67 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
                 { name: "Energy Shockwave", description: "Emit a shockwave at the end of the run, dealing 780 splash damage in 30 radius", imageUrl: "https://i.postimg.cc/wx4pRzhS/transparent-Photoroom-2026-02-03T213315-477.png" }
               ]
             },
@@ -9897,7 +10030,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 25, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 10.8 seconds at 30.85 speed, dealing 68.5 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
+                { name: "Energy Dash", description: "Run for 10.8 seconds at 30.85 speed, dealing 68.5 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
                 { name: "Energy Shockwave", description: "Emit a shockwave at the end of the run, dealing 800 splash damage in 30 radius", imageUrl: "https://i.postimg.cc/wx4pRzhS/transparent-Photoroom-2026-02-03T213315-477.png" }
               ]
             },
@@ -9910,7 +10043,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 26, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 11 seconds at 31 speed, dealing 70 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
+                { name: "Energy Dash", description: "Run for 11 seconds at 31 speed, dealing 70 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
                 { name: "Energy Shockwave", description: "Emit a shockwave at the end of the run, dealing 820 splash damage in 30 radius", imageUrl: "https://i.postimg.cc/wx4pRzhS/transparent-Photoroom-2026-02-03T213315-477.png" }
               ]
             },
@@ -9922,7 +10055,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 26, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 11.2 seconds at 31.15 speed, dealing 71.5 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
+                { name: "Energy Dash", description: "Run for 11.2 seconds at 31.15 speed, dealing 71.5 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
                 { name: "Energy Shockwave", description: "Emit a shockwave at the end of the run, dealing 840 splash damage in 30 radius", imageUrl: "https://i.postimg.cc/wx4pRzhS/transparent-Photoroom-2026-02-03T213315-477.png" }
               ]
             },
@@ -9934,7 +10067,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 26, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 11.4 seconds at 31.3 speed, dealing 73 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
+                { name: "Energy Dash", description: "Run for 11.4 seconds at 31.3 speed, dealing 73 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
                 { name: "Energy Shockwave", description: "Emit a shockwave at the end of the run, dealing 860 splash damage in 30 radius", imageUrl: "https://i.postimg.cc/wx4pRzhS/transparent-Photoroom-2026-02-03T213315-477.png" }
               ]
             },
@@ -9946,7 +10079,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 27, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 11.6 seconds at 31.45 speed, dealing 74.5 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
+                { name: "Energy Dash", description: "Run for 11.6 seconds at 31.45 speed, dealing 74.5 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
                 { name: "Energy Shockwave", description: "Emit a shockwave at the end of the run, dealing 880 splash damage in 30 radius", imageUrl: "https://i.postimg.cc/wx4pRzhS/transparent-Photoroom-2026-02-03T213315-477.png" }
               ]
             },
@@ -9958,7 +10091,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 27, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 11.8 seconds at 31.6 speed, dealing 76 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
+                { name: "Energy Dash", description: "Run for 11.8 seconds at 31.6 speed, dealing 76 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
                 { name: "Energy Shockwave", description: "Emit a shockwave at the end of the run, dealing 900 splash damage in 30 radius", imageUrl: "https://i.postimg.cc/wx4pRzhS/transparent-Photoroom-2026-02-03T213315-477.png" }
               ]
             },
@@ -9971,7 +10104,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 27, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 12 seconds at 31.75 speed, dealing 77.5 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
+                { name: "Energy Dash", description: "Run for 12 seconds at 31.75 speed, dealing 77.5 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
                 { name: "Energy Shockwave", description: "Emit a shockwave at the end of the run, dealing 920 splash damage in 30 radius", imageUrl: "https://i.postimg.cc/wx4pRzhS/transparent-Photoroom-2026-02-03T213315-477.png" }
               ]
             },
@@ -9983,7 +10116,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 28, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 12.2 seconds at 31.9 speed, dealing 79 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
+                { name: "Energy Dash", description: "Run for 12.2 seconds at 31.9 speed, dealing 79 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
                 { name: "Energy Shockwave", description: "Emit a shockwave at the end of the run, dealing 940 splash damage in 30 radius", imageUrl: "https://i.postimg.cc/wx4pRzhS/transparent-Photoroom-2026-02-03T213315-477.png" }
               ]
             },
@@ -9995,7 +10128,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 28, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 12.4 seconds at 32.05 speed, dealing 80.5 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
+                { name: "Energy Dash", description: "Run for 12.4 seconds at 32.05 speed, dealing 80.5 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
                 { name: "Energy Shockwave", description: "Emit a shockwave at the end of the run, dealing 960 splash damage in 30 radius", imageUrl: "https://i.postimg.cc/wx4pRzhS/transparent-Photoroom-2026-02-03T213315-477.png" }
               ]
             },
@@ -10007,7 +10140,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 28, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 12.6 seconds at 32.2 speed, dealing 82 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
+                { name: "Energy Dash", description: "Run for 12.6 seconds at 32.2 speed, dealing 82 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
                 { name: "Energy Shockwave", description: "Emit a shockwave at the end of the run, dealing 980 splash damage in 30 radius", imageUrl: "https://i.postimg.cc/wx4pRzhS/transparent-Photoroom-2026-02-03T213315-477.png" }
               ]
             },
@@ -10019,7 +10152,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 28, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Energy Dash", description: "Run for 12.8 seconds at 32.35 speed, dealing 83.5 damage to toilets in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
+                { name: "Energy Dash", description: "Run for 12.8 seconds at 32.35 speed, dealing 83.5 damage to enemies in the way", imageUrl: "https://i.postimg.cc/K8CKY9BS/transparent-Photoroom-2026-02-03T172501-690.png" },
                 { name: "Energy Shockwave", description: "Emit a shockwave at the end of the run, dealing 1000 splash damage in 30 radius", imageUrl: "https://i.postimg.cc/wx4pRzhS/transparent-Photoroom-2026-02-03T213315-477.png" }
               ]
             },
@@ -10041,7 +10174,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 5, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 3 seconds, dealing 4 damage 5 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 3 seconds, dealing 4 damage 5 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
               ]
             },
             {
@@ -10052,7 +10185,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 2, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 3.2 seconds, dealing 5 damage 5 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 3.2 seconds, dealing 5 damage 5 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
               ]
             },
             {
@@ -10063,7 +10196,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 3, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 3.4 seconds, dealing 6 damage 5 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 3.4 seconds, dealing 6 damage 5 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
               ]
             },
             {
@@ -10074,7 +10207,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 4, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 3.6 seconds, dealing 7 damage 5 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 3.6 seconds, dealing 7 damage 5 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
               ]
             },
             {
@@ -10085,7 +10218,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 4, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 3.8 seconds, dealing 8 damage 5 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 3.8 seconds, dealing 8 damage 5 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
               ]
             },
             {
@@ -10097,7 +10230,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 5, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 4 seconds, dealing 9 damage 6 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 4 seconds, dealing 9 damage 6 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
               ]
             },
             {
@@ -10108,7 +10241,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 5, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 4.2 seconds, dealing 10 damage 6 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 4.2 seconds, dealing 10 damage 6 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
               ]
             },
             {
@@ -10119,7 +10252,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 6, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 4.4 seconds, dealing 11 damage 6 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 4.4 seconds, dealing 11 damage 6 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
               ]
             },
             {
@@ -10130,7 +10263,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 6, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 4.6 seconds, dealing 12 damage 6 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 4.6 seconds, dealing 12 damage 6 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
               ]
             },
             {
@@ -10141,7 +10274,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 6, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 4.8 seconds, dealing 13 damage 6 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 4.8 seconds, dealing 13 damage 6 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
               ]
             },
             {
@@ -10153,7 +10286,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 7, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 5 seconds, dealing 14 damage 7 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 5 seconds, dealing 14 damage 7 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
               ]
             },
             {
@@ -10164,7 +10297,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 7, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 5.2 seconds, dealing 15 damage 7 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 5.2 seconds, dealing 15 damage 7 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
               ]
             },
             {
@@ -10175,7 +10308,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 7, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 5.4 seconds, dealing 16 damage 7 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 5.4 seconds, dealing 16 damage 7 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
               ]
             },
             {
@@ -10186,7 +10319,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 8, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 5.6 seconds, dealing 17 damage 7 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 5.6 seconds, dealing 17 damage 7 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
               ]
             },
             {
@@ -10197,7 +10330,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 8, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 5.8 seconds, dealing 18 damage 7 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 5.8 seconds, dealing 18 damage 7 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
               ]
             },
             {
@@ -10209,7 +10342,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 8, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 6 seconds, dealing 19 damage 8 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 6 seconds, dealing 19 damage 8 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
               ]
             },
             {
@@ -10220,7 +10353,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 8, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 6.2 seconds, dealing 20 damage 8 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 6.2 seconds, dealing 20 damage 8 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
               ]
             },
             {
@@ -10231,7 +10364,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 9, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 6.4 seconds, dealing 21 damage 8 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 6.4 seconds, dealing 21 damage 8 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
               ]
             },
             {
@@ -10242,7 +10375,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 9, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 6.6 seconds, dealing 22 damage 8 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 6.6 seconds, dealing 22 damage 8 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
               ]
             },
             {
@@ -10253,7 +10386,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 9, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 6.8 seconds, dealing 23 damage 8 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 6.8 seconds, dealing 23 damage 8 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
               ]
             },
             {
@@ -10265,7 +10398,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 9, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 7 seconds, dealing 24 damage 9 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 7 seconds, dealing 24 damage 9 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
               ]
             },
             {
@@ -10276,7 +10409,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 10, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 7.2 seconds, dealing 25 damage 9 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 7.2 seconds, dealing 25 damage 9 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
               ]
             },
             {
@@ -10287,7 +10420,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 10, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 7.4 seconds, dealing 26 damage 9 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 7.4 seconds, dealing 26 damage 9 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
               ]
             },
             {
@@ -10298,7 +10431,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 10, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 7.6 seconds, dealing 27 damage 9 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 7.6 seconds, dealing 27 damage 9 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" }
               ]
             },
             {
@@ -10312,8 +10445,8 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 10, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 7.8 seconds, dealing 28 damage 9 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
-                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to toilets in front for 3.4 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 7.8 seconds, dealing 28 damage 9 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
+                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to enemies in front for 3.4 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
               ]
             },
             {
@@ -10325,8 +10458,8 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 10, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 8 seconds, dealing 29 damage 10 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
-                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to toilets in front for 3.5 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 8 seconds, dealing 29 damage 10 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
+                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to enemies in front for 3.5 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
               ]
             },
             {
@@ -10337,8 +10470,8 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 11, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 8.2 seconds, dealing 30 damage 10 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
-                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to toilets in front for 3.6 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 8.2 seconds, dealing 30 damage 10 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
+                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to enemies in front for 3.6 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
               ]
             },
             {
@@ -10349,8 +10482,8 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 11, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 8.4 seconds, dealing 31 damage 10 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
-                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to toilets in front for 3.7 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 8.4 seconds, dealing 31 damage 10 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
+                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to enemies in front for 3.7 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
               ]
             },
             {
@@ -10361,8 +10494,8 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 11, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 8.6 seconds, dealing 32 damage 10 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
-                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to toilets in front for 3.8 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 8.6 seconds, dealing 32 damage 10 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
+                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to enemies in front for 3.8 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
               ]
             },
             {
@@ -10373,8 +10506,8 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 11, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 8.8 seconds, dealing 33 damage 10 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
-                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to toilets in front for 3.9 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 8.8 seconds, dealing 33 damage 10 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
+                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to enemies in front for 3.9 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
               ]
             },
             {
@@ -10386,8 +10519,8 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 11, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 9 seconds, dealing 34 damage 11 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
-                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to toilets in front for 4 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 9 seconds, dealing 34 damage 11 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
+                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to enemies in front for 4 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
               ]
             },
             {
@@ -10398,8 +10531,8 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 12, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 9.2 seconds, dealing 35 damage 11 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
-                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to toilets in front for 4.1 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 9.2 seconds, dealing 35 damage 11 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
+                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to enemies in front for 4.1 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
               ]
             },
             {
@@ -10410,8 +10543,8 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 12, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 9.4 seconds, dealing 36 damage 11 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
-                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to toilets in front for 4.2 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 9.4 seconds, dealing 36 damage 11 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
+                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to enemies in front for 4.2 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
               ]
             },
             {
@@ -10422,8 +10555,8 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 12, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 9.6 seconds, dealing 37 damage 11 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
-                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to toilets in front for 4.3 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 9.6 seconds, dealing 37 damage 11 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
+                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to enemies in front for 4.3 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
               ]
             },
             {
@@ -10434,8 +10567,8 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 12, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 9.8 seconds, dealing 38 damage 11 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
-                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to toilets in front for 4.4 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 9.8 seconds, dealing 38 damage 11 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
+                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to enemies in front for 4.4 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
               ]
             },
             {
@@ -10447,8 +10580,8 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 12, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 10 seconds, dealing 39 damage 12 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
-                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to toilets in front for 4.5 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 10 seconds, dealing 39 damage 12 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
+                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to enemies in front for 4.5 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
               ]
             },
             {
@@ -10459,8 +10592,8 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 12, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 10.2 seconds, dealing 40 damage 12 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
-                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to toilets in front for 4.6 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 10.2 seconds, dealing 40 damage 12 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
+                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to enemies in front for 4.6 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
               ]
             },
             {
@@ -10471,8 +10604,8 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 13, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 10.4 seconds, dealing 41 damage 12 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
-                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to toilets in front for 4.7 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 10.4 seconds, dealing 41 damage 12 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
+                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to enemies in front for 4.7 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
               ]
             },
             {
@@ -10483,8 +10616,8 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 13, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 10.6 seconds, dealing 42 damage 12 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
-                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to toilets in front for 4.8 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 10.6 seconds, dealing 42 damage 12 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
+                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to enemies in front for 4.8 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
               ]
             },
             {
@@ -10495,8 +10628,8 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 13, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 10.8 seconds, dealing 43 damage 12 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
-                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to toilets in front for 4.9 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 10.8 seconds, dealing 43 damage 12 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
+                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to enemies in front for 4.9 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
               ]
             },
             {
@@ -10508,8 +10641,8 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 13, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 11 seconds, dealing 44 damage 13 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
-                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to toilets in front for 5 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 11 seconds, dealing 44 damage 13 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
+                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to enemies in front for 5 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
               ]
             },
             {
@@ -10520,8 +10653,8 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 13, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 11.2 seconds, dealing 45 damage 13 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
-                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to toilets in front for 5.1 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 11.2 seconds, dealing 45 damage 13 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
+                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to enemies in front for 5.1 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
               ]
             },
             {
@@ -10532,8 +10665,8 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 13, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 11.4 seconds, dealing 46 damage 13 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
-                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to toilets in front for 5.2 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 11.4 seconds, dealing 46 damage 13 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
+                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to enemies in front for 5.2 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
               ]
             },
             {
@@ -10544,8 +10677,8 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 14, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 11.6 seconds, dealing 47 damage 13 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
-                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to toilets in front for 5.3 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 11.6 seconds, dealing 47 damage 13 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
+                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to enemies in front for 5.3 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
               ]
             },
             {
@@ -10556,8 +10689,8 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 14, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 11.8 seconds, dealing 48 damage 13 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
-                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to toilets in front for 5.4 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 11.8 seconds, dealing 48 damage 13 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
+                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to enemies in front for 5.4 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
               ]
             },
             {
@@ -10569,8 +10702,8 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 14, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 12 seconds, dealing 49 damage 14 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
-                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to toilets in front for 5.5 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 12 seconds, dealing 49 damage 14 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
+                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to enemies in front for 5.5 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
               ]
             },
             {
@@ -10581,8 +10714,8 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 14, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 12.2 seconds, dealing 50 damage 14 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
-                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to toilets in front for 5.6 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 12.2 seconds, dealing 50 damage 14 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
+                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to enemies in front for 5.6 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
               ]
             },
             {
@@ -10593,8 +10726,8 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 14, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 12.4 seconds, dealing 51 damage 14 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
-                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to toilets in front for 5.7 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 12.4 seconds, dealing 51 damage 14 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
+                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to enemies in front for 5.7 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
               ]
             },
             {
@@ -10605,8 +10738,8 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 14, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 12.6 seconds, dealing 52 damage 14 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
-                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to toilets in front for 5.8 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 12.6 seconds, dealing 52 damage 14 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
+                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to enemies in front for 5.8 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
               ]
             },
             {
@@ -10617,8 +10750,8 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 14, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Scorching Blaze", description: "Applies burn status effect to toilets in front for 12.8 seconds, dealing 53 damage 14 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
-                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to toilets in front for 5.9 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
+                { name: "Scorching Blaze", description: "Applies burn status effect to enemies in front for 12.8 seconds, dealing 53 damage 14 times", imageUrl: "https://i.postimg.cc/RCGL0BFq/transparent-Photoroom-2026-02-03T173557-315.png" },
+                { name: "Blazing Toxin", description: "Applies toxic status effect (+25% damage taken) to enemies in front for 5.9 seconds", imageUrl: "https://i.postimg.cc/Vs3dqCMS/transparent-Photoroom-2026-02-04T171909-142.png" }
               ]
             },
           ],
@@ -11278,7 +11411,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 10, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 50 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 50 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
               ]
             },
             {
@@ -11289,7 +11422,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 2, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 70 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 70 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
               ]
             },
             {
@@ -11300,7 +11433,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 3, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 90 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 90 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
               ]
             },
             {
@@ -11311,7 +11444,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 4, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 110 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 110 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
               ]
             },
             {
@@ -11322,7 +11455,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 4, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 130 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 130 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
               ]
             },
             {
@@ -11334,7 +11467,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 5, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 150 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 150 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
               ]
             },
             {
@@ -11345,7 +11478,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 5, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 170 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 170 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
               ]
             },
             {
@@ -11356,7 +11489,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 6, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 190 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 190 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
               ]
             },
             {
@@ -11367,7 +11500,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 6, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 210 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 210 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
               ]
             },
             {
@@ -11378,7 +11511,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 6, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 230 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 230 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
               ]
             },
             {
@@ -11390,7 +11523,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 7, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 250 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 250 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
               ]
             },
             {
@@ -11401,7 +11534,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 7, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 270 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 270 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
               ]
             },
             {
@@ -11412,7 +11545,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 7, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 290 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 290 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
               ]
             },
             {
@@ -11423,7 +11556,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 8, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 310 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 310 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
               ]
             },
             {
@@ -11434,7 +11567,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 8, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 330 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 330 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
               ]
             },
             {
@@ -11446,7 +11579,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 8, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 350 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 350 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
               ]
             },
             {
@@ -11457,7 +11590,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 8, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 370 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 370 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
               ]
             },
             {
@@ -11468,7 +11601,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 9, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 390 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 390 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
               ]
             },
             {
@@ -11479,7 +11612,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 9, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 410 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 410 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
               ]
             },
             {
@@ -11490,7 +11623,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 9, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 430 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 430 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
               ]
             },
             {
@@ -11502,7 +11635,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 9, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 450 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 450 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
               ]
             },
             {
@@ -11513,7 +11646,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 10, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 470 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 470 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
               ]
             },
             {
@@ -11524,7 +11657,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 10, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 490 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 490 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
               ]
             },
             {
@@ -11535,7 +11668,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 10, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 510 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 510 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
               ]
             },
             {
@@ -11548,7 +11681,7 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 30, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 530 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 530 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
                 { name: "Trickshot Specialist", description: "Gain +307 damage per second for being in the air (literally), capped at +1039", imageUrl: "https://i.postimg.cc/DwdPRSMs/transparent-Photoroom-2026-02-04T194620-930.png" }
               ]
             },
@@ -11561,7 +11694,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 10, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 550 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 550 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
                 { name: "Trickshot Specialist", description: "Gain +330 damage per second for being in the air (literally), capped at +1100", imageUrl: "https://i.postimg.cc/DwdPRSMs/transparent-Photoroom-2026-02-04T194620-930.png" }
               ]
             },
@@ -11573,7 +11706,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 11, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 570 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 570 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
                 { name: "Trickshot Specialist", description: "Gain +353 damage per second for being in the air (literally), capped at +1163", imageUrl: "https://i.postimg.cc/DwdPRSMs/transparent-Photoroom-2026-02-04T194620-930.png" }
               ]
             },
@@ -11585,7 +11718,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 11, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 590 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 590 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
                 { name: "Trickshot Specialist", description: "Gain +378 damage per second for being in the air (literally), capped at +1227", imageUrl: "https://i.postimg.cc/DwdPRSMs/transparent-Photoroom-2026-02-04T194620-930.png" }
               ]
             },
@@ -11597,7 +11730,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 11, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 610 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 610 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
                 { name: "Trickshot Specialist", description: "Gain +403 damage per second for being in the air (literally), capped at +1293", imageUrl: "https://i.postimg.cc/DwdPRSMs/transparent-Photoroom-2026-02-04T194620-930.png" }
               ]
             },
@@ -11609,7 +11742,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 11, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 630 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 630 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
                 { name: "Trickshot Specialist", description: "Gain +428 damage per second for being in the air (literally), capped at +1361", imageUrl: "https://i.postimg.cc/DwdPRSMs/transparent-Photoroom-2026-02-04T194620-930.png" }
               ]
             },
@@ -11622,7 +11755,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 11, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 650 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 650 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
                 { name: "Trickshot Specialist", description: "Gain +455 damage per second for being in the air (literally), capped at +1430", imageUrl: "https://i.postimg.cc/DwdPRSMs/transparent-Photoroom-2026-02-04T194620-930.png" }
               ]
             },
@@ -11634,7 +11767,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 12, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 670 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 670 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
                 { name: "Trickshot Specialist", description: "Gain +482 damage per second for being in the air (literally), capped at +1501", imageUrl: "https://i.postimg.cc/DwdPRSMs/transparent-Photoroom-2026-02-04T194620-930.png" }
               ]
             },
@@ -11646,7 +11779,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 12, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 690 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 690 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
                 { name: "Trickshot Specialist", description: "Gain +511 damage per second for being in the air (literally), capped at +1573", imageUrl: "https://i.postimg.cc/DwdPRSMs/transparent-Photoroom-2026-02-04T194620-930.png" }
               ]
             },
@@ -11658,7 +11791,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 12, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 710 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 710 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
                 { name: "Trickshot Specialist", description: "Gain +540 damage per second for being in the air (literally), capped at +1647", imageUrl: "https://i.postimg.cc/DwdPRSMs/transparent-Photoroom-2026-02-04T194620-930.png" }
               ]
             },
@@ -11670,7 +11803,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 12, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 730 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 730 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
                 { name: "Trickshot Specialist", description: "Gain +569 damage per second for being in the air (literally), capped at +1723", imageUrl: "https://i.postimg.cc/DwdPRSMs/transparent-Photoroom-2026-02-04T194620-930.png" }
               ]
             },
@@ -11683,7 +11816,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 12, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 750 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 750 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
                 { name: "Trickshot Specialist", description: "Gain +600 damage per second for being in the air (literally), capped at +1800", imageUrl: "https://i.postimg.cc/DwdPRSMs/transparent-Photoroom-2026-02-04T194620-930.png" }
               ]
             },
@@ -11695,7 +11828,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 12, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 770 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 770 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
                 { name: "Trickshot Specialist", description: "Gain +631 damage per second for being in the air (literally), capped at +1879", imageUrl: "https://i.postimg.cc/DwdPRSMs/transparent-Photoroom-2026-02-04T194620-930.png" }
               ]
             },
@@ -11707,7 +11840,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 13, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 790 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 790 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
                 { name: "Trickshot Specialist", description: "Gain +664 damage per second for being in the air (literally), capped at +1959", imageUrl: "https://i.postimg.cc/DwdPRSMs/transparent-Photoroom-2026-02-04T194620-930.png" }
               ]
             },
@@ -11719,7 +11852,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 13, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 810 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 810 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
                 { name: "Trickshot Specialist", description: "Gain +697 damage per second for being in the air (literally), capped at +2041", imageUrl: "https://i.postimg.cc/DwdPRSMs/transparent-Photoroom-2026-02-04T194620-930.png" }
               ]
             },
@@ -11731,7 +11864,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 13, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 830 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 830 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
                 { name: "Trickshot Specialist", description: "Gain +730 damage per second for being in the air (literally), capped at +2125", imageUrl: "https://i.postimg.cc/DwdPRSMs/transparent-Photoroom-2026-02-04T194620-930.png" }
               ]
             },
@@ -11744,7 +11877,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 13, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 850 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 850 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
                 { name: "Trickshot Specialist", description: "Gain +765 damage per second for being in the air (literally), capped at +2210", imageUrl: "https://i.postimg.cc/DwdPRSMs/transparent-Photoroom-2026-02-04T194620-930.png" }
               ]
             },
@@ -11756,7 +11889,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 13, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 870 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 870 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
                 { name: "Trickshot Specialist", description: "Gain +800 damage per second for being in the air (literally), capped at +2297", imageUrl: "https://i.postimg.cc/DwdPRSMs/transparent-Photoroom-2026-02-04T194620-930.png" }
               ]
             },
@@ -11768,7 +11901,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 13, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 890 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 890 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
                 { name: "Trickshot Specialist", description: "Gain +837 damage per second for being in the air (literally), capped at +2385", imageUrl: "https://i.postimg.cc/DwdPRSMs/transparent-Photoroom-2026-02-04T194620-930.png" }
               ]
             },
@@ -11780,7 +11913,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 14, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 910 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 910 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
                 { name: "Trickshot Specialist", description: "Gain +874 damage per second for being in the air (literally), capped at +2475", imageUrl: "https://i.postimg.cc/DwdPRSMs/transparent-Photoroom-2026-02-04T194620-930.png" }
               ]
             },
@@ -11792,7 +11925,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 14, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 930 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 930 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
                 { name: "Trickshot Specialist", description: "Gain +911 damage per second for being in the air (literally), capped at +2567", imageUrl: "https://i.postimg.cc/DwdPRSMs/transparent-Photoroom-2026-02-04T194620-930.png" }
               ]
             },
@@ -11805,7 +11938,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 14, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 950 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 950 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
                 { name: "Trickshot Specialist", description: "Gain +950 damage per second for being in the air (literally), capped at +2660", imageUrl: "https://i.postimg.cc/DwdPRSMs/transparent-Photoroom-2026-02-04T194620-930.png" }
               ]
             },
@@ -11817,7 +11950,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 14, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 970 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 970 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
                 { name: "Trickshot Specialist", description: "Gain +989 damage per second for being in the air (literally), capped at +2755", imageUrl: "https://i.postimg.cc/DwdPRSMs/transparent-Photoroom-2026-02-04T194620-930.png" }
               ]
             },
@@ -11829,7 +11962,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 14, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 990 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 990 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
                 { name: "Trickshot Specialist", description: "Gain +1030 damage per second for being in the air (literally), capped at +2851", imageUrl: "https://i.postimg.cc/DwdPRSMs/transparent-Photoroom-2026-02-04T194620-930.png" }
               ]
             },
@@ -11841,7 +11974,7 @@ overallTierList: {
                 { name: "Scrеw", rarity: "common", quantity: 14, imageUrl: "https://i.postimg.cc/hG80hNdw/*****.png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 1010 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 1010 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
                 { name: "Trickshot Specialist", description: "Gain +1071 damage per second for being in the air (literally), capped at +2949", imageUrl: "https://i.postimg.cc/DwdPRSMs/transparent-Photoroom-2026-02-04T194620-930.png" }
               ]
             },
@@ -11855,9 +11988,9 @@ overallTierList: {
                 { name: "Metal Plating", rarity: "common", quantity: 20, imageUrl: "https://i.postimg.cc/PNsdFDm9/transparent_Photoroom_(24).png" }
               ],
               abilities: [
-                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 1030 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
+                { name: "Eruption Throw", description: "Throw a plunger towards the first toilet, dealing 1030 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" },
                 { name: "Trickshot Specialist", description: "Gain +1112 damage per second for being in the air (literally), capped at +3049", imageUrl: "https://i.postimg.cc/DwdPRSMs/transparent-Photoroom-2026-02-04T194620-930.png" },
-                { name: "Double Throw", description: "Throw another plunger towards the last toilet, dealing 1030 damage to all toilets in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
+                { name: "Double Throw", description: "Throw another plunger towards the last toilet, dealing 1030 damage to all enemies in 15 splash radius", imageUrl: "https://i.postimg.cc/pX5NQk3M/transparent-Photoroom-2026-02-03T175607-340.png" }
               ]
             },
           ],
