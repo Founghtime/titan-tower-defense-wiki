@@ -3128,6 +3128,89 @@ window.gameData = {
           }
         },
         { 
+          name: "Upgraded Titan TV Guy", 
+          imageUrl: "https://i.postimg.cc/J0FHCJNb/transparent_Photoroom_(77).png",
+          rarity: 'mythic',
+          type: 'AOE',
+          obtainmentInfo: {
+            mode: 'craft',
+            craft: [
+              {
+                name: 'Titan Cinema Guy',
+                rarity: 'mythic',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/0NcC96J6/transparent_Photoroom_2026_01_27T203709_076.png'
+              },
+              {
+                name: 'Energy Blade',
+                rarity: 'mythic',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/m20gTpck/transparent_Photoroom_(13).png'
+              },
+              {
+                name: "Reinforced Plating",
+                rarity: 'epic',
+                quantity: 18,
+                imageUrl: 'https://i.postimg.cc/FKJHZQZD/Reinforced_Plating.png'
+              }
+            ]
+          },
+          stats: {
+            cost: { min: "6,000", max: "89,050" },
+            placements: { min: 1, max: 1 },
+            range: { min: 60, max: 74 },
+            speed: { min: 5, max: 0.7 },
+            damage: { min: 65, max: 105 },
+            angle: { min: 35, max: 35 },
+            strokes: { min: 4, max: 1 }
+          },
+          abilities: [
+            {
+              name: "Advanced Tech",
+              description: "Immune to stun",
+              onLevel: 1,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 }
+            },
+            {
+              name: "Core Blast",
+              description: "Shoots with his core, dealing 2x damage",
+              onLevel: 4,
+              type: "Passive",
+              speed: { min: 20, max: 20 },
+              damage: { min: 800, max: "1,400" },
+              dps: { min: 0, max: "0" }
+            },
+            {
+              name: "Teleport Pulse",
+              description: "Teleports, dealing 3x damage",
+              onLevel: 6,
+              type: "Passive",
+              speed: { min: 30, max: 30 },
+              damage: { min: "1,560", max: "2,100" },
+              dps: { min: 0, max: "0" }
+            },
+            {
+              name: "Side Screen",
+              description: "Releases his side screens for 10 seconds",
+              onLevel: 9,
+              type: "Passive",
+              speed: { min: 25, max: 25 },
+              damage: { min: "2,330", max: "2,330" },
+              dps: { min: 0, max: "0" }
+            }
+          ],
+          scrapUpgrades: {
+            levels: 2,
+            prices: [100, 125],
+            abilities: [
+              { ability: "Ability Cooldown", values: ["100% → 95%", "95% → 90%"] },
+              { ability: "🎯Range", values: ["100 → 102", "102 → 105"] }
+            ]
+          }
+        },    
+        { 
           name: "Zombie Titan TV Guy (enraged)", 
           imageUrl: "https://i.postimg.cc/ryRJxwrP/transparent-Photoroom-2026-01-27T200250-157.png",
           rarity: 'secret',
@@ -3446,7 +3529,7 @@ window.gameData = {
           abilities: [
             {
               name: "Energy Rip",
-              description: "Energy TV Guy steals energy from the toilet and gains +1% base stats, capped at +50%",
+              description: "Steals energy from the toilet and gains +1% base stats, capped at +50%",
               onLevel: 1,
               type: "Passive",
               speed: { min: 20, max: 20 },
@@ -3455,7 +3538,7 @@ window.gameData = {
             },
             {
               name: "Energy Pulse",
-              description: "Energy TV Guy knocks toilets back in a large Cone AOE",
+              description: "Knocks toilets back in a large Cone AOE",
               onLevel: 2,
               type: "Passive",
               speed: { min: 10, max: 10 },
@@ -3503,7 +3586,7 @@ window.gameData = {
           abilities: [
             {
               name: "Energy Rip",
-              description: "Energy TV Guy steals energy from the toilet and gains +1% base stats, capped at +50%",
+              description: "Steals energy from the toilet and gains +1% base stats, capped at +50%",
               onLevel: 1,
               type: "Passive",
               speed: { min: 20, max: 20 },
@@ -3512,7 +3595,7 @@ window.gameData = {
             },
             {
               name: "Energy Pulse",
-              description: "Energy TV Guy knocks toilets back in a large Cone AOE",
+              description: "Knocks toilets back in a large Cone AOE",
               onLevel: 2,
               type: "Passive",
               speed: { min: 10, max: 10 },
@@ -3521,8 +3604,8 @@ window.gameData = {
             },
             {
               name: "Conduit",
-              description: "Energy TV Guy gains 10% (15%) of the damage from all units in range, capped at +300 (350)",
-              onLevel: 2,
+              description: "Gains 10% of the damage from all units in range, capped at +300 (350)",
+              onLevel: 11,
               type: "Passive",
               speed: { min: 0, max: 0 },
               damage: { min: 0, max: 0 },
