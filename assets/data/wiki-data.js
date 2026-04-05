@@ -3214,7 +3214,7 @@ window.gameData = {
         },
         { 
           name: "Golden Engineer Camera Guy", 
-          imageUrl: "https://i.postimg.cc/44WKtSWj/transparent_Photoroom_(94).png",
+          imageUrl: "https://i.postimg.cc/hP8w4Nch/transparent_Photoroom_(95).png",
           rarity: 'mythic',
           type: 'Summoner',
           obtainmentInfo: {
