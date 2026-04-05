@@ -2289,21 +2289,44 @@
           <div class="detail-desc">
             <h3>Shiny buffs</h3>
             <p>Buffs Unit damage by 5% and reduces Unit placement cost by 10%</p>
+
+            <div class="stats-accordion" id="shiny-banner-chances-accordion">
+              <div class="accordion-header">
+                <span>Banner &amp; Evolution Shiny Chances</span>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="accordion-content">
+                <table class="stats-table">
+                  <thead>
+                    <tr>
+                      <th>Rarity</th>
+                      <th>Chance</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td><span class="card-rarity rarity-secret">Secret</span></td><td>4.5%</td></tr>
+                    <tr><td><span class="card-rarity rarity-mythic">Mythic</span></td><td>4.5%</td></tr>
+                    <tr><td><span class="card-rarity rarity-legendary">Legendary</span></td><td>1.5%</td></tr>
+                    <tr><td><span class="card-rarity rarity-epic">Epic</span></td><td>0.6%</td></tr>
+                    <tr><td><span class="card-rarity rarity-rare">Rare</span></td><td>0.3%</td></tr>
+                    <tr><td><span class="card-rarity rarity-uncommon">Uncommon</span></td><td>0.2%</td></tr>
+                    <tr><td><span class="card-rarity rarity-common">Common</span></td><td>0.1%</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
 
           <div class="detail-desc">
             <h3>How Shiny Lab works</h3>
             <p>Shiny Lab makes the chosen Unit shiny if you win. Quantity of Units (identical to the first Unit) increases win chance and reduces roll cost (max 10 Units per roll).</p>
-          </div>
 
-          <div class="detail-desc">
-            <h3>Shiny Lab</h3>
+            <h3 style="margin-top: 20px;">Shiny Lab</h3>
 
             <div class="warning-box">
               <div class="warning-title">WARNING</div>
               <p>If you lose, your units will be destroyed</p>
             </div>
-
 
             <div class="gear-level-controls shiny-level-controls">
               <button class="gear-level-btn" id="shiny-prev-btn" type="button" aria-label="Previous level">
@@ -2330,8 +2353,6 @@
                 <tr><td>Cost</td><td id="shiny-lab-cost">—</td></tr>
               </tbody>
             </table>
-
-            
           </div>
         </div>
 
