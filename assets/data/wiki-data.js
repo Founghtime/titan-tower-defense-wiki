@@ -667,9 +667,19 @@ window.gameData = {
             summonspeed: { min: 20, max: 26 },
             minionhp: { min: 20, max: 130 },
             minionspeed: { min: 0, max: 0.5 },
-            miniondamage: { min: 0, max: 13 },
-            miniondps: { min: 0, max: 26 }
-          }
+            miniondamage: { min: 0, max: 13 }
+          },
+          abilities: [
+            {
+              name: "Armored Vehicle",
+              description: "Minions can shoot",
+              onLevel: 5,
+              type: "Passive",
+              speed: { min: 0.5, max: 0.5 },
+              damage: { min: 9, max: 13 },
+              dps: { min: 0, max: 0 }
+            }
+          ]
         },
         { 
           name: `Dark Stereocopter`, 
@@ -3196,9 +3206,84 @@ window.gameData = {
             title: 'Additional Upgrades',
             currencyLabel: 'Cash',
             levels: 3,
-            prices: ["1,800 Cash", "2,400 Cash", "3,200 Cash"],
+            prices: ["1,800", "2,400", "3,200"],
             abilities: [
               { ability: "OVERCHARGED! (duration)", values: ["10s → 12s", "12s → 15s", "15s → 20s"] }
+            ]
+          }
+        },
+        { 
+          name: "Golden Engineer Camera Guy", 
+          imageUrl: "https://i.postimg.cc/44WKtSWj/transparent_Photoroom_(94).png",
+          rarity: 'mythic',
+          type: 'Summoner',
+          obtainmentInfo: {
+            mode: 'craft',
+            craft: [
+              {
+                name: 'Engineer Camera Guy',
+                rarity: 'mythic',
+                quantity: 2,
+                imageUrl: 'https://i.postimg.cc/2yVdHMLX/Engineer_Camera_Guy.png'
+              },
+              {
+                name: 'Gold Bar',
+                rarity: 'legendary',
+                quantity: 15,
+                imageUrl: 'https://i.postimg.cc/90PTCdQK/image.png'
+              },
+              {
+                name: "Reinforced Plating",
+                rarity: 'epic',
+                quantity: 9,
+                imageUrl: 'https://i.postimg.cc/FKJHZQZD/Reinforced_Plating.png'
+              }
+            ]
+          },
+          stats: {
+            cost: { min: 400, max: "7,450" },
+            cash: { min: 50, max: "50 (Check the Additional Upgrades)" },
+            placements: { min: 2, max: 2 },
+            summonspeed: { min: 15, max: 19 },
+            minionhp: { min: 45, max: 500 },
+            minionspeed: { min: 3, max: 3 },
+            miniondamage: { min: 0, max: 50 }
+          },
+          abilities: [
+            {
+              name: "Golden Wrench",
+              description: "Minions have +1 increased damage for every 100 Cash you hold, capped at +800",
+              onLevel: 7,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 }
+            },
+            {
+              name: "Disabler Carrier",
+              description: "Minions can shoot",
+              onLevel: 8,
+              type: "Passive",
+              speed: { min: 3, max: 3 },
+              damage: { min: "40", max: "50" },
+              dps: { min: 0, max: "0" }
+            },
+            {
+              name: "Anti-Parasite",
+              description: "2x damage to infected enemies and parasites",
+              onLevel: 9,
+              type: "Passive",
+              speed: { min: 3, max: 3 },
+              damage: { min: "40", max: "50" },
+              dps: { min: 0, max: "0" }
+            }
+          ],
+          additionalUpgrades: {
+            title: 'Additional Upgrades',
+            currencyLabel: 'Cash',
+            levels: 5,
+            prices: ["350", "650", "900", "950", "1,200"],
+            abilities: [
+              { ability: "💸Cash", values: ["50 → 225", "225 → 500", "500 → 825", "825 → 1,150", "1,150 → 1,550"] }
             ]
           }
         },
