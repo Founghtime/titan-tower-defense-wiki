@@ -3266,6 +3266,107 @@ window.gameData = {
           }
         },
         { 
+          name: "Dave", 
+          imageUrl: "https://i.postimg.cc/3rpY2zb7/transparent_Photoroom_(84).png",
+          rarity: 'mythic',
+          type: 'Splash | AOE | Single Target',
+          obtainmentInfo: {
+            mode: 'craft',
+            craft: [
+              {
+                name: 'Large Red Laser Camera Guy',
+                rarity: 'mythic',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/y69s02r1/transparent_Photoroom_(85).png'
+              },
+              {
+                name: 'Chainsword',
+                rarity: 'mythic',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/Vk8pmXF0/transparent_Photoroom_(21).png'
+              },
+              {
+                name: "Fuel Cell",
+                rarity: 'epic',
+                quantity: 16,
+                imageUrl: 'https://i.postimg.cc/DyVdd2P5/Fuel_Cell.png'
+              },
+              {
+                name: "Reinforced Plating",
+                rarity: 'epic',
+                quantity: 12,
+                imageUrl: 'https://i.postimg.cc/FKJHZQZD/Reinforced_Plating.png'
+              },
+              {
+                name: "Charged Battery",
+                rarity: 'common',
+                quantity: 24,
+                imageUrl: 'https://i.postimg.cc/5yjHM8Q9/transparent_Photoroom_(23).png'
+              }
+            ]
+          },
+          stats: {
+            cost: { min: "800", max: "34,850" },
+            placements: { min: 1, max: 1 },
+            range: { min: 42, max: "74 (Check the abilities)" },
+            speed: { min: 5.5, max: "0.7 (Check the abilities)" },
+            damage: { min: 100, max: "105 (Check the abilities)" }
+          },
+          abilities: [
+            {
+              name: "Arsenal",
+              description: "Can switch his active weapon, changing his stats",
+              onLevel: 1,
+              type: "Active",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 }
+            },
+            {
+              name: "(WEAPON) Arm Blaster",
+              description: "Stuns for 2 seconds, +25% range",
+              onLevel: 1,
+              type: "Passive",
+              speed: { min: 5.5, max: 5 },
+              damage: { min: "110", max: "825" },
+              dps: { min: 0, max: "0" }
+            },
+            {
+              name: "(WEAPON) Chainsaw",
+              description: "Applies bleed, -45% range",
+              onLevel: 1,
+              type: "Passive",
+              speed: { min: 5.5, max: 3.5 },
+              damage: { min: "110", max: "600" },
+              dps: { min: 0, max: "0" }
+            },
+            {
+              name: "(WEAPON) Minigun",
+              description: "Just shoots fast",
+              onLevel: 1,
+              type: "Passive",
+              speed: { min: 0.45, max: 0.4 },
+              damage: { min: "18", max: "108" },
+              dps: { min: 0, max: "0" }
+            },
+            {
+              name: "Fast Hands",
+              description: "Arsenal ability cooldown reduced to 3 seconds",
+              onLevel: 6,
+              type: "Active",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 }
+            },
+            {
+              name: "Momentum",
+              description: "Gain 25% damage for 15 seconds after using Arsenal ability",
+              onLevel: 10,
+              type: "Active",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 }
+            },    
+          ]
+        },
+        { 
           name: "Upgraded Titan TV Guy", 
           imageUrl: "https://i.postimg.cc/J0FHCJNb/transparent_Photoroom_(77).png",
           rarity: 'mythic',
