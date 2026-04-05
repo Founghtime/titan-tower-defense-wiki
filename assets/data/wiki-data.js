@@ -3388,7 +3388,7 @@ window.gameData = {
             { from: "Banner", chance: "0.001%", imageUrl: "https://i.postimg.cc/m2nsQsmv/Banner.jpg" }
           ],
           stats: {
-            cost: { min: "5 Scrap", max: "29,800 (125 scrap)" },
+            cost: { min: "5 Scrap", max: "5 Scrap + 29,800 Cash" },
             placements: { min: 1, max: 1 },
             range: { min: 28, max: "38 (42)" },
             speed: { min: 3.5, max: 2.5 },
