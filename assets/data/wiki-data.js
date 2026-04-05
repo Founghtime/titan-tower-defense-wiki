@@ -3289,7 +3289,7 @@ window.gameData = {
         },
         { 
           name: "Golden Hero Speaker Guy (revived)", 
-          imageUrl: "https://i.postimg.cc/hP8w4Nch/transparent_Photoroom_(95).png",
+          imageUrl: "https://i.postimg.cc/44WKtSWj/transparent_Photoroom_(94).png",
           rarity: 'mythic',
           type: 'Single Target → AOE & Booster',
           obtainmentInfo: {
