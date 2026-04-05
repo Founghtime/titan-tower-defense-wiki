@@ -3065,6 +3065,142 @@ window.gameData = {
           }
         },
         { 
+          name: "Red Laser Camera Guy", 
+          imageUrl: "https://i.postimg.cc/G3Ydv6S2/transparent_Photoroom_(86).png",
+          rarity: 'mythic',
+          type: 'Line AOE',
+          obtainmentInfo: {
+            mode: 'craft',
+            craft: [
+              {
+                name: 'Thrower Camera Guy',
+                rarity: 'legendary',
+                quantity: 3,
+                imageUrl: 'https://i.postimg.cc/pXSqnZ2P/transparent_Photoroom_(25).png'
+              },
+              {
+                name: 'Upgraded Blaster',
+                rarity: 'mythic',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/gJdgS6b5/transparent_Photoroom_(39).png'
+              },
+              {
+                name: "Charged Battery",
+                rarity: 'common',
+                quantity: 24,
+                imageUrl: 'https://i.postimg.cc/5yjHM8Q9/transparent_Photoroom_(23).png'
+              }
+            ]
+          },
+          stats: {
+            cost: { min: "800", max: "12,000" },
+            placements: { min: 4, max: 4 },
+            range: { min: 28, max: 50 },
+            speed: { min: 0.5, max: 0.5 },
+            damage: { min: 4, max: 18 }
+          },
+          abilities: [
+            {
+              name: "Toilet Paper",
+              description: "Throws a toilet paper grenade, dealing 10x damage",
+              onLevel: 5,
+              type: "Passive",
+              speed: { min: 10, max: 10 },
+              damage: { min: 110, max: 180 }
+            },
+            {
+              name: "Advanced Tech",
+              description: "All buff & debuffs are 50% more effective",
+              onLevel: 11,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: "0", max: "0" },
+              dps: { min: 0, max: "0" }
+            }
+          ],
+          scrapUpgrades: {
+            levels: 3,
+            prices: [20, 25, 30],
+            abilities: [
+              { ability: "Toilet Grenade (damage)", values: ["1000% → 1100%", "1100% → 1200%", "1200% → 1300%"] }
+            ]
+          }
+        },
+        { 
+          name: "Large Red Laser Camera Guy", 
+          imageUrl: "https://i.postimg.cc/y69s02r1/transparent_Photoroom_(85).png",
+          rarity: 'mythic',
+          type: 'Line AOE',
+          obtainmentInfo: {
+            mode: 'craft',
+            craft: [
+              {
+                name: 'Red Laser Camera Guy',
+                rarity: 'mythic',
+                quantity: 2,
+                imageUrl: 'https://i.postimg.cc/G3Ydv6S2/transparent_Photoroom_(86).png'
+              },
+              {
+                name: 'Overcharged Blaster',
+                rarity: 'mythic',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/nc6hnSs9/transparent_Photoroom_(12).png'
+              },
+              {
+                name: "Fuel Cell",
+                rarity: 'epic',
+                quantity: 20,
+                imageUrl: 'https://i.postimg.cc/DyVdd2P5/Fuel_Cell.png'
+              },
+              {
+                name: "Reinforced Plating",
+                rarity: 'epic',
+                quantity: 9,
+                imageUrl: 'https://i.postimg.cc/FKJHZQZD/Reinforced_Plating.png'
+              },
+              {
+                name: "Charged Battery",
+                rarity: 'common',
+                quantity: 40,
+                imageUrl: 'https://i.postimg.cc/5yjHM8Q9/transparent_Photoroom_(23).png'
+              }
+            ]
+          },
+          stats: {
+            cost: { min: "1,200", max: "12,000" },
+            placements: { min: 2, max: 2 },
+            range: { min: 34, max: 50 },
+            speed: { min: 0.4, max: 0.5 },
+            damage: { min: 5, max: 18 }
+          },
+          abilities: [
+            {
+              name: "OVERCHARGED!",
+              description: "Once activated, gains -2x cooldown boost for 10 seconds",
+              onLevel: 5,
+              type: "Active",
+              speed: { min: 120, max: 120 },
+              damage: { min: 0, max: 0 }
+            },
+            {
+              name: "Advanced Charge",
+              description: "Damage buffs also increase OVERCHARGED! ability duration",
+              onLevel: 9,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: "0", max: "0" },
+              dps: { min: 0, max: "0" }
+            }
+          ],
+          scrapUpgrades: {
+            levels: 3,
+            prices: ["1,800 Cash", "2,400 Cash", "3,200 Cash"],
+            abilities: [
+              { ability: "OVERCHARGED! (duration)", values: ["10s → 12s", "12s → 15s", "15s → 20s"] }
+            ]
+          }
+        },
+        { 
           name: "Glitch Camera Guy", 
           imageUrl: "https://i.postimg.cc/tTngLrJg/Glitch_Cameraman.png",
           rarity: 'mythic',
