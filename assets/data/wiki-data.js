@@ -3192,7 +3192,9 @@ window.gameData = {
               dps: { min: 0, max: "0" }
             }
           ],
-          scrapUpgrades: {
+          additionalUpgrades: {
+            title: 'Additional Upgrades',
+            currencyLabel: 'Cash',
             levels: 3,
             prices: ["1,800 Cash", "2,400 Cash", "3,200 Cash"],
             abilities: [
