@@ -3556,7 +3556,79 @@ window.gameData = {
               { ability: "🎯✨ Crit %", values: ["75% → 100%"] },
             ]
           }
-        },    
+        },
+        { 
+          name: "Astro Titan Camera Guy", 
+          imageUrl: "https://i.postimg.cc/3rtypcts/transparent_Photoroom_(92).png",
+          rarity: 'mythic',
+          type: 'Full AOE → Line AOE',
+          obtainmentInfo: {
+            mode: 'craft',
+            craft: [
+              {
+                name: 'Toxic Titan Camera Guy',
+                rarity: 'mythic',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/9QWkD1Q7/transparent_Photoroom_(99).png'
+              },
+              {
+                name: 'Hextech Arm',
+                rarity: 'mythic',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/65DpBb7n/transparent_Photoroom_(11).png'
+              },
+              {
+                name: "Reinforced Plating",
+                rarity: 'epic',
+                quantity: 12,
+                imageUrl: 'https://i.postimg.cc/FKJHZQZD/Reinforced_Plating.png'
+              }
+            ]
+          },
+          stats: {
+            cost: { min: "3,000", max: "52,400" },
+            placements: { min: 1, max: 1 },
+            range: { min: 34, max: 90 },
+            speed: { min: 3, max: 0.3 },
+            damage: { min: 100, max: 50 },
+            angle: { min: 360, max: 0 }
+          },
+          abilities: [
+            {
+              name: "Advanced Tech",
+              description: "Immune to stun",
+              onLevel: 1,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 }
+            },
+            {
+              name: "Energy Ball",
+              description: "Deals 15x damage and stuns enemies",
+              onLevel: 6,
+              type: "Passive",
+              speed: { min: 10, max: 10 },
+              damage: { min: "450", max: "750" },
+              dps: { min: 0, max: "0" }
+            },
+            {
+              name: "Energy Finisher",
+              description: "Slams down an enemy, dealing 10x damage",
+              onLevel: 9,
+              type: "Passive",
+              speed: { min: 15, max: 15 },
+              damage: { min: "500", max: "500" },
+              dps: { min: 0, max: "0" }
+            }
+          ],
+          scrapUpgrades: {
+            levels: 1,
+            prices: [100],
+            abilities: [
+              { ability: "Energy Finisher (damage)", values: ["1,000% → 1,500%"] },
+            ]
+          }
+        },
         { 
           name: "Dave", 
           imageUrl: "https://i.postimg.cc/3rpY2zb7/transparent_Photoroom_(84).png",
