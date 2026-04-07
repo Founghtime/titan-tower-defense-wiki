@@ -3369,7 +3369,7 @@ window.gameData = {
           type: 'Splash & Booster',
           obtainmentStats: 
           [
-            { from: "Endless Leaderboard", chance: "Getting into the top 11-100", imageUrl: "https://i.postimg.cc/y8tDPz5r/image.png" }
+            { from: "Endless Leaderboard", chance: "Unobtainable", imageUrl: "https://i.postimg.cc/y8tDPz5r/image.png" }
           ],
           stats: {
             cost: { min: 360, max: "2,160" },
@@ -3398,7 +3398,7 @@ window.gameData = {
           type: 'Splash & Booster',
           obtainmentStats: 
           [
-            { from: "Endless Leaderboard", chance: "Getting into the top 11-100", imageUrl: "https://i.postimg.cc/y8tDPz5r/image.png" }
+            { from: "Endless Leaderboard", chance: "Unobtainable", imageUrl: "https://i.postimg.cc/y8tDPz5r/image.png" }
           ],
           stats: {
             cost: { min: 360, max: "2,160" },
