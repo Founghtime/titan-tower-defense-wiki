@@ -2811,7 +2811,7 @@ window.gameData = {
               description: "Attacks bleed emenies for 25% damage over 3 seconds",
               onLevel: 3,
               type: "Passive",
-              speed: { min: 0, max: 90 },
+              speed: { min: 0, max: 0 },
               damage: { min: 0, max: 0 },
               dps: { min: 0, max: 0 }
             },
