@@ -2754,6 +2754,88 @@ window.gameData = {
           ]
         },
         { 
+          name: "Pirate Speaker Woman (cannon)", 
+          imageUrl: "https://i.postimg.cc/tRfBy1kc/transparent_Photoroom_2026_01_23T232348_224.png",
+          rarity: 'mythic',
+          type: 'AOE',
+          obtainmentInfo: {
+            mode: 'craft',
+            craft: [
+              {
+                name: 'Pirate Speaker Woman',
+                rarity: 'legendary',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/vZnQFKTc/Pirate_Speaker_Woman.png'
+              },
+              {
+                name: "Cannon",
+                rarity: 'mythic',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/KzNJdvZ4/transparent_Photoroom_(47).png'
+              },
+              {
+                name: "Gold Bar",
+                rarity: 'legendary',
+                quantity: 2,
+                imageUrl: 'https://i.postimg.cc/90PTCdQK/image.png'
+              },
+              {
+                name: "Eyeball",
+                rarity: 'common',
+                quantity: 100,
+                imageUrl: 'https://i.postimg.cc/vmDcVhHL/Eyeball.png'
+              }
+            ]
+          },
+          stats: {
+            cost: { min: "350", max: "5,750" },
+            placements: { min: 3, max: 3 },
+            cash: { min: 30, max: 300 },
+            range: { min: 20, max: 30 },
+            speed: { min: 3, max: 2.5 },
+            damage: { min: 12, max: 34 },
+            angle: { min: 115, max: 115 }
+          },
+          abilities: [
+            {
+              name: "Arm Cannon",
+              description: "Uses her arm cannon, dealing 10x damage",
+              onLevel: 1,
+              type: "Active",
+              speed: { min: 90, max: 90 },
+              damage: { min: 120, max: 340 },
+              dps: { min: 0, max: 0 }
+            },
+            {
+              name: "Rusty-Hook",
+              description: "Attacks bleed emenies for 25% damage over 3 seconds",
+              onLevel: 3,
+              type: "Passive",
+              speed: { min: 0, max: 90 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            },
+            {
+              name: "Smoke Bomb",
+              description: "Stuns enemies for 3 seconds",
+              onLevel: 5,
+              type: "Passive",
+              speed: { min: 16, max: 16 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            },
+            {
+              name: "Burning Rounds",
+              description: "Cannon inflicts 100% burn that deals damage over time",
+              onLevel: 8,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            }
+          ]
+        },
+        { 
           name: "Titan TV Guy", 
           imageUrl: "https://i.postimg.cc/fy3nxfrx/transparent_Photoroom_(34).png",
           rarity: 'mythic',
@@ -3682,7 +3764,7 @@ window.gameData = {
               description: "Can switch his active weapon, changing his stats",
               onLevel: 1,
               type: "Active",
-              speed: { min: 0, max: 0 },
+              speed: { min: 0, max: 3 },
               damage: { min: 0, max: 0 }
             },
             {
