@@ -1430,7 +1430,7 @@ window.gameData = {
           name: `Pirate Speaker Woman`, 
           imageUrl: "https://i.postimg.cc/vZnQFKTc/Pirate_Speaker_Woman.png",
           rarity: 'legendary',
-          type: 'AOE',
+          type: 'AOE & Farm',
           obtainmentStats: 
           [
             { from: "Zombie Crate", chance: "3%", imageUrl: "https://i.postimg.cc/ZngNd1GS/Zombie_Crate.jpg" }
@@ -1932,7 +1932,36 @@ window.gameData = {
             },
             {
               name: "Golden Gun",
-              description: "Attacks deal 1 increased damage for each 1,000 cash you hold up, capped at 100",
+              description: "Deals +1 damage for each 1,000 cash you hold up, capped at +100",
+              onLevel: 6,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            }
+          ]
+        },
+        { 
+          name: `Diamond Camera Toilet`, 
+          imageUrl: "https://i.postimg.cc/tgJ6z7wV/transparent_Photoroom_2026_01_28T184624_448.png",
+          rarity: 'mythic',
+          type: 'Single Target & Farm',
+          obtainmentStats: 
+          [
+            { from: "Top Donators Leaderboard", chance: "Getting into the top 100", imageUrl: "https://i.postimg.cc/y8tDPz5r/image.png" }
+          ],
+          stats: {
+            cost: { min: 650, max: "16,400" },
+            placements: { min: 1, max: 1 },
+            range: { min: 25, max: 50 },
+            speed: { min: 2, max: 0.5 },
+            damage: { min: 5, max: 25 },
+            cash: { min: 132, max: "1,758" }
+          },
+          abilities: [
+            {
+              name: "Diamond Gun",
+              description: "Deals +1 damage for ever 1000 cash you hold up, capped at +125",
               onLevel: 6,
               type: "Passive",
               speed: { min: 0, max: 0 },
@@ -2757,7 +2786,7 @@ window.gameData = {
           name: "Pirate Speaker Woman (cannon)", 
           imageUrl: "https://i.postimg.cc/tRfBy1kc/transparent_Photoroom_2026_01_23T232348_224.png",
           rarity: 'mythic',
-          type: 'AOE',
+          type: 'AOE & Farm',
           obtainmentInfo: {
             mode: 'craft',
             craft: [
@@ -3298,7 +3327,7 @@ window.gameData = {
           name: "Golden Engineer Camera Guy", 
           imageUrl: "https://i.postimg.cc/hP8w4Nch/transparent_Photoroom_(95).png",
           rarity: 'mythic',
-          type: 'Summoner',
+          type: 'Summoner & Farm',
           obtainmentInfo: {
             mode: 'craft',
             craft: [
@@ -3328,7 +3357,7 @@ window.gameData = {
             placements: { min: 2, max: 2 },
             summonspeed: { min: 15, max: 19 },
             minionhp: { min: 45, max: 500 },
-            minionspeed: { min: 3, max: 3 },
+            minionspeed: { min: 0, max: 3 },
             miniondamage: { min: 0, max: 50 }
           },
           abilities: [
@@ -3354,8 +3383,8 @@ window.gameData = {
               description: "2x damage to infected enemies and parasites",
               onLevel: 9,
               type: "Passive",
-              speed: { min: 3, max: 3 },
-              damage: { min: "40", max: "50" },
+              speed: { min: 0, max: 0 },
+              damage: { min: "0", max: "0" },
               dps: { min: 0, max: "0" }
             }
           ],
@@ -3373,7 +3402,7 @@ window.gameData = {
           name: "Golden Hero Speaker Guy (revived)", 
           imageUrl: "https://i.postimg.cc/44WKtSWj/transparent_Photoroom_(94).png",
           rarity: 'mythic',
-          type: 'Single Target → AOE & Booster',
+          type: 'Single Target & Farm → AOE & Farm & Booster',
           obtainmentInfo: {
             mode: 'craft',
             craft: [
@@ -3443,6 +3472,96 @@ window.gameData = {
               { ability: "Shock Wave", values: ["5s → 5.5s", "5.5 → 6"] }
             ]
           }
+        },
+        { 
+          name: "Engineer Camera Guy", 
+          imageUrl: "https://i.postimg.cc/2yVdHMLX/Engineer_Camera_Guy.png",
+          rarity: 'mythic',
+          type: 'Summoner',
+          obtainment: 'Raid Crate (0.8% chance)',
+          stats: {
+            cost: { min: 500, max: "17,000" },
+            placements: { min: 2, max: 2 },
+            summonspeed: { min: 15, max: 20 },
+            minionhp: { min: 45, max: 1000 },
+            minionspeed: { min: 0, max: 3 },
+            miniondamage: { min: 0, max: 100 }
+          },
+          abilities: [
+            {
+              name: "Disabler Carrier",
+              description: "Minions can shoot",
+              onLevel: 8,
+              type: "Passive",
+              speed: { min: 3, max: 3 },
+              damage: { min: "100", max: "100" },
+              dps: { min: 0, max: "0" }
+            },
+            {
+              name: "Anti-Parasite",
+              description: "2x damage to infected enemies and parasites",
+              onLevel: 9,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: "0", max: "0" },
+              dps: { min: 0, max: "0" }
+            }
+          ]
+        },
+        { 
+          name: "Tub Engineer Camera Guy (atomic)", 
+          imageUrl: "https://i.postimg.cc/zGgV5xwK/transparent_Photoroom_2026_01_23T154606_993.png",
+          rarity: 'mythic',
+          type: 'Summoner',
+          obtainmentInfo: {
+            mode: 'craft',
+            craft: [
+              {
+                name: 'Tub Engineer Camera Guy',
+                rarity: 'legendary',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/Dzc4PnpF/transparent_Photoroom_2026_01_28T172851_074.png'
+              },
+              {
+                name: 'Atomic Bomb',
+                rarity: 'mythic',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/W3yMrNhk/transparent_Photoroom_2026_01_27T173151_730.png'
+              },
+              {
+                name: "Sunscreen",
+                rarity: 'common',
+                quantity: 80,
+                imageUrl: 'https://i.postimg.cc/66Vb5k2z/Sunscreen_Photoroom.png'
+              }
+            ]
+          },
+          stats: {
+            cost: { min: 435, max: "17,635" },
+            placements: { min: 2, max: 2 },
+            summonspeed: { min: 10, max: 200 },
+            minionhp: { min: 20, max: 1000 }
+          },
+          abilities: [
+            {
+              name: "Explosive Ducks",
+              description: "Minions explode and deal 500% damage",
+              onLevel: 7,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: "625", max: "750" },
+              dps: { min: 0, max: "0" }
+            },
+            {
+              name: "Atomic Ducks",
+              description: "Minions explode and deal 800% damage",
+              onLevel: 9,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: "8,000", max: "8,000" },
+              dps: { min: 0, max: "0" }
+            }
+          ]
         },
         { 
           name: `Neko TV Woman`, 
