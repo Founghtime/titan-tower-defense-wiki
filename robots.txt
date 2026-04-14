@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://founghtime.github.io/titan-tower-defense-wiki/sitemap.xml
