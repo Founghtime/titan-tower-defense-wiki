@@ -3685,6 +3685,56 @@ window.gameData = {
           }
         },
         { 
+          name: "Speaker Woman (katana)", 
+          imageUrl: "https://i.postimg.cc/W1hycCQj/transparent-Photoroom-2026-01-25T140144-852.png",
+          rarity: 'mythic',
+          type: 'AOE → Full AOE',
+          obtainmentInfo: {
+            mode: 'craft',
+            craft: [
+              {
+                name: 'Speaker Woman',
+                rarity: 'legendary',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/Y9dKVV1s/image.png'
+              },
+              {
+                name: 'Katana',
+                rarity: 'mythic',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/02N6jMZT/image.png'
+              }
+            ]
+          },
+          stats: {
+            cost: { min: "440", max: "7,640" },
+            placements: { min: 4, max: 4 },
+            range: { min: 25, max: 35 },
+            speed: { min: 2, max: 5 },
+            damage: { min: 15, max: 45 },
+            angle: { min: 90, max: 360 },
+            crit: { min: 25, max: 100 },
+            strokes: { min: 1, max: 3 }
+          },
+          abilities: [
+            {
+              name: "Clean Cut",
+              description: "Critical attacks deal 2x damage",
+              onLevel: 5,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 }
+            }    
+          ],
+          scrapUpgrades: {
+            levels: 2,
+            prices: [10, 10],
+            abilities: [
+              { ability: "Clean cut (damage)", values: ["200% → 225%", "225% → 250%"] }
+            ]
+          }
+        },
+        { 
           name: "Overcharged Titan Speaker Guy", 
           imageUrl: "https://i.postimg.cc/cLszvTLM/transparent_Photoroom_(96).png",
           rarity: 'mythic',
@@ -3883,7 +3933,7 @@ window.gameData = {
               description: "Can switch his active weapon, changing his stats",
               onLevel: 1,
               type: "Active",
-              speed: { min: 0, max: 3 },
+              speed: { min: 10, max: 3 },
               damage: { min: 0, max: 0 }
             },
             {
