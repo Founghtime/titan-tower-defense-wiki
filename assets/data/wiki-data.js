@@ -3735,6 +3735,90 @@ window.gameData = {
           }
         },
         { 
+          name: "Saw Titan Camera", 
+          imageUrl: "https://i.postimg.cc/8z1Y7wzW/transparent-Photoroom-(97).png",
+          rarity: 'mythic',
+          type: 'AOE',
+          obtainmentInfo: {
+            mode: 'craft',
+            craft: [
+              {
+                name: 'Upgraded Titan Camera Guy',
+                rarity: 'mythic',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/Kzdbs8QX/transparent-Photoroom-2026-01-27T204848-524.png'
+              },
+              {
+                name: "Titan's Core",
+                rarity: 'mythic',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/bNX3Pg3C/image.png'
+              },
+              {
+                name: 'Reinforced Plating',
+                rarity: 'epic',
+                quantity: 16,
+                imageUrl: 'https://i.postimg.cc/FKJHZQZD/Reinforced-Plating.png'
+              },
+              {
+                name: 'Buzzsaw',
+                rarity: 'epic',
+                quantity: 25,
+                imageUrl: 'https://i.postimg.cc/m2cJh223/Buzzsaw.png'
+              }
+            ]
+          },
+          stats: {
+            cost: { min: "1,600", max: "23,700" },
+            placements: { min: 1, max: 1 },
+            range: { min: 30, max: 50 },
+            speed: { min: 2.5, max: 1.5 },
+            damage: { min: 50, max: 150 },
+            angle: { min: 60, max: 60 }
+          },
+          abilities: [
+            {
+              name: "Shredder",
+              description: "Attacks bleed enemies for 50% damage over 50 seconds",
+              onLevel: 1,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 25, max: 75 }
+            }, 
+            {
+              name: "Saw Line",
+              description: "Drives buzzsaw into the ground, dealing 2.5x damage",
+              onLevel: 3,
+              type: "Passive",
+              speed: { min: 10, max: 10 },
+              damage: { min: 187, max: 375 }
+            },
+            {
+              name: "Spinning Saw",
+              description: "Unleashes a saw that deals 80% damage per second for 10 seconds",
+              onLevel: 6,
+              type: "Passive",
+              speed: { min: 20, max: 20 },
+              damage: { min: 92, max: 120 }
+            },
+            {
+              name: "Blood Infusion",
+              description: "Enemies with his bleed take +10% more damage",
+              onLevel: 8,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 }
+            }
+          ],
+          scrapUpgrades: {
+            levels: 3,
+            prices: [5, 10, 15],
+            abilities: [
+              { ability: "Spinning Saw (time)", values: ["10s → 12s", "12s → 14s", "14s → 16s"] }
+            ]
+          }
+        },
+        { 
           name: "Overcharged Titan Speaker Guy", 
           imageUrl: "https://i.postimg.cc/cLszvTLM/transparent_Photoroom_(96).png",
           rarity: 'mythic',
