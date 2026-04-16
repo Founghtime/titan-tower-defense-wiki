@@ -2792,7 +2792,7 @@ window.gameData = {
             { from: "Easter Crate", chance: "Unobtainable", imageUrl: "https://i.postimg.cc/gJmfYzVd/Easter_Crate.jpg" }
           ],
           stats: {
-            cost: { min: "900", max: "30,750" },
+            cost: { min: "900", max: "13,250" },
             placements: { min: 3, max: 3 },
             range: { min: 36, max: 100 },
             speed: { min: 8, max: 5 },
@@ -2969,6 +2969,63 @@ window.gameData = {
               speed: { min: 30, max: 30 },
               damage: { min: "2,400", max: "2,400" },
               dps: { min: 80, max: 80 }
+            }
+          ]
+        },
+        { 
+          name: "Hero Speaker Guy (revived)", 
+          imageUrl: "https://i.postimg.cc/WbJ9tCV2/transparent-Photoroom-2026-01-22T220534-143.png",
+          rarity: 'mythic',
+          type: 'Single Target → AOE & Stun',
+          obtainmentInfo: {
+            mode: 'craft',
+            craft: [
+              {
+                name: 'Hero Speaker Guy',
+                rarity: 'legendary',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/mDw802b1/transparent-Photoroom-(49).png'
+              },
+              {
+                name: "Titan's Core",
+                rarity: 'mythic',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/bNX3Pg3C/image.png'
+              },
+              {
+                name: "Metal Plating",
+                rarity: 'common',
+                quantity: 8,
+                imageUrl: 'https://i.postimg.cc/PNsdFDm9/transparent-Photoroom-(24).png'
+              }
+            ]
+          },
+          stats: {
+            cost: { min: "400", max: "6,625" },
+            placements: { min: 3, max: 3 },
+            range: { min: 28, max: 65 },
+            speed: { min: 3.5, max: 3 },
+            damage: { min: 50, max: 135 },
+            angle: { min: 0, max: 48 }
+          },
+          abilities: [
+            {
+              name: "Adrenaline",
+              description: "Immune to stun",
+              onLevel: 1,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            },
+            {
+              name: "Shock Wave",
+              description: "Stuns enemies for 5 seconds",
+              onLevel: 8,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: "0", max: "0" },
+              dps: { min: 0, max: 0 }
             }
           ]
         },
