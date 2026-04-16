@@ -3030,6 +3030,78 @@ window.gameData = {
           ]
         },
         { 
+          name: "Toxic Titan Camera Guy", 
+          imageUrl: "https://i.postimg.cc/9QWkD1Q7/transparent-Photoroom-(99).png",
+          rarity: 'mythic',
+          type: 'Full AOE → AOE & Damage Boost',
+          obtainmentInfo: {
+            mode: 'craft',
+            craft: [
+              {
+                name: 'Upgraded Titan Camera Guy',
+                rarity: 'mythic',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/Kzdbs8QX/transparent-Photoroom-2026-01-27T204848-524.png'
+              },
+              {
+                name: "Titan's Core",
+                rarity: 'mythic',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/PJ81Qgw2/transparent-Photoroom-2026-01-27T171940-174.png'
+              },
+              {
+                name: "Toxic Barrel",
+                rarity: 'legendary',
+                quantity: 3,
+                imageUrl: 'https://i.postimg.cc/503nZNx4/transparent-Photoroom-(42).png'
+              },
+              {
+                name: "Reinforced Plating",
+                rarity: 'epic',
+                quantity: 18,
+                imageUrl: 'https://i.postimg.cc/FKJHZQZD/Reinforced-Plating.png'
+              }
+            ]
+          },
+          stats: {
+            cost: { min: "1,800", max: "27,500" },
+            placements: { min: 1, max: 1 },
+            range: { min: 30, max: 90 },
+            speed: { min: 3.6, max: 2.5 },
+            damage: { min: 75, max: 270 },
+            angle: { min: 360, max: 90 }
+          },
+          abilities: [
+            {
+              name: "Toxic (doesn't work)",
+              description: "Attacks inflict toxic effect that increases enemy damage taken by +25% (doesn't work)",
+              onLevel: 1,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            },
+            {
+              name: "Toxic Cannon",
+              description: "Sends toxic explosion, dealing 1x damage and applying toxic infliction for 16 seconds",
+              onLevel: 4,
+              type: "Passive",
+              speed: { min: "no info about it blehhh", max: "no info about it blehhh" },
+              damage: { min: "145", max: "270" },
+              dps: { min: 0, max: 0 }
+            },
+            {
+              name: "Toxic Core",
+              description: "Shoots toxic flames, dealing 1x damage",
+              onLevel: 8,
+              type: "Passive",
+              speed: { min: "no info about it blehhh", max: "no info about it blehhh" },
+              damage: { min: "250", max: "270" },
+              dps: { min: 0, max: 0 }
+            }
+          ]
+        },
+        { 
           name: "Upgraded Titan Camera Guy", 
           imageUrl: "https://i.postimg.cc/Kzdbs8QX/transparent_Photoroom_2026_01_27T204848_524.png",
           rarity: 'mythic',
