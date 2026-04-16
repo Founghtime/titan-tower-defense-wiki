@@ -3102,6 +3102,70 @@ window.gameData = {
           ]
         },
         { 
+          name: "TV Woman (infernal)", 
+          imageUrl: "https://i.postimg.cc/T3RsKQ3L/transparent-Photoroom-(98).png",
+          rarity: 'mythic',
+          type: 'AOE → Line AOE & Burn',
+          obtainmentInfo: {
+            mode: 'craft',
+            craft: [
+              {
+                name: 'TV Woman',
+                rarity: 'mythic',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/GpK77s0b/transparent-Photoroom-(26).png'
+              },
+              {
+                name: "Photon Grenade",
+                rarity: 'mythic',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/hvXM1t1V/transparent-Photoroom-(20).png'
+              },
+              {
+                name: "Reinforced Plating",
+                rarity: 'epic',
+                quantity: 6,
+                imageUrl: 'https://i.postimg.cc/FKJHZQZD/Reinforced-Plating.png'
+              }
+            ]
+          },
+          stats: {
+            cost: { min: "750", max: "13,350" },
+            placements: { min: 3, max: 3 },
+            range: { min: 24, max: 80 },
+            speed: { min: 2, max: 4 },
+            damage: { min: 20, max: 160 },
+            angle: { min: 80, max: 0 }
+          },
+          abilities: [
+            {
+              name: "Infernal Photons",
+              description: "Deals 50% burn damage over 5 seconds",
+              onLevel: 5,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 47, max: 80 },
+              dps: { min: 0, max: 0 }
+            },
+            {
+              name: "Detonate",
+              description: "Attacking a burning enemy, the burn damage is dealt in full",
+              onLevel: 9,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            }
+          ],
+          scrapUpgrades: {
+            levels: 3,
+            prices: [20, 20, 20],
+            abilities: [
+              { ability: "Infernal Photons (damage)", values: ["50% → 60%", "60% → 70%", "70% → 80%"] }
+            ]
+          }
+        },
+        { 
           name: "Upgraded Titan Camera Guy", 
           imageUrl: "https://i.postimg.cc/Kzdbs8QX/transparent_Photoroom_2026_01_27T204848_524.png",
           rarity: 'mythic',
