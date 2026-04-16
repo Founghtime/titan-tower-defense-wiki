@@ -3647,6 +3647,88 @@ window.gameData = {
           }
         },
         { 
+          name: "Camera Woman 3.0", 
+          imageUrl: "https://i.postimg.cc/BZD42Rwj/transparent-Photoroom-(83).png",
+          rarity: 'mythic',
+          type: 'AOE → Line AOE',
+          obtainmentInfo: {
+            mode: 'craft',
+            craft: [
+              {
+                name: 'Camera Woman (overcharged)',
+                rarity: 'legendary',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/PfZT10Fs/transparent-Photoroom-(80).png'
+              },
+              {
+                name: 'Orbital Laser Drone',
+                rarity: 'mythic',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/s2Jj9VTB/transparent-Photoroom-(10).png'
+              },
+              {
+                name: "Fuel Cell",
+                rarity: 'epic',
+                quantity: 36,
+                imageUrl: 'https://i.postimg.cc/DyVdd2P5/Fuel_Cell.png'
+              },
+              {
+                name: "Reinforced Plating",
+                rarity: 'epic',
+                quantity: 24,
+                imageUrl: 'https://i.postimg.cc/FKJHZQZD/Reinforced_Plating.png'
+              },
+              {
+                name: "Lost Plunger",
+                rarity: 'rare',
+                quantity: 2,
+                imageUrl: 'https://i.postimg.cc/dtTTRyrN/transparent-Photoroom-(16).png'
+              },
+              {
+                name: "Charged Battery",
+                rarity: 'common',
+                quantity: 60,
+                imageUrl: 'https://i.postimg.cc/5yjHM8Q9/transparent_Photoroom_(23).png'
+              }
+            ]
+          },
+          stats: {
+            cost: { min: "750", max: "25,000" },
+            placements: { min: 3, max: 3 },
+            range: { min: 22, max: 50 },
+            speed: { min: 3.5, max: 0.3 },
+            angle: { min: 75, max: 0 },
+            damage: { min: 32, max: 20 }
+          },
+          abilities: [
+            {
+              name: "Orbital Lasers",
+              description: "Summons orbital missiles that deal 100x damage within 2x range",
+              onLevel: 6,
+              type: "Active",
+              speed: { min: 180, max: 180 },
+              damage: { min: 700, max: 2000 }
+            },
+            {
+              name: "Orbital Drone",
+              description: "Orbital Lasers ability summons a drone that deals 2x damage per second",
+              onLevel: 9,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: "40", max: "40" },
+              dps: { min: 0, max: "0" }
+            }
+          ],
+          scrapUpgrades: {
+            levels: 3,
+            prices: [15, 25, 50],
+            abilities: [
+              { ability: "Orbital Drone (damage)", values: ["100% → 110%", "110% → 125%", "125% → 150%"] },
+              { ability: "Orbital Drone (health)", values: ["100% → 125%", "125% → 150%", "150% → 200%"] }
+            ]
+          }
+        },
+        { 
           name: "Golden Engineer Camera Guy", 
           imageUrl: "https://i.postimg.cc/hP8w4Nch/transparent_Photoroom_(95).png",
           rarity: 'mythic',
@@ -3718,6 +3800,70 @@ window.gameData = {
             prices: ["350", "650", "900", "950", "1,200"],
             abilities: [
               { ability: "💸Cash", values: ["50 → 225", "225 → 500", "500 → 825", "825 → 1,150", "1,150 → 1,550"] }
+            ]
+          }
+        },
+        { 
+          name: "Chief Scientist Camera Guy (command)", 
+          imageUrl: "https://i.postimg.cc/nL2RRQ8X/transparent-Photoroom-(28).png",
+          rarity: 'mythic',
+          type: 'Summoner & Farm',
+          obtainmentInfo: {
+            mode: 'craft',
+            craft: [
+              {
+                name: 'Chief Scientist Camera Guy',
+                rarity: 'legendary',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/nL2RRQ8X/transparent-Photoroom-(28).png'
+              },
+              {
+                name: 'Camera Drone',
+                rarity: 'uncommon',
+                quantity: 6,
+                imageUrl: 'https://i.postimg.cc/hGwy49Ts/Camera_Drone.png'
+              },
+              {
+                name: "Reinforced Plating",
+                rarity: 'epic',
+                quantity: 12,
+                imageUrl: 'https://i.postimg.cc/FKJHZQZD/Reinforced_Plating.png'
+              },
+              {
+                name: "Large Camera",
+                rarity: 'rare',
+                quantity: 18,
+                imageUrl: 'https://i.postimg.cc/6qHhfXBT/transparent-Photoroom-2026-01-24T175531-684.png'
+              }
+            ]
+          },
+          stats: {
+            cost: { min: "5 Scrap", max: "45 Scrap" },
+            cash: { min: 150, max: "1,250" },
+            range: { min: 16, max: "25" },
+            placements: { min: 2, max: 2 },
+            summonspeed: { min: 12, max: 8 },
+            minionspeed: { min: 0.5, max: 0.5 },
+            miniondamage: { min: 4, max: 5 }
+          },
+          abilities: [
+            {
+              name: "Repair Drone",
+              description: "Immune to stun while has an active drone",
+              onLevel: 7,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 }
+            }
+          ],
+          additionalUpgrades: {
+            title: 'Additional Upgrades',
+            currencyLabel: 'Cash',
+            levels: 4,
+            prices: ["750", "1,500", "2,750", "3,800"],
+            abilities: [
+              { ability: "❤♟ Minion HP", values: ["100% → 105%", "105% → 115%", "115% → 130%", "130% → 150%"] },
+              { ability: "Minion (lifetime)", values: ["100% → 110%", "110% → 130%", "130% → 160%", "160% → 200%"] },
             ]
           }
         },
