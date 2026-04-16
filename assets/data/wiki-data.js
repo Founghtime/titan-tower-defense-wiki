@@ -2915,6 +2915,107 @@ window.gameData = {
           }
         },
         { 
+          name: "Titan Sandcastle Guy", 
+          imageUrl: "https://i.postimg.cc/sxrMfnHH/Titan-Sandcastle.png",
+          rarity: 'mythic',
+          type: 'Splash → Splash & Knockback',
+          obtainment: 'Summer Crate (0.3%)',
+          stats: {
+            cost: { min: "2,450", max: "31,450" },
+            placements: { min: 1, max: 1 },
+            range: { min: 40, max: 80 },
+            speed: { min: 2.5, max: 3 },
+            damage: { min: 100, max: 450 },
+            splash: { min: 15, max: 38 }
+          },
+          abilities: [
+            {
+              name: "Anchor",
+              description: "Gains +30% range when placed near the end of the path",
+              onLevel: 1,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            },
+            {
+              name: "Final Stand",
+              description: "Knocks back enemies",
+              onLevel: 8,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: "0", max: "0" },
+              dps: { min: 0, max: 0 }
+            }
+          ]
+        },
+        { 
+          name: "Titan Sandcastle Guy (fortified)", 
+          imageUrl: "https://i.postimg.cc/0ywbxVGd/transparent-Photoroom-2026-01-23T151316-035.png",
+          rarity: 'mythic',
+          type: 'Splash → Splash & Knockback & Booster',
+          obtainmentInfo: {
+            mode: 'craft',
+            craft: [
+              {
+                name: 'Titan Sandcastle Guy',
+                rarity: 'mythic',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/sxrMfnHH/Titan-Sandcastle.png'
+              },
+              {
+                name: "Red Flag",
+                rarity: 'mythic',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/WzJ0wBk0/transparent-Photoroom-2026-01-27T172147-455.png'
+              },
+              {
+                name: "Sunscreen",
+                rarity: 'common',
+                quantity: 100,
+                imageUrl: 'https://i.postimg.cc/66Vb5k2z/Sunscreen-Photoroom.png'
+              }
+            ]
+          },
+          stats: {
+            cost: { min: "2,450", max: "42,950" },
+            placements: { min: 1, max: 1 },
+            range: { min: 40, max: 85 },
+            speed: { min: 2.5, max: 3 },
+            damage: { min: 100, max: 450 },
+            splash: { min: 15, max: 38 }
+          },
+          abilities: [
+            {
+              name: "Anchor",
+              description: "Gains +30% range when placed near the end of the path",
+              onLevel: 1,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            },
+            {
+              name: "Final Stand",
+              description: "Knocks back enemies",
+              onLevel: 8,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: "0", max: "0" },
+              dps: { min: 0, max: 0 }
+            },
+            {
+              name: "Raised Flags!",
+              description: "Units in range gain +15% damage",
+              onLevel: 9,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: "0", max: "0" },
+              dps: { min: 0, max: 0 }
+            }
+          ]
+        },
+        { 
           name: "Upgraded Titan Speaker Guy", 
           imageUrl: "https://i.postimg.cc/KYJ5mKgB/transparent_Photoroom_2026_01_27T203432_454.png",
           rarity: 'mythic',
@@ -4512,7 +4613,7 @@ window.gameData = {
           imageUrl: "https://i.postimg.cc/VvWdJj27/Titan_Grill.png",
           rarity: 'secret',
           type: 'Splash',
-          obtainment: 'Summer Crate (0.1%)',
+          obtainment: 'Summer Crate (0.01%)',
           stats: {
             cost: { min: "4,600", max: "44,000" },
             range: { min: 45, max: 62 },
