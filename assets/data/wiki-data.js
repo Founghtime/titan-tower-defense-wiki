@@ -2783,6 +2783,35 @@ window.gameData = {
           ]
         },
         { 
+          name: "Bunny Racer Camera Guy", 
+          imageUrl: "https://i.postimg.cc/9MpJvFWC/transparent-Photoroom-(45).png",
+          rarity: 'mythic',
+          type: 'Full AOE → Line AOE',
+          obtainmentStats: 
+          [
+            { from: "Easter Crate", chance: "Unobtainable", imageUrl: "https://i.postimg.cc/gJmfYzVd/Easter_Crate.jpg" }
+          ],
+          stats: {
+            cost: { min: "900", max: "30,750" },
+            placements: { min: 3, max: 3 },
+            range: { min: 36, max: 100 },
+            speed: { min: 8, max: 5 },
+            damage: { min: 72, max: 200 },
+            angle: { min: 360, max: 0 }
+          },
+          abilities: [
+            {
+              name: "Explosive Maneuver",
+              description: "Explodes at the end of the path, dealing 1x damage",
+              onLevel: 8,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 200, max: 200 },
+              dps: { min: 0, max: 0 }
+            }
+          ]
+        },
+        { 
           name: "Pirate Speaker Woman (cannon)", 
           imageUrl: "https://i.postimg.cc/tRfBy1kc/transparent_Photoroom_2026_01_23T232348_224.png",
           rarity: 'mythic',
