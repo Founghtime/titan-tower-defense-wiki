@@ -1853,10 +1853,10 @@ window.gameData = {
           stats: {
             cost: { min: 650, max: "7,600" },
             placements: { min: 4, max: 4 },
-            range: { min: 36, max: 46 },
+            range: { min: 36, max: 52 },
             speed: { min: 2.5, max: 2 },
             damage: { min: 20, max: 80 },
-            cash: { min: 200, max: 500 },
+            cash: { min: 200, max: 675 },
             dps: { min: 8, max: 40 }
           },
           abilities: [
@@ -1887,6 +1887,15 @@ window.gameData = {
               damage: { min: 0, max: 0 },
               dps: { min: 0, max: 0 }
             },
+            {
+              name: "Stun Protection",
+              description: "Allies within range have -50% reduced stun duration",
+              onLevel: 8,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: 0 },
+              dps: { min: 0, max: 0 }
+            }
           ]
         },
         { 
@@ -2092,7 +2101,7 @@ window.gameData = {
           abilities: [
             {
               name: "Midas Touch",
-              description: "Applies Midas: enemies take 30% more damage from golden units",
+              description: "Applies Midas: enemies take +40% more damage from golden units",
               onLevel: 1,
               type: "Passive",
               speed: { min: 0, max: 0 },
