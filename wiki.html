@@ -1810,6 +1810,17 @@
               </div>
             </div>
 
+            <!-- NEW: Black Market entry in main menu -->
+            <div class="card" data-section="blackmarket">
+              <div class="card-img">
+                <img src="https://i.postimg.cc/t4541Qd1/image.png" alt="Robux Shop" loading="lazy" decoding="async">
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Black Market</h3>
+                <div class="card-info-box">Click for Info</div>
+              </div>
+            </div>
+
             <div class="card" data-section="robux">
               <div class="card-img">
                 <img src="https://i.postimg.cc/Wpk6vsjZ/image.png" alt="Robux Shop" loading="lazy" decoding="async">
@@ -2115,6 +2126,60 @@
               </thead>
               <tbody></tbody>
             </table>
+          </div>
+        </div>
+        
+        <!-- NEW: Black Market View -->
+        <div id="blackmarket-view" class="content-view" style="display: none;">
+          <div class="content-header">
+            <h2 class="section-title"><i class="fas fa-store-slash"></i> Black Market</h2>
+          </div>
+
+          <div class="nav-buttons">
+            <button class="nav-btn home" onclick="showView('home')">
+              <i class="fas fa-home"></i> Back to Main Menu
+            </button>
+          </div>
+
+          <div class="detail-desc">
+            <h3>Rotation</h3>
+            <p>Black Market updates every hour at 00 minutes.</p>
+            <p id="blackmarket-next-time"></p>
+            <p id="blackmarket-timer" style="font-weight: 600; color: #64b5f6;"></p>
+          </div>
+
+          <div class="detail-desc">
+            <h3>Market functional</h3>
+            <p>Black Market sells random items at varying prices.</p>
+          </div>
+
+          <div class="detail-desc">
+            <h3>Trades functional</h3>
+            <p>Black Market generates random offers for units, giving chips in exchange for them.</p>
+          </div>
+
+          <div class="detail-desc">
+            <h3>Ranking system</h3>
+            <p>For buying items and trading in Black Market, you increase your Rank. The higher your Rank, the more slots are unlocked in the Black Market.</p>
+          </div>
+
+          <div class="stats-accordion">
+            <div class="accordion-header">
+              <span>Possible Market Items</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="accordion-content">
+              <table class="stats-table" id="blackmarket-items-table">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Rarity</th>
+                    <th>Price</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
           </div>
         </div>
         
@@ -2859,6 +2924,7 @@
       gears:  document.getElementById('gears-view'),
       banner: document.getElementById('banner-view'),
       tvwoman:document.getElementById('tvwoman-view'),
+      blackmarket:document.getElementById('blackmarket-view'),
       robux:  document.getElementById('robux-view'),
       codes:  document.getElementById('codes-view'),
       shinies:document.getElementById('shinies-view'),
@@ -2946,6 +3012,12 @@
     const tvShopNextTimeEl     = document.getElementById('tvshop-next-time');
     const tvShopMaterialsTable = document.getElementById('tvshop-materials-table');
     let   tvShopTimerInterval  = null;
+
+    // BLACK MARKET elements
+    const blackMarketTimerEl      = document.getElementById('blackmarket-timer');
+    const blackMarketNextTimeEl   = document.getElementById('blackmarket-next-time');
+    const blackMarketItemsTable   = document.getElementById('blackmarket-items-table');
+    let   blackMarketTimerInterval = null;
     
     // CODES elements
     const codesTable = document.getElementById('codes-table');
@@ -3068,6 +3140,12 @@
           updateTvShopTimer();
           if (!tvShopTimerInterval) {
             tvShopTimerInterval = setInterval(updateTvShopTimer, 1000);
+          }
+        } else if (view === 'blackmarket') {
+          renderBlackMarket();
+          updateBlackMarketTimer();
+          if (!blackMarketTimerInterval) {
+            blackMarketTimerInterval = setInterval(updateBlackMarketTimer, 1000);
           }
         } else if (view === 'robux') {
           renderRobuxShop();
@@ -4727,6 +4805,96 @@ _refreshDisp();
 
       tvShopTimerEl.textContent = `Next rotation in ${minutes} min ${String(seconds).padStart(2, '0')} sec`;
       tvShopNextTimeEl.textContent = `Next rotation at ${next.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} (your local time)`;
+    }
+
+    // Black Market: fill possible items table with grouping by rarity
+    function renderBlackMarket() {
+      if (!blackMarketItemsTable) return;
+      const tbody = blackMarketItemsTable.querySelector('tbody');
+      if (!tbody) return;
+      tbody.innerHTML = '';
+
+      const data = gameData.blackMarket && Array.isArray(gameData.blackMarket.possibleMarketItems)
+        ? gameData.blackMarket.possibleMarketItems
+        : [];
+
+      if (!data.length) return;
+
+      const groups = {};
+      data.forEach(item => {
+        const r = (item.rarity || 'unknown').toLowerCase();
+        if (!groups[r]) groups[r] = [];
+        groups[r].push(item);
+      });
+
+      const rarityOrder = ['common','uncommon','rare','epic','legendary','mythic','secret','unknown'];
+
+      rarityOrder.forEach(rarityKey => {
+        const list = groups[rarityKey];
+        if (!list || !list.length) return;
+
+        list.sort((a, b) => (a.name || '').localeCompare(b.name || ''));
+
+        const headerRow = document.createElement('tr');
+        headerRow.className = 'rarity-group-header';
+        headerRow.setAttribute('data-rarity', rarityKey);
+
+        const rarityLabel = rarityKey === 'unknown'
+          ? 'Unknown'
+          : capitalizeFirstLetter(rarityKey);
+
+        headerRow.innerHTML = `
+          <td colspan="3">
+            <div class="rarity-group-toggle">
+              <span class="rarity-group-arrow">▼</span>
+              <span class="card-rarity rarity-${rarityKey}">${rarityLabel}</span>
+              <span class="rarity-group-count">(${list.length})</span>
+            </div>
+          </td>
+        `;
+        tbody.appendChild(headerRow);
+
+        list.forEach(item => {
+          const tr = document.createElement('tr');
+          tr.className = 'rarity-group-row';
+          tr.setAttribute('data-rarity', rarityKey);
+
+          const img = item.imageUrl || DEFAULT_ITEM_IMAGE;
+          const rarityClass = item.rarity ? `rarity-${item.rarity}` : '';
+
+          tr.innerHTML = `
+            <td>
+              <div style="display:flex; align-items:center; gap:10px;">
+                <div class="drop-item-image">
+                  <img src="${img}" alt="${item.name || ''}">
+                </div>
+                ${item.name || ''}
+              </div>
+            </td>
+            <td>
+              ${item.rarity ? `<span class="card-rarity ${rarityClass}">${capitalizeFirstLetter(item.rarity)}</span>` : ''}
+            </td>
+            <td>${item.price || ''}</td>
+          `;
+          tbody.appendChild(tr);
+        });
+      });
+    }
+
+    // Black Market: rotation timer
+    function updateBlackMarketTimer() {
+      if (!blackMarketTimerEl || !blackMarketNextTimeEl) return;
+      const now = new Date();
+      const next = new Date(now);
+      next.setHours(now.getHours() + 1, 0, 0, 0);
+
+      const diffMs = next - now;
+      const totalSeconds = Math.max(0, Math.floor(diffMs / 1000));
+      const minutes = Math.floor(totalSeconds / 60);
+      const seconds = totalSeconds % 60;
+
+      blackMarketTimerEl.textContent = `Next rotation in ${minutes} min ${String(seconds).padStart(2, '0')} sec`;
+      blackMarketNextTimeEl.textContent = `Next rotation at ${next.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} (your local time)`;
     }
 
     // ===== Robux Shop: render (MANUAL) =====
