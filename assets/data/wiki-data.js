@@ -4909,7 +4909,7 @@ window.gameData = {
           ],
           scrapUpgrades: {
             levels: 1,
-            prices: [120],
+            prices: [80],
             abilities: [
               { ability: "🎯 Range", values: ["38 → 42"] },
               { ability: "Infinity", values: ["Allows to place another Clock Woman"] },
