@@ -7235,7 +7235,7 @@ window.gameData = {
           obtainmentStats: [
             {
               from: "Robux Shop",
-              chance: "599 Robux",
+              chance: "599 Robux/month",
               imageUrl: "https://i.postimg.cc/Wpk6vsjZ/image.png"
             }
           ],
