@@ -38,13 +38,13 @@
       <div class="card">
         <div class="top">
           <div style="opacity:.85;margin-top:6px">If you can't see the page - click the button below (redirect to the form)</div>
-          <a class="btn" href="https://script.google.com/macros/s/AKfycbx1Jqg9Jpek66sQscDtAC_Q0G-9ojMqhaeMqSdHlHD_1fF-8eD18b_0c1YRGimauXM4/exec" target="_blank" rel="noopener">
+          <a class="btn" href="https://script.google.com/macros/s/AKfycbzwJ4aqY-EVbYkB4J6ohmn4rnr3xHWEBeynmykMk9szXMPEsAr9JX6jj0L2jKoIBG-SMQ/exec" target="_blank" rel="noopener">
             Open feedback form
           </a>
         </div>
 
         <iframe
-          src="https://script.google.com/macros/s/AKfycbx1Jqg9Jpek66sQscDtAC_Q0G-9ojMqhaeMqSdHlHD_1fF-8eD18b_0c1YRGimauXM4/exec"
+          src="https://script.google.com/macros/s/AKfycbzwJ4aqY-EVbYkB4J6ohmn4rnr3xHWEBeynmykMk9szXMPEsAr9JX6jj0L2jKoIBG-SMQ/exec"
           loading="lazy"
           referrerpolicy="no-referrer"
           allow="clipboard-read; clipboard-write">
