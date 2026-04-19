@@ -4829,7 +4829,7 @@ window.gameData = {
           },
           stats: {
             cost: { min: "4,600", max: "55,000" },
-            placements: { min: 2, max: 2 },
+            placements: { min: 1, max: 1 },
             range: { min: 45, max: "62 (66)" },
             speed: { min: 3.5, max: 7 },
             damage: { min: 50, max: "260" },
@@ -7127,7 +7127,7 @@ window.gameData = {
         },
         { 
           name: "Hot Coal", 
-          imageUrl: "https://i.postimg.cc/5jdL7s5V/transparent_Photoroom_2026_01_27T172500_650.png", 
+          imageUrl: "https://i.postimg.cc/MTLyR6vf/transparent-Photoroom-2026-01-27T173205-554.png", 
           type: "material",
           rarity: "mythic",
           obtainmentStats: [
