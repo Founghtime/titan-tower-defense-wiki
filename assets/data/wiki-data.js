@@ -7367,6 +7367,70 @@ window.gameData = {
           ] 
         },
         { 
+          name: "Volt Kanabo Skin (Titan's Hammer Gear)", 
+          imageUrl: "https://i.postimg.cc/nrbTMcDj/transparent-Photoroom-(8).png", 
+          type: "usable",
+          rarity: "legendary",
+          obtainmentStats: [
+            {
+              from: "Premium Samurai Battle Pass",
+              chance: "Tier 50",
+              imageUrl: "https://i.postimg.cc/0NZbbtKJ/image.png"
+            }
+          ],
+          usedForStats: [
+            { name: "Unlocking Volt Kanabo Skin for Titan's Hammer Gear", imageUrl: "https://i.postimg.cc/nrbTMcDj/transparent-Photoroom-(8).png", details: "" }
+          ] 
+        },
+        { 
+          name: "Dragon Flamethrower Skin (Titan's Hammer Gear)", 
+          imageUrl: "https://i.postimg.cc/zBW6xQwX/transparent-Photoroom-(10).png", 
+          type: "usable",
+          rarity: "rare",
+          obtainmentStats: [
+            {
+              from: "Samurai Battle Pass",
+              chance: "Tier 30",
+              imageUrl: "https://i.postimg.cc/0NZbbtKJ/image.png"
+            }
+          ],
+          usedForStats: [
+            { name: "Unlocking Dragon Flamethrower Skin for Flamethrower Gear", imageUrl: "https://i.postimg.cc/zBW6xQwX/transparent-Photoroom-(10).png", details: "" }
+          ] 
+        },
+        { 
+          name: "Tomoe Gate Skin (Medkit Gear)", 
+          imageUrl: "https://i.postimg.cc/g28z6gQm/transparent-Photoroom-(9).png", 
+          type: "usable",
+          rarity: "rare",
+          obtainmentStats: [
+            {
+              from: "Premium Samurai Battle Pass",
+              chance: "Tier 28",
+              imageUrl: "https://i.postimg.cc/0NZbbtKJ/image.png"
+            }
+          ],
+          usedForStats: [
+            { name: "Unlocking Tomoe Gate Skin for Medkit Gear", imageUrl: "https://i.postimg.cc/g28z6gQm/transparent-Photoroom-(9).png", details: "" }
+          ] 
+        },
+        { 
+          name: "Demon Fangs Skin (Buzzsaw Gear)", 
+          imageUrl: "https://i.postimg.cc/bJq9j2xF/transparent-Photoroom-(7).png", 
+          type: "usable",
+          rarity: "rare",
+          obtainmentStats: [
+            {
+              from: "Samurai Battle Pass",
+              chance: "Tier 45",
+              imageUrl: "https://i.postimg.cc/0NZbbtKJ/image.png"
+            }
+          ],
+          usedForStats: [
+            { name: "Unlocking Demon Fangs Skin for Buzzsaw Gear", imageUrl: "https://i.postimg.cc/bJq9j2xF/transparent-Photoroom-(7).png", details: "" }
+          ] 
+        },
+        { 
           name: "Gravestone Skin (Medkit Gear)", 
           imageUrl: "https://i.postimg.cc/BZm0dNRx/transparent_Photoroom_(66).png", 
           type: "usable",
@@ -7379,7 +7443,7 @@ window.gameData = {
             }
           ],
           usedForStats: [
-            { name: "Unlocking Graveblade Skin for Medkit Gear", imageUrl: "https://i.postimg.cc/BZm0dNRx/transparent_Photoroom_(66).png", details: "" }
+            { name: "Unlocking Gravestone Skin for Medkit Gear", imageUrl: "https://i.postimg.cc/BZm0dNRx/transparent_Photoroom_(66).png", details: "" }
           ] 
         },
         { 
@@ -9326,8 +9390,9 @@ overallTierList: {
             },
           ],
           skins: [
+            { name: "Pool Noodle", rarity: "epic", imageUrl: "https://i.postimg.cc/VsK8342J/transparent_Photoroom_(67).png" },
             { name: "Graveblade", rarity: "legendary", imageUrl: "https://i.postimg.cc/MZ9Shtgj/transparent_Photoroom_(65).png" },
-            { name: "Pool Noodle", rarity: "epic", imageUrl: "https://i.postimg.cc/VsK8342J/transparent_Photoroom_(67).png" }
+            { name: "Volt Kanabo", rarity: "legendary", imageUrl: "https://i.postimg.cc/nrbTMcDj/transparent-Photoroom-(8).png" }
           ]
         },
 
@@ -9928,7 +9993,9 @@ overallTierList: {
               ]
             },
           ],
-          skins: []
+          skins: [
+            { name: "Demon Fangs", rarity: "legendary", imageUrl: "https://i.postimg.cc/bJq9j2xF/transparent-Photoroom-(7).png" }
+          ]
         },
         {
           name: "Blaster Turret",
@@ -11775,6 +11842,7 @@ overallTierList: {
             },
           ],
           skins: [
+            { name: "Dragon Flamethrower", rarity: "rare", imageUrl: "https://i.postimg.cc/zBW6xQwX/transparent-Photoroom-(10).png" },
             { name: "Water Gun", rarity: "epic", imageUrl: "https://i.postimg.cc/QNf3RSvQ/transparent_Photoroom_(70).png" }
           ]
         },
@@ -13708,7 +13776,8 @@ overallTierList: {
             }
           ],
           skins: [
-            { name: "Gravestone", rarity: "rare", imageUrl: "https://i.postimg.cc/BZm0dNRx/transparent_Photoroom_(66).png" }
+            { name: "Gravestone", rarity: "rare", imageUrl: "https://i.postimg.cc/BZm0dNRx/transparent_Photoroom_(66).png" },
+            { name: "Tomoe Gate", rarity: "epic", imageUrl: "https://i.postimg.cc/g28z6gQm/transparent-Photoroom-(9).png" },
           ]
         }
       ]
