@@ -8000,14 +8000,19 @@ window.gameData = {
             { name: "Depends on chosen modifiers",   waves: 40, coinsReward: "?", expReward: "?" }
           ],
           dropItems: [
-            { name: "Samurai Plating", imageUrl: "https://i.postimg.cc/90XFcLSP/transparent-Photoroom.png", from: "Favor Reward", chance: "?%", rarity: "rare" },
-            { name: "Weapon Key", imageUrl: "https://i.postimg.cc/Kvfmhgvv/Weapon-Key.png", from: "Favor Reward", chance: "?%", rarity: "epic" },
-            { name: "Samurai Speaker Guy", imageUrl: "https://i.ibb.co/B2P56ZPS/Samurai-Speaker-Guy.png", from: "Favor Reward", chance: "?%", rarity: "legendary" },
-            { name: "Gourd", imageUrl: "https://i.postimg.cc/GpHbgBDX/transparent-Photoroom-(4).png", from: "Favor Reward", chance: "?%", rarity: "legendary" },
-            { name: "Samurai Camera Guy", imageUrl: "https://i.ibb.co/9kXpnHRQ/Samurai-Camera-Guy.png", from: "Favor Reward", chance: "?%", rarity: "mythic" },
-            { name: "Cobalt Katana", imageUrl: "https://i.postimg.cc/tCWZDcbq/transparent-Photoroom-(2).png", from: "Favor Reward", chance: "?%", rarity: "mythic" },
-            { name: "Samurai TV Guy", imageUrl: "https://i.postimg.cc/d30k5QqK/transparent-Photoroom-(1).png", from: "Favor Reward", chance: "?%", rarity: "mythic" },
-            { name: "Metal Crest", imageUrl: "https://i.postimg.cc/gcR2P6Ty/transparent-Photoroom-(3).png", from: "Favor Reward", chance: "?%", rarity: "mythic" }
+            { name: "Samurai Plating", imageUrl: "https://i.postimg.cc/90XFcLSP/transparent-Photoroom.png", from: "Favor Reward", chance: "66%", rarity: "rare" },
+            { name: "Sushi", imageUrl: "https://i.postimg.cc/g276DtkN/transparent-Photoroom-(11).png", from: "Favor Reward", chance: "8%", rarity: "epic" },
+            { name: "Weapon Key", imageUrl: "https://i.postimg.cc/Kvfmhgvv/Weapon-Key.png", from: "Favor Reward", chance: "10%", rarity: "epic" },
+            { name: "Samurai Speaker Guy", imageUrl: "https://i.ibb.co/B2P56ZPS/Samurai-Speaker-Guy.png", from: "Favor Reward", chance: "6%", rarity: "legendary" },
+            { name: "Gourd", imageUrl: "https://i.postimg.cc/GpHbgBDX/transparent-Photoroom-(4).png", from: "Favor Reward", chance: "4%", rarity: "legendary" },
+            { name: "Samurai Camera Guy", imageUrl: "https://i.ibb.co/9kXpnHRQ/Samurai-Camera-Guy.png", from: "Favor Reward", chance: "2%", rarity: "mythic" },
+            { name: "Cobalt Katana", imageUrl: "https://i.postimg.cc/tCWZDcbq/transparent-Photoroom-(2).png", from: "Favor Reward", chance: "1.25%", rarity: "mythic" },
+            { name: "Samurai TV Guy", imageUrl: "https://i.postimg.cc/d30k5QqK/transparent-Photoroom-(1).png", from: "Favor Reward", chance: "1.75%", rarity: "mythic" },
+            { name: "Metal Crest", imageUrl: "https://i.postimg.cc/gcR2P6Ty/transparent-Photoroom-(3).png", from: "Favor Reward", chance: "0.95%", rarity: "mythic" },
+            { name: "Titan Samurai (lower)", imageUrl: "https://i.postimg.cc/x87S7mJ9/transparent-Photoroom-(12).png", from: "Favor Reward", chance: "0.025%", rarity: "mythic" },
+            { name: "Titan Samurai (upper)", imageUrl: "https://i.postimg.cc/0yYLGFfr/transparent-Photoroom-(13).png", from: "Favor Reward", chance: "0.025%", rarity: "mythic" },
+            { name: "Titan Samurai (head)", imageUrl: "https://i.postimg.cc/J4NLKsrF/transparent-Photoroom-(14).png", from: "Favor Reward", chance: "0.025%", rarity: "mythic" },
+            { name: "Titan Samuria (final)", imageUrl: "https://i.postimg.cc/vZZN9TcL/transparent-Photoroom-(15).png", from: "Favor Reward", chance: "0.001%", rarity: "mythic" },
           ]
         }
       ],
