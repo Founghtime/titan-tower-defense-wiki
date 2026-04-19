@@ -8011,8 +8011,8 @@ window.gameData = {
             { name: "Metal Crest", imageUrl: "https://i.postimg.cc/gcR2P6Ty/transparent-Photoroom-(3).png", from: "Favor Reward", chance: "0.95%", rarity: "mythic" },
             { name: "Titan Samurai (lower)", imageUrl: "https://i.postimg.cc/x87S7mJ9/transparent-Photoroom-(12).png", from: "Favor Reward", chance: "0.025%", rarity: "mythic" },
             { name: "Titan Samurai (upper)", imageUrl: "https://i.postimg.cc/0yYLGFfr/transparent-Photoroom-(13).png", from: "Favor Reward", chance: "0.025%", rarity: "mythic" },
-            { name: "Titan Samurai (head)", imageUrl: "https://i.postimg.cc/J4NLKsrF/transparent-Photoroom-(14).png", from: "Favor Reward", chance: "0.025%", rarity: "mythic" },
-            { name: "Titan Samuria (final)", imageUrl: "https://i.postimg.cc/vZZN9TcL/transparent-Photoroom-(15).png", from: "Favor Reward", chance: "0.001%", rarity: "mythic" },
+            { name: "Titan Samurai (head)", imageUrl: "https://i.postimg.cc/gJ1xyxzN/transparent-Photoroom-(14).png", from: "Favor Reward", chance: "0.025%", rarity: "mythic" },
+            { name: "Titan Samuria (final)", imageUrl: "https://i.postimg.cc/76j515HK/transparent-Photoroom-(15).png", from: "Favor Reward", chance: "0.001%", rarity: "mythic" },
           ]
         }
       ],
