@@ -4967,7 +4967,7 @@ window.gameData = {
           name: "Enhanced Energy TV Guy", 
           imageUrl: "https://i.postimg.cc/brKXLS73/transparent_Photoroom_(36).png",
           rarity: 'secret',
-          type: 'Sigle Target → Line AOE',
+          type: 'Sigle Target → Triple Line AOE',
           obtainmentInfo: {
             mode: 'craft',
             craft: [
@@ -4992,12 +4992,12 @@ window.gameData = {
             ]
           },
           stats: {
-            cost: { min: "500", max: "29,650 (100 scrpa)" },
+            cost: { min: "500", max: "40,150" },
             placements: { min: 3, max: 3 },
             range: { min: 36, max: 90 },
             speed: { min: 4, max: 2 },
-            damage: { min: 74, max: "675 (750)" },
-            dps: { min: 18.5, max: "405 (450)" }
+            damage: { min: 74, max: "675" },
+            dps: { min: 18.5, max: "405" }
           },
           abilities: [
             {
@@ -5015,13 +5015,13 @@ window.gameData = {
               onLevel: 2,
               type: "Passive",
               speed: { min: 10, max: 10 },
-              damage: { min: 74, max: "675 (750)" },
-              dps: { min: 7.4, max: "67.5 (75)" }
+              damage: { min: 74, max: "675" },
+              dps: { min: 7.4, max: "67.5" }
             },
             {
               name: "Conduit",
               description: "Gains 10% of the damage from all units in range, capped at +300 (350)",
-              onLevel: 11,
+              onLevel: 12,
               type: "Passive",
               speed: { min: 0, max: 0 },
               damage: { min: 0, max: 0 },
