@@ -4771,10 +4771,10 @@ window.gameData = {
           obtainment: 'Summer Crate (0.01%)',
           stats: {
             cost: { min: "4,600", max: "44,000" },
+            placements: { min: "1", max: "1" },
             range: { min: 45, max: 62 },
             speed: { min: 3.5, max: 3.5 },
             damage: { min: 50, max: 95 },
-            dps: { min: 57, max: 136 },
             strokes: { min: 4, max: 5 },
             splash: { min: 10, max: 30 }
           },
@@ -4828,12 +4828,11 @@ window.gameData = {
             ]
           },
           stats: {
-            cost: { min: "4,600", max: "59,000 (55 scrap)" },
-            placements: { min: 1, max: 1 },
+            cost: { min: "4,600", max: "55,000" },
+            placements: { min: 2, max: 2 },
             range: { min: 45, max: "62 (66)" },
             speed: { min: 3.5, max: 7 },
-            damage: { min: 50, max: "260 (265)" },
-            dps: { min: 57, max: "186 (189)" },
+            damage: { min: 50, max: "260" },
             strokes: { min: 4, max: 5 },
             splash: { min: 10, max: 0 },
             angle: { min: 0, max: 360 }
