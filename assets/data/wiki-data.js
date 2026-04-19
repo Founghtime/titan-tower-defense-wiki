@@ -7909,7 +7909,7 @@ window.gameData = {
             { name: "Depends on chosen modifiers",   waves: 40, coinsReward: "?", expReward: "?" }
           ],
           dropItems: [
-            { name: "Samurai Plating", imageUrl: "https://i.postimg.cc/90XFcLSP/transparent-Photoroom.png", from: "Favor Rewards", chance: "?%", rarity: "rare" },
+            { name: "Samurai Plating", imageUrl: "https://i.postimg.cc/90XFcLSP/transparent-Photoroom.png", from: "Favor Reward", chance: "?%", rarity: "rare" },
             { name: "Weapon Key", imageUrl: "https://i.postimg.cc/Kvfmhgvv/Weapon-Key.png", from: "Favor Reward", chance: "?%", rarity: "epic" },
             { name: "Samurai Speaker Guy", imageUrl: "https://i.ibb.co/B2P56ZPS/Samurai-Speaker-Guy.png", from: "Favor Reward", chance: "?%", rarity: "legendary" },
             { name: "Gourd", imageUrl: "https://i.postimg.cc/GpHbgBDX/transparent-Photoroom-(4).png", from: "Favor Reward", chance: "?%", rarity: "legendary" },
