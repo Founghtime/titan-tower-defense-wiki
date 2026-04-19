@@ -8384,7 +8384,12 @@ window.gameData = {
 
       // ----- CODES (manual) -----
       codes: [
-        { code: "ZombieUpdate", reward: "150 coins" },
+        { code: "SamuraiUpdate", reward: "350 coins" },
+        { code: "125KLIKES", reward: "500 coins" },
+        { code: "450KMEMBERS", reward: "1000 coins" },
+        { code: "475KMEMBERS", reward: "1000 coins" },
+        { code: "475KFavorites", reward: "500 coins" },
+        { code: "2YearAnniversary", reward: "2000 coins" },
         { code: "FOLLOWETHYRIAS", reward: "50 coins" },
         { code: "FOLLOWMALACHITE", reward: "50 coins" },
         { code: "FOLLOWU_VKV", reward: "50 coins" }
