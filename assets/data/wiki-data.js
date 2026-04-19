@@ -8252,6 +8252,13 @@ window.gameData = {
         ]
       },
 
+      // ----- BLACK MARKET (manual) -----
+      blackMarket: {
+        rotationMinutes: 60,
+        possibleMarketItems: [
+        ]
+      },
+
       robuxShop: {
         imageUrl: "https://i.postimg.cc/Wpk6vsjZ/image.png",
 
