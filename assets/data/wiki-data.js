@@ -7220,11 +7220,39 @@ window.gameData = {
             }
           ],
           usedForStats: [
-            { name: "Obtaining VIP Tag", imageUrl: "https://i.postimg.cc/MZDKnfzx/Скриншот_10_01_2026_193533.jpg", details: "" },
-            { name: "Obtaining VIP Booth", imageUrl: "https://i.postimg.cc/fWKTVSMM/Скриншот_10_01_2026_193602.jpg", details: "" },
-            { name: "Obtaining Golden Camera Guy Morph", imageUrl: "https://i.postimg.cc/NG4fK2Qg/Скриншот_10_01_2026_193741.jpg", details: "" },
-            { name: "Obtaining +25% Coins boost", imageUrl: "https://i.postimg.cc/zv0J66xX/Coin.png", details: "" },
-            { name: "Obtaining +25% EXP Boost", imageUrl: "https://i.postimg.cc/HL6FGM5V/transparent_Photoroom_(58).png", details: "" },
+            { name: "VIP Tag", imageUrl: "https://i.postimg.cc/MZDKnfzx/Скриншот_10_01_2026_193533.jpg", details: "" },
+            { name: "VIP Booth", imageUrl: "https://i.postimg.cc/fWKTVSMM/Скриншот_10_01_2026_193602.jpg", details: "" },
+            { name: "Golden Camera Guy Morph", imageUrl: "https://i.postimg.cc/NG4fK2Qg/Скриншот_10_01_2026_193741.jpg", details: "" },
+            { name: "+25% Coins boost", imageUrl: "https://i.postimg.cc/zv0J66xX/Coin.png", details: "" },
+            { name: "+25% EXP boost", imageUrl: "https://i.postimg.cc/HL6FGM5V/transparent_Photoroom_(58).png", details: "" },
+          ] 
+        },
+        { 
+          name: "Black Market VIP Token", 
+          imageUrl: "https://i.postimg.cc/3R5hn3TJ/transparent-Photoroom-(5).png", 
+          type: "usable",
+          rarity: "mythic",
+          obtainmentStats: [
+            {
+              from: "Robux Shop",
+              chance: "599 Robux",
+              imageUrl: "https://i.postimg.cc/Wpk6vsjZ/image.png"
+            }
+          ],
+          usedForStats: [
+            { name: "Black Market VIP Tag", imageUrl: "https://i.postimg.cc/MZDKnfzx/Скриншот_10_01_2026_193533.jpg", details: "" },
+            { name: "Diamond Camera Guy Morph", imageUrl: "https://i.postimg.cc/fWKTVSMM/Скриншот_10_01_2026_193602.jpg", details: "" },
+            { name: "+20% Coins boost", imageUrl: "https://i.postimg.cc/zv0J66xX/Coin.png", details: "" },
+            { name: "+20% EXP boost", imageUrl: "https://i.postimg.cc/HL6FGM5V/transparent_Photoroom_(58).png", details: "" },
+            { name: "+10% Coins boost to your party", imageUrl: "https://i.postimg.cc/zv0J66xX/Coin.png", details: "" },
+            { name: "+20% EXP boost to your party", imageUrl: "https://i.postimg.cc/HL6FGM5V/transparent-Photoroom-(58).png", details: "" },
+            { name: "+15% more rewards from Robux purchases", imageUrl: "https://i.postimg.cc/MG42MRGL/image.png", details: "" },
+            { name: "+15% more rewards from Black Market trades", imageUrl: "https://i.postimg.cc/t4541Qd1/image.png", details: "" },
+            { name: "+2 Units slots in your Base", imageUrl: "https://i.postimg.cc/cLC8NB8s/image.png", details: "" },
+            { name: "Monthly: Plunger Potion (x2) (+1 for every month subscribed, capped at 5)", imageUrl: "https://i.postimg.cc/JhhMBM5k/transparent-Photoroom-(60).png", details: "" },
+            { name: "Monthly: Shiny Potion (x2) (+1 for every month subscribed, capped at 5)", imageUrl: "https://i.postimg.cc/qqNTDL5f/transparent-Photoroom-(59).png", details: "" },
+            { name: "First time: 7,500 Coins", imageUrl: "https://i.postimg.cc/zv0J66xX/Coin.png", details: "" },
+            { name: "First time: 250 Gems", imageUrl: "https://i.postimg.cc/zv0J66xX/Coin.png", details: "" },
           ] 
         },
         { 
@@ -8351,23 +8379,23 @@ window.gameData = {
           { name: "Premium Zombie Battle Pass", detailsText: "Unlocks premium path in Zombie Battle Pass (bought in the Battle Pass Menu)", imageUrl: "https://i.postimg.cc/2ST11ntS/transparent_Photoroom_(71).png", price: "599 Robux" },
 
           {
-            name: "VIP+",
-            imageUrl: "https://i.postimg.cc/SNB5qVHf/transparent_Photoroom_(57).png",
-            price: "7.99 €/Month (NOT AVAILABLE IN SOME COUNTRIES)",
+            name: "Black Market VIP",
+            imageUrl: "https://i.postimg.cc/3R5hn3TJ/transparent-Photoroom-(5).png",
+            price: "599 Robux/month",
             included: [
-              { name: "VIP+ Tag", imageUrl: "https://i.postimg.cc/nVkcX9nc/Скриншот_10_01_2026_193447.jpg" },
+              { name: "Black Market VIP Tag", imageUrl: "https://i.postimg.cc/nVkcX9nc/Скриншот_10_01_2026_193447.jpg" },
               { name: "Diamond Camera Guy Morph", imageUrl: "https://i.postimg.cc/1RH58Vys/Скриншот_10_01_2026_193701.jpg" },
               { name: "+20% Coins boost", imageUrl: "https://i.postimg.cc/zv0J66xX/Coin.png" },
               { name: "+20% EXP boost", imageUrl: "https://i.postimg.cc/HL6FGM5V/transparent-Photoroom-(58).png" },
               { name: "+10% Coins boost to your Party", imageUrl: "https://i.postimg.cc/zv0J66xX/Coin.png" },
               { name: "+10% EXP boost to your Party", imageUrl: "https://i.postimg.cc/HL6FGM5V/transparent-Photoroom-(58).png" },
               { name: "+15% more rewards from Robux purchases", imageUrl: "https://i.postimg.cc/MG42MRGL/image.png" },
-              { name: "Monthly: Plunger Potion (x1)", imageUrl: "https://i.postimg.cc/JhhMBM5k/transparent-Photoroom-(60).png" },
-              { name: "Monthly: Shiny Potion (x1)", imageUrl: "https://i.postimg.cc/qqNTDL5f/transparent-Photoroom-(59).png" },
+              { name: "+15% more rewards from Black Market Trades", imageUrl: "https://i.postimg.cc/t4541Qd1/image.png" },
+              { name: "+2 Units slots in your Base", imageUrl: "https://i.postimg.cc/cLC8NB8s/image.png" },
+              { name: "Monthly: Plunger Potion (x2) (+1 for every month subscribed, capped at 5)", imageUrl: "https://i.postimg.cc/JhhMBM5k/transparent-Photoroom-(60).png" },
+              { name: "Monthly: Shiny Potion (x2) (+1 for every month subscribed, capped at 5)", imageUrl: "https://i.postimg.cc/qqNTDL5f/transparent-Photoroom-(59).png" },
               { name: "First time: 7,500 Coins", imageUrl: "https://i.postimg.cc/zv0J66xX/Coin.png" },
-              { name: "First time: 250 Gems", imageUrl: "https://i.postimg.cc/8kHP7fTp/Gem.png" },
-              { name: "First time: Plunger Potion (x2)", imageUrl: "https://i.postimg.cc/JhhMBM5k/transparent-Photoroom-(60).png" },
-              { name: "First time: Shiny Potion (x2)", imageUrl: "https://i.postimg.cc/qqNTDL5f/transparent-Photoroom-(59).png" }
+              { name: "First time: 250 Gems", imageUrl: "https://i.postimg.cc/8kHP7fTp/Gem.png" }
             ]
           }
         ],
