@@ -7800,7 +7800,7 @@ window.gameData = {
           name: "Secret Bunker Raid", 
           type: "Raid Map",
           category: "raid",
-          difficulty: "9/10",
+          difficulty: "8/10",
           imageUrl: "https://i.postimg.cc/k4X3dJGV/Скриншот_06_01_2026_163755.jpg",
           difficulties: [
             { name: "Easy",   waves: 40, coinsReward: 780, expReward: 90 },
@@ -7896,6 +7896,27 @@ window.gameData = {
             { name: "Toilet Plunger Gear Blueprint", imageUrl: "https://i.postimg.cc/gkDqLRWB/transparent_Photoroom_(22).png", from: "Wave 30 bosses (x2 on Normal | x3 on Hard | x4 on Insane)", chance: "1.5%", rarity: "epic" },
             { name: "Boombox Gear Blueprint", imageUrl: "https://i.postimg.cc/gkDqLRWB/transparent_Photoroom_(22).png", from: "Wave 35 bosses (x2 on Hard | x4 on Insane)", chance: "0.5%", rarity: "legendary" },
             { name: "Flamethrower Gear Blueprint", imageUrl: "https://i.postimg.cc/gkDqLRWB/transparent_Photoroom_(22).png", from: "Wave 40 bosses (x4 on Insane)", chance: "3%", rarity: "epic" }
+          ]
+        },
+        { 
+          id: 11, 
+          name: "Plunger Temple Raid", 
+          type: "Raid Map",
+          category: "raid",
+          difficulty: "10/10",
+          imageUrl: "https://i.postimg.cc/QxGVBqTw/image.png",
+          difficulties: [
+            { name: "Depends on chosen modifiers",   waves: 40, coinsReward: "?", expReward: "?" }
+          ],
+          dropItems: [
+            { name: "Samurai Plating", imageUrl: "https://i.postimg.cc/90XFcLSP/transparent-Photoroom.png", from: "Favor Rewards", chance: "?%", rarity: "rare" },
+            { name: "Weapon Key", imageUrl: "https://i.postimg.cc/Kvfmhgvv/Weapon-Key.png", from: "Favor Reward", chance: "?%", rarity: "epic" },
+            { name: "Samurai Speaker Guy", imageUrl: "https://i.ibb.co/B2P56ZPS/Samurai-Speaker-Guy.png", from: "Favor Reward", chance: "?%", rarity: "legendary" },
+            { name: "Gourd", imageUrl: "https://i.postimg.cc/GpHbgBDX/transparent-Photoroom-(4).png", from: "Favor Reward", chance: "?%", rarity: "legendary" },
+            { name: "Samurai Camera Guy", imageUrl: "https://i.ibb.co/9kXpnHRQ/Samurai-Camera-Guy.png", from: "Favor Reward", chance: "?%", rarity: "mythic" },
+            { name: "Cobalt Katana", imageUrl: "https://i.postimg.cc/tCWZDcbq/transparent-Photoroom-(2).png", from: "Favor Reward", chance: "?%", rarity: "mythic" },
+            { name: "Samurai TV Guy", imageUrl: "https://i.postimg.cc/d30k5QqK/transparent-Photoroom-(1).png", from: "Favor Reward", chance: "?%", rarity: "mythic" },
+            { name: "Metal Crest", imageUrl: "https://i.postimg.cc/gcR2P6Ty/transparent-Photoroom-(3).png", from: "Favor Reward", chance: "?%", rarity: "mythic" }
           ]
         }
       ],
