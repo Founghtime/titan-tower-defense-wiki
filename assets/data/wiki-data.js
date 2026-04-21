@@ -4402,7 +4402,7 @@ window.gameData = {
             cost: { min: "3,000", max: "52,400" },
             placements: { min: 1, max: 1 },
             range: { min: 34, max: 90 },
-            speed: { min: 3, max: 0.3 },
+            speed: { min: 3, max: 0.25 },
             damage: { min: 100, max: 50 },
             angle: { min: 360, max: 0 }
           },
