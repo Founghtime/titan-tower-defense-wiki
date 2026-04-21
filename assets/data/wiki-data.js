@@ -5181,7 +5181,7 @@ window.gameData = {
             {
               from: "Upgraded Raid Crate",
               chance: "52.25%",
-              imageUrl: "https://i.postimg.cc/wMPNmSCd/Upgraded_Raid_Crate.jpg"
+              imageUrl: "https://i.postimg.cc/HngnjFJh/Skrinsot-19-04-2026-152205.jpg"
             },
             {
               from: "Gear Lab Map",
@@ -5739,7 +5739,7 @@ window.gameData = {
             }
           ],
           usedForStats: [
-            { name: "Opening Upgraded Raid Crate", imageUrl: "https://i.postimg.cc/wMPNmSCd/Upgraded_Raid_Crate.jpg", details: "" }
+            { name: "Opening Upgraded Raid Crate", imageUrl: "https://i.postimg.cc/HngnjFJh/Skrinsot-19-04-2026-152205.jpg", details: "" }
           ]
         },
         { 
@@ -5751,7 +5751,7 @@ window.gameData = {
             {
               from: "Upgraded Raid Crate",
               chance: "0.75%",
-              imageUrl: "https://i.postimg.cc/wMPNmSCd/Upgraded_Raid_Crate.jpg"
+              imageUrl: "https://i.postimg.cc/HngnjFJh/Skrinsot-19-04-2026-152205.jpg"
             }
           ],
           usedForStats: [
@@ -5768,7 +5768,7 @@ window.gameData = {
             {
               from: "Upgraded Raid Crate",
               chance: "0.75%",
-              imageUrl: "https://i.postimg.cc/wMPNmSCd/Upgraded_Raid_Crate.jpg"
+              imageUrl: "https://i.postimg.cc/HngnjFJh/Skrinsot-19-04-2026-152205.jpg"
             }
           ],
           usedForStats: [
@@ -5786,7 +5786,7 @@ window.gameData = {
             {
               from: "Upgraded Raid Crate",
               chance: "0.75%",
-              imageUrl: "https://i.postimg.cc/wMPNmSCd/Upgraded_Raid_Crate.jpg"
+              imageUrl: "https://i.postimg.cc/HngnjFJh/Skrinsot-19-04-2026-152205.jpg"
             }
           ],
           usedForStats: [
@@ -6632,7 +6632,7 @@ window.gameData = {
             {
               from: "Upgraded Raid Crate",
               chance: "10%",
-              imageUrl: "https://i.postimg.cc/wMPNmSCd/Upgraded_Raid_Crate.jpg"
+              imageUrl: "https://i.postimg.cc/HngnjFJh/Skrinsot-19-04-2026-152205.jpg"
             }
           ],
           usedForStats: [
@@ -6687,7 +6687,7 @@ window.gameData = {
             {
               from: "Upgraded Raid Crate",
               chance: "30%",
-              imageUrl: "https://i.postimg.cc/wMPNmSCd/Upgraded_Raid_Crate.jpg"
+              imageUrl: "https://i.postimg.cc/HngnjFJh/Skrinsot-19-04-2026-152205.jpg"
             },
             {
               from: "Salvaging Flamethrower Camera Guy",
@@ -6765,7 +6765,7 @@ window.gameData = {
             {
               from: "Upgraded Raid Crate",
               chance: "3%",
-              imageUrl: "https://i.postimg.cc/wMPNmSCd/Upgraded_Raid_Crate.jpg"
+              imageUrl: "https://i.postimg.cc/HngnjFJh/Skrinsot-19-04-2026-152205.jpg"
             },
             {
               from: "Train Route Map",
@@ -6808,7 +6808,7 @@ window.gameData = {
             {
               from: "Upgraded Raid Crate",
               chance: "3%",
-              imageUrl: "https://i.postimg.cc/wMPNmSCd/Upgraded_Raid_Crate.jpg"
+              imageUrl: "https://i.postimg.cc/HngnjFJh/Skrinsot-19-04-2026-152205.jpg"
             },
             {
               from: "Salvaging Toxic Camera Guy",
@@ -7757,7 +7757,7 @@ window.gameData = {
             {
               from: "Upgraded Raid Crate",
               chance: "0.5%",
-              imageUrl: "https://i.postimg.cc/wMPNmSCd/Upgraded_Raid_Crate.jpg"
+              imageUrl: "https://i.postimg.cc/HngnjFJh/Skrinsot-19-04-2026-152205.jpg"
             }
           ],
           usedForStats: [
@@ -8090,7 +8090,8 @@ window.gameData = {
             { item: "Mace", imageUrl: "https://i.postimg.cc/fTFpF6VP/transparent-Photoroom-(18).png", rarity: "legendary", chance: "10.7%" },
             { item: "Katana", imageUrl: "https://i.postimg.cc/8cX9TYtW/transparent-Photoroom-(19).png", rarity: "mythic", chance: "0.5%" },
             { item: "Photon Grenade", imageUrl: "https://i.postimg.cc/hvXM1t1V/transparent-Photoroom-(20).png", rarity: "mythic", chance: "0.5%" },
-            { item: "Chainsword", imageUrl: "https://i.postimg.cc/Vk8pmXF0/transparent-Photoroom-(21).png", rarity: "mythic", chance: "0.3%" }
+            { item: "Chainsword", imageUrl: "https://i.postimg.cc/Vk8pmXF0/transparent-Photoroom-(21).png", rarity: "mythic", chance: "0.3%" },
+            { item: "Doom Blade", imageUrl: "https://i.postimg.cc/FKfrDTb7/transparent-Photoroom-(27).png", rarity: "mythic", chance: "0.01%" }
           ]
         },
         {
@@ -8121,18 +8122,21 @@ window.gameData = {
             { item: "Thumbs Up Emote", imageUrl: "https://i.postimg.cc/5NN1Sqwx/Скриншот_05_01_2026_172425.jpg", rarity: "common",    chance: "19%" },
             { item: "T-Pose Emote", imageUrl: "https://i.postimg.cc/MKKxmbyq/Скриншот_05_01_2026_172355.jpg", rarity: "common", chance: "19%" },
             { item: "Threaten Emote", imageUrl: "https://i.postimg.cc/2S1DPkcH/Скриншот_05_01_2026_172844.jpg", rarity: "common", chance: "19%" },
-            { item: "Toilet Sit Emote", imageUrl: "https://i.postimg.cc/qvNT9Jbj/Скриншот_05_01_2026_172900.jpg", rarity: "uncommon", chance: "8.7%" },
+            { item: "Toilet Sit Emote", imageUrl: "https://i.postimg.cc/qvNT9Jbj/Скриншот_05_01_2026_172900.jpg", rarity: "uncommon", chance: "4.5%" },
+            { item: "Dap Up Emote", imageUrl: "https://i.postimg.cc/qvNT9Jbj/Скриншот_05_01_2026_172900.jpg", rarity: "uncommon", chance: "4.4%" },
             { item: "Kazotsky Kick Emote", imageUrl: "https://i.postimg.cc/L8Jpr9Cx/Скриншот_05_01_2026_172941.jpg", rarity: "rare", chance: "8.7%" },
             { item: "Parrot Wiggle Emote", imageUrl: "https://i.postimg.cc/K812dGqq/Скриншот_05_01_2026_172923.jpg", rarity: "rare", chance: "8.6%" },
             { item: "Company Dance Emote", imageUrl: "https://i.postimg.cc/rwDkvVnZ/Скриншот_05_01_2026_173030.jpg", rarity: "rare", chance: "8.6%" },
-            { item: "The Star Emote", imageUrl: "https://i.postimg.cc/T3K6Zd7H/Скриншот_05_01_2026_173258.jpg", rarity: "epic", chance: "2.5%" },
-            { item: "Orange Justice Emote", imageUrl: "https://i.postimg.cc/FHw4vM8C/Скриншот_05_01_2026_173903.jpg", rarity: "epic", chance: "2.5%" },
-            { item: "Shadow Emerge Emote", imageUrl: "https://i.postimg.cc/DwSTtvjH/Скриншот_05_01_2026_173328.jpg", rarity: "legendary", chance: "0.8%" },
-            { item: "Boogie Down Emote", imageUrl: "https://i.postimg.cc/mgKs4vJj/Скриншот_05_01_2026_173554.jpg", rarity: "legendary", chance: "0.8%" },
+            { item: "Beatbox Emote", imageUrl: "https://i.postimg.cc/rwDkvVnZ/Скриншот_05_01_2026_173030.jpg", rarity: "epic", chance: "1.6%" },
+            { item: "The Star Emote", imageUrl: "https://i.postimg.cc/T3K6Zd7H/Скриншот_05_01_2026_173258.jpg", rarity: "epic", chance: "1.6%" },
+            { item: "Orange Justice Emote", imageUrl: "https://i.postimg.cc/FHw4vM8C/Скриншот_05_01_2026_173903.jpg", rarity: "epic", chance: "1.6%" },
             { item: "Breakdance Emote", imageUrl: "https://i.postimg.cc/52DVJhT3/Скриншот_05_01_2026_173352.jpg", rarity: "legendary", chance: "0.8%" },
+            { item: "Shadow Emerge Emote", imageUrl: "https://i.postimg.cc/DwSTtvjH/Скриншот_05_01_2026_173328.jpg", rarity: "legendary", chance: "0.8%" },
+            { item: "Boogie Down Emote", imageUrl: "https://i.postimg.cc/mgKs4vJj/Скриншот_05_01_2026_173554.jpg", rarity: "legendary", chance: "0.65%" },
             { item: "Take The L Emote", imageUrl: "https://i.postimg.cc/wjnpzCZw/Скриншот_05_01_2026_173636.jpg", rarity: "mythic", chance: "0.4%" },
             { item: "The Honored One Emote", imageUrl: "https://i.postimg.cc/XYtbWRmQ/Скриншот_05_01_2026_173615.jpg", rarity: "mythic", chance: "0.3%" },
             { item: "Gambler Dance Emote", imageUrl: "https://i.postimg.cc/Cx9g03XP/Скриншот_05_01_2026_173655.jpg", rarity: "mythic", chance: "0.3%" },
+            { item: "Neko Dance Emote", imageUrl: "https://i.postimg.cc/Cx9g03XP/Скриншот_05_01_2026_173655.jpg", rarity: "mythic", chance: "0.15%" }
           ]
         },
         {
@@ -8143,7 +8147,7 @@ window.gameData = {
           openswithImageUrl: "https://i.postimg.cc/xjpHk1GH/transparent-Photoroom-(61).png",
           drops: [
             { item: "TV Guy Morph Token", imageUrl: "https://i.postimg.cc/c12tV2C1/Skrinsot-05-01-2026-171415.jpg", rarity: "common",    chance: "29.1%" },
-            { item: "Speaker Guy Morph Token", imageUrl: "https://i.postimg.cc/WzNTdM27/Скриншот_05_01_2026_171553.jpg", rarity: "common", chance: "29.1%" },
+            { item: "Speaker Guy Morph Token", imageUrl: "https://i.postimg.cc/WzNTdM27/Скриншот_05_01_2026_171553.jpg", rarity: "common", chance: "27.85%" },
             { item: "Dark Speaker Guy Morph Token", imageUrl: "https://i.postimg.cc/XNLnTD8L/Скриншот_05_01_2026_171610.jpg", rarity: "uncommon", chance: "20%" },
             { item: "Scientist Camera Guy Morph Token", imageUrl: "https://i.postimg.cc/jqcRGkXM/Скриншот_05_01_2026_171628.jpg", rarity: "rare", chance: "7%" },
             { item: "Large Speaker Guy Morph Token", imageUrl: "https://i.postimg.cc/qBwp9ZLm/Скриншот_05_01_2026_171641.jpg", rarity: "rare", chance: "7%" },
@@ -8152,7 +8156,9 @@ window.gameData = {
             { item: "Camera Woman Morph Token", imageUrl: "https://i.postimg.cc/qBwp9ZLF/Скриншот_05_01_2026_171752.jpg", rarity: "legendary", chance: "1%" },
             { item: "Buzzsaw Camera Guy Morph Token", imageUrl: "https://i.postimg.cc/NGDQWP4Z/Скриншот_05_01_2026_171814.jpg", rarity: "legendary", chance: "1%" },
             { item: "Engineer Camera Guy Morph Token", imageUrl: "https://i.postimg.cc/XNLnTD8m/Скриншот_05_01_2026_171831.jpg", rarity: "mythic", chance: "0.4%" },
-            { item: "Katana Speaker Woman Morph Token", imageUrl: "https://i.postimg.cc/c1hdV5mp/Скриншот_05_01_2026_171842.jpg", rarity: "mythic", chance: "0.4%" }
+            { item: "Katana Speaker Woman Morph Token", imageUrl: "https://i.postimg.cc/c1hdV5mp/Скриншот_05_01_2026_171842.jpg", rarity: "mythic", chance: "0.4%" },
+            { item: "Bomb Woman Morph Token", imageUrl: "https://i.postimg.cc/GmcLWkY8/Skrinsot-21-04-2026-204025.jpg", rarity: "mythic", chance: "0.2%" },
+            { item: "Slotman (highroller) Morph Token", imageUrl: "https://i.postimg.cc/c1hdV5mp/Скриншот_05_01_2026_171842.jpg", rarity: "mythic", chance: "0.05%" }
           ]
         }
       ],
@@ -8460,7 +8466,7 @@ window.gameData = {
           { name: "Zombie Key", detailsText: "For opening Zombie Crate", imageUrl: "https://i.postimg.cc/TwBk8nMK/Zombie_Key.png" , priceX1: "99 Robux", priceX10: "799 Robux" },
           { name: "Raid Key", detailsText: "For opening Raid Crate", imageUrl: "https://i.postimg.cc/43TxBSS7/Raid_Key.png" , priceX1: "99 Robux", priceX10: "799 Robux" },
           { name: "Weapon Key", detailsText: "For opening Weapon Crate", imageUrl: "https://i.postimg.cc/Kvfmhgvv/Weapon_Key.png" , priceX1: "199 Robux", priceX10: "1,499 Robux" },
-          { name: "Upgraded Raid Key", detailsText: "For opening Upgraded Raid Crate", imageUrl: "https://i.postimg.cc/ZKhsYP2c/Upgraded_Raid_Key.png" , priceX1: "199 Robux", priceX10: "1,499 Robux" }
+          { name: "Upgraded Raid Key", detailsText: "For opening Upgraded Raid Crate", imageUrl: "https://i.postimg.cc/HngnjFJh/Skrinsot-19-04-2026-152205.jpg" , priceX1: "199 Robux", priceX10: "1,499 Robux" }
         ]
       },
 
