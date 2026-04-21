@@ -1078,7 +1078,7 @@ window.gameData = {
           type: 'Single target',
           obtainmentStats: 
           [
-            { from: "Zombie Crate", chance: "5%", imageUrl: "https://i.postimg.cc/ZngNd1GS/Zombie_Crate.jpg" }
+            { from: "Zombie Crate", chance: "5%", imageUrl: "https://i.postimg.cc/C5g5d9Z2/Skrinsot-19-04-2026-152142.jpg" }
           ],
           stats: {
             cost: { min: 900, max: "9,350" },
@@ -1433,7 +1433,7 @@ window.gameData = {
           type: 'AOE & Farm',
           obtainmentStats: 
           [
-            { from: "Zombie Crate", chance: "3%", imageUrl: "https://i.postimg.cc/ZngNd1GS/Zombie_Crate.jpg" }
+            { from: "Zombie Crate", chance: "3%", imageUrl: "https://i.postimg.cc/C5g5d9Z2/Skrinsot-19-04-2026-152142.jpg" }
           ],
           stats: {
             cost: { min: "350", max: "4,000" },
@@ -5718,7 +5718,7 @@ window.gameData = {
             }
           ],
           usedForStats: [
-            { name: "Opening Zombie Crate", imageUrl: "https://i.postimg.cc/ZngNd1GS/Zombie_Crate.jpg", details: "" }
+            { name: "Opening Zombie Crate", imageUrl: "https://i.postimg.cc/C5g5d9Z2/Skrinsot-19-04-2026-152142.jpg", details: "" }
           ]
         },
         { 
@@ -8036,7 +8036,7 @@ window.gameData = {
         {
           id: 2,
           name: "Upgraded Raid Crate",
-          imageUrl: "https://i.postimg.cc/wMPNmSCd/Upgraded_Raid_Crate.jpg",
+          imageUrl: "https://i.postimg.cc/HngnjFJh/Skrinsot-19-04-2026-152205.jpg",
           openswith: "Upgraded Raid Key",
           openswithImageUrl: "https://i.postimg.cc/ZKhsYP2c/Upgraded_Raid_Key.png",
           drops: [
@@ -8053,7 +8053,7 @@ window.gameData = {
         {
           id: 3,
           name: "Zombie Crate",
-          imageUrl: "https://i.postimg.cc/ZngNd1GS/Zombie_Crate.jpg",
+          imageUrl: "https://i.postimg.cc/C5g5d9Z2/Skrinsot-19-04-2026-152142.jpg",
           openswith: "Zombie Key",
           openswithImageUrl: "https://i.postimg.cc/TwBk8nMK/Zombie_Key.png",
           drops: [
@@ -8081,7 +8081,7 @@ window.gameData = {
         {
           id: 5,
           name: "Weapon Crate",
-          imageUrl: "https://i.postimg.cc/C5t8qW3L/Weapon_Crate.jpg",
+          imageUrl: "https://i.postimg.cc/brhrd4Dc/Skrinsot-19-04-2026-152303.jpg",
           openswith: "Weapon Key",
           openswithImageUrl: "https://i.postimg.cc/Kvfmhgvv/Weapon-Key.png",
           drops: [
@@ -8096,7 +8096,7 @@ window.gameData = {
         {
           id: 6,
           name: "Tag Crate",
-          imageUrl: "https://i.postimg.cc/FzqSL2Mz/Tag_Crate.jpg",
+          imageUrl: "https://i.postimg.cc/zvrv34LM/Skrinsot-19-04-2026-152418.jpg",
           openswith: "Tag Key",
           openswithImageUrl: "https://i.postimg.cc/m2pmGzT0/Tag-Key.png",
           drops: [
@@ -8114,7 +8114,7 @@ window.gameData = {
         {
           id: 7,
           name: "Emote Crate",
-          imageUrl: "https://i.postimg.cc/T1SbDZzP/Emote_Crate.jpg",
+          imageUrl: "https://i.postimg.cc/rsksz70L/Skrinsot-19-04-2026-152357.jpg",
           openswith: "Emote Key",
           openswithImageUrl: "https://i.postimg.cc/RZ0mdbRH/Morph-Key.png",
           drops: [
@@ -8138,7 +8138,7 @@ window.gameData = {
         {
           id: 8,
           name: "Morph Crate",
-          imageUrl: "https://i.postimg.cc/D0DGXt9w/Morph_Crate.jpg",
+          imageUrl: "https://i.postimg.cc/Vv8v52rw/Skrinsot-19-04-2026-152325.jpg",
           openswith: "Morph Key",
           openswithImageUrl: "https://i.postimg.cc/xjpHk1GH/transparent-Photoroom-(61).png",
           drops: [
@@ -8153,27 +8153,6 @@ window.gameData = {
             { item: "Buzzsaw Camera Guy Morph Token", imageUrl: "https://i.postimg.cc/NGDQWP4Z/Скриншот_05_01_2026_171814.jpg", rarity: "legendary", chance: "1%" },
             { item: "Engineer Camera Guy Morph Token", imageUrl: "https://i.postimg.cc/XNLnTD8m/Скриншот_05_01_2026_171831.jpg", rarity: "mythic", chance: "0.4%" },
             { item: "Katana Speaker Woman Morph Token", imageUrl: "https://i.postimg.cc/c1hdV5mp/Скриншот_05_01_2026_171842.jpg", rarity: "mythic", chance: "0.4%" }
-          ]
-        },
-        {
-          id: 9,
-          name: "Summer Crate",
-          imageUrl: "https://i.postimg.cc/tJf6xLKb/Summer_Crate.jpg",
-          openswith: "Summer Key",
-          openswithImageUrl: "https://i.postimg.cc/JhWx3tjw/Summer-Key.png",
-          drops: [
-            { item: "Sunscreen", imageUrl: "https://i.postimg.cc/66Vb5k2z/Sunscreen-Photoroom.png", rarity: "common",    chance: "48.5%" },
-            { item: "Chill Camera Toilet", imageUrl: "https://i.postimg.cc/15HrKxXK/Chill_Camera_Toilet.png", rarity: "rare", chance: "27.7%" },
-            { item: "Beach Speaker Guy", imageUrl: "https://i.postimg.cc/Y0Hv2XDy/Beach_Speaker_Guy.png", rarity: "legendary", chance: "12%" },
-            { item: "Wave Crusher Camera Guy", imageUrl: "https://i.postimg.cc/fyNVWHqH/Wave_Camera_Crusher.png", rarity: "legendary", chance: "3%" },
-            { item: "Tub Engineer Camera Guy", imageUrl: "https://i.postimg.cc/x82Xjsp6/Tub_Engineer_Camera_Guy.png", rarity: "legendary", chance: "2%" },
-            { item: "Grillmaster TV Guy Morph Token", imageUrl: "https://i.postimg.cc/d3YhQWNf/Скриншот_05_01_2026_181307.jpg", rarity: "legendary", chance: "2%" },
-            { item: "Beach Speaker Guy Morph Token", imageUrl: "https://i.postimg.cc/1XQ8RW7L/Скриншот_05_01_2026_181321.jpg", rarity: "legendary", chance: "1.5%" },
-            { item: "Wave Camera Crusher Morph Token", imageUrl: "https://i.postimg.cc/Y0Hv2Xyc/Скриншот_05_01_2026_181341.jpg", rarity: "legendary", chance: "1.5%" },
-            { item: "Wave Ninja Camera Guy Morph Token", imageUrl: "https://i.postimg.cc/gjHnxv1S/Скриншот_05_01_2026_181354.jpg", rarity: "legendary", chance: "1.5%" },
-            { item: "Titan Sandcastle Guy Morph Token", imageUrl: "https://i.postimg.cc/7hnf5gjW/Скриншот_05_01_2026_181409.jpg", rarity: "mythic", chance: "0.5%" },
-            { item: "Titan Sandcastle Guy", imageUrl: "https://i.postimg.cc/sxrMfnHH/Titan_Sandcastle.png", rarity: "mythic", chance: "0.3%" },
-            { item: "Titan Grill Guy", imageUrl: "https://i.postimg.cc/VvWdJj27/Titan_Grill.png", rarity: "secret", chance: "0.01%" }
           ]
         }
       ],
