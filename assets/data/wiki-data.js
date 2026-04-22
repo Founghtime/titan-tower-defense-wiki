@@ -5181,7 +5181,7 @@ window.gameData = {
             {
               from: "Upgraded Raid Crate",
               chance: "52.25%",
-              imageUrl: "https://i.postimg.cc/HngnjFJh/Skrinsot-19-04-2026-152205.jpg"
+              imageUrl: "https://i.postimg.cc/d15jBtbz/Skrinsot-19-04-2026-152205.jpg"
             },
             {
               from: "Gear Lab Map",
@@ -5393,7 +5393,7 @@ window.gameData = {
             {
               from: "Weapon Crate",
               chance: "50%",
-              imageUrl: "https://i.postimg.cc/C5t8qW3L/Weapon_Crate.jpg"
+              imageUrl: "https://i.postimg.cc/NMdk4f3z/Skrinsot-19-04-2026-152303.jpg"
             },
             {
               from: "Salvaging Ninja Camera Guy",
@@ -5508,7 +5508,7 @@ window.gameData = {
             {
               from: "Weapon Crate",
               chance: "38%",
-              imageUrl: "https://i.postimg.cc/C5t8qW3L/Weapon_Crate.jpg"
+              imageUrl: "https://i.postimg.cc/NMdk4f3z/Skrinsot-19-04-2026-152303.jpg"
             }
           ],
           usedForStats: [
@@ -5524,7 +5524,7 @@ window.gameData = {
             {
               from: "Weapon Crate",
               chance: "10.7%",
-              imageUrl: "https://i.postimg.cc/C5t8qW3L/Weapon_Crate.jpg"
+              imageUrl: "https://i.postimg.cc/NMdk4f3z/Skrinsot-19-04-2026-152303.jpg"
             },
             {
               from: "Salvaging Mace Camera Guy",
@@ -5550,7 +5550,7 @@ window.gameData = {
             {
               from: "Weapon Crate",
               chance: "0.5%",
-              imageUrl: "https://i.postimg.cc/C5t8qW3L/Weapon_Crate.jpg"
+              imageUrl: "https://i.postimg.cc/NMdk4f3z/Skrinsot-19-04-2026-152303.jpg"
             },
             {
               from: "Salvaging Speaker Woman (katana)",
@@ -5571,7 +5571,7 @@ window.gameData = {
             {
               from: "Weapon Crate",
               chance: "0.5%",
-              imageUrl: "https://i.postimg.cc/C5t8qW3L/Weapon_Crate.jpg"
+              imageUrl: "https://i.postimg.cc/NMdk4f3z/Skrinsot-19-04-2026-152303.jpg"
             }
           ],
           usedForStats: [
@@ -5588,7 +5588,7 @@ window.gameData = {
             {
               from: "Weapon Crate",
               chance: "0.3%",
-              imageUrl: "https://i.postimg.cc/C5t8qW3L/Weapon_Crate.jpg"
+              imageUrl: "https://i.postimg.cc/NMdk4f3z/Skrinsot-19-04-2026-152303.jpg"
             }
           ],
           usedForStats: [
@@ -5613,7 +5613,7 @@ window.gameData = {
             }
           ],
           usedForStats: [
-            { name: "Opening Weapon Crate", imageUrl: "https://i.postimg.cc/C5t8qW3L/Weapon_Crate.jpg", details: "" }
+            { name: "Opening Weapon Crate", imageUrl: "https://i.postimg.cc/NMdk4f3z/Skrinsot-19-04-2026-152303.jpg", details: "" }
           ]
         },
         { 
@@ -5634,7 +5634,7 @@ window.gameData = {
             }
           ],
           usedForStats: [
-            { name: "Opening Tag Crate", imageUrl: "https://i.postimg.cc/FzqSL2Mz/Tag_Crate.jpg", details: "" }
+            { name: "Opening Tag Crate", imageUrl: "https://i.postimg.cc/DZxPgy9B/Skrinsot-19-04-2026-152418.jpg", details: "" }
           ]
         },
         { 
@@ -5676,7 +5676,7 @@ window.gameData = {
             }
           ],
           usedForStats: [
-            { name: "Opening Emote Crate", imageUrl: "https://i.postimg.cc/T1SbDZzP/Emote_Crate.jpg", details: "" }
+            { name: "Opening Emote Crate", imageUrl: "https://i.postimg.cc/50sS3NhP/Skrinsot-19-04-2026-152357.jpg", details: "" }
           ]
         },
         { 
@@ -5739,7 +5739,7 @@ window.gameData = {
             }
           ],
           usedForStats: [
-            { name: "Opening Upgraded Raid Crate", imageUrl: "https://i.postimg.cc/HngnjFJh/Skrinsot-19-04-2026-152205.jpg", details: "" }
+            { name: "Opening Upgraded Raid Crate", imageUrl: "https://i.postimg.cc/d15jBtbz/Skrinsot-19-04-2026-152205.jpg", details: "" }
           ]
         },
         { 
@@ -5751,7 +5751,7 @@ window.gameData = {
             {
               from: "Upgraded Raid Crate",
               chance: "0.75%",
-              imageUrl: "https://i.postimg.cc/HngnjFJh/Skrinsot-19-04-2026-152205.jpg"
+              imageUrl: "https://i.postimg.cc/d15jBtbz/Skrinsot-19-04-2026-152205.jpg"
             }
           ],
           usedForStats: [
@@ -5768,7 +5768,7 @@ window.gameData = {
             {
               from: "Upgraded Raid Crate",
               chance: "0.75%",
-              imageUrl: "https://i.postimg.cc/HngnjFJh/Skrinsot-19-04-2026-152205.jpg"
+              imageUrl: "https://i.postimg.cc/d15jBtbz/Skrinsot-19-04-2026-152205.jpg"
             }
           ],
           usedForStats: [
@@ -5786,7 +5786,7 @@ window.gameData = {
             {
               from: "Upgraded Raid Crate",
               chance: "0.75%",
-              imageUrl: "https://i.postimg.cc/HngnjFJh/Skrinsot-19-04-2026-152205.jpg"
+              imageUrl: "https://i.postimg.cc/d15jBtbz/Skrinsot-19-04-2026-152205.jpg"
             }
           ],
           usedForStats: [
@@ -5802,7 +5802,7 @@ window.gameData = {
             {
               from: "Emote Crate",
               chance: "8.7%",
-              imageUrl: "https://i.postimg.cc/T1SbDZzP/Emote_Crate.jpg"
+              imageUrl: "https://i.postimg.cc/50sS3NhP/Skrinsot-19-04-2026-152357.jpg"
             }
           ],
           usedForStats: [
@@ -5818,7 +5818,7 @@ window.gameData = {
             {
               from: "Emote Crate",
               chance: "19%",
-              imageUrl: "https://i.postimg.cc/T1SbDZzP/Emote_Crate.jpg"
+              imageUrl: "https://i.postimg.cc/50sS3NhP/Skrinsot-19-04-2026-152357.jpg"
             }
           ],
           usedForStats: [
@@ -5834,7 +5834,7 @@ window.gameData = {
             {
               from: "Emote Crate",
               chance: "19%",
-              imageUrl: "https://i.postimg.cc/T1SbDZzP/Emote_Crate.jpg"
+              imageUrl: "https://i.postimg.cc/50sS3NhP/Skrinsot-19-04-2026-152357.jpg"
             }
           ],
           usedForStats: [
@@ -5850,7 +5850,7 @@ window.gameData = {
             {
               from: "Emote Crate",
               chance: "19%",
-              imageUrl: "https://i.postimg.cc/T1SbDZzP/Emote_Crate.jpg"
+              imageUrl: "https://i.postimg.cc/50sS3NhP/Skrinsot-19-04-2026-152357.jpg"
             }
           ],
           usedForStats: [
@@ -5866,7 +5866,7 @@ window.gameData = {
             {
               from: "Emote Crate",
               chance: "8.7%",
-              imageUrl: "https://i.postimg.cc/T1SbDZzP/Emote_Crate.jpg"
+              imageUrl: "https://i.postimg.cc/50sS3NhP/Skrinsot-19-04-2026-152357.jpg"
             }
           ],
           usedForStats: [
@@ -5882,7 +5882,7 @@ window.gameData = {
             {
               from: "Emote Crate",
               chance: "8.6%",
-              imageUrl: "https://i.postimg.cc/T1SbDZzP/Emote_Crate.jpg"
+              imageUrl: "https://i.postimg.cc/50sS3NhP/Skrinsot-19-04-2026-152357.jpg"
             }
           ],
           usedForStats: [
@@ -5898,7 +5898,7 @@ window.gameData = {
             {
               from: "Emote Crate",
               chance: "8.6%",
-              imageUrl: "https://i.postimg.cc/T1SbDZzP/Emote_Crate.jpg"
+              imageUrl: "https://i.postimg.cc/50sS3NhP/Skrinsot-19-04-2026-152357.jpg"
             }
           ],
           usedForStats: [
@@ -5914,7 +5914,7 @@ window.gameData = {
             {
               from: "Emote Crate",
               chance: "2.5%",
-              imageUrl: "https://i.postimg.cc/T1SbDZzP/Emote_Crate.jpg"
+              imageUrl: "https://i.postimg.cc/50sS3NhP/Skrinsot-19-04-2026-152357.jpg"
             }
           ],
           usedForStats: [
@@ -5930,7 +5930,7 @@ window.gameData = {
             {
               from: "Emote Crate",
               chance: "2.5%",
-              imageUrl: "https://i.postimg.cc/T1SbDZzP/Emote_Crate.jpg"
+              imageUrl: "https://i.postimg.cc/50sS3NhP/Skrinsot-19-04-2026-152357.jpg"
             }
           ],
           usedForStats: [
@@ -5946,7 +5946,7 @@ window.gameData = {
             {
               from: "Emote Crate",
               chance: "0.8%",
-              imageUrl: "https://i.postimg.cc/T1SbDZzP/Emote_Crate.jpg"
+              imageUrl: "https://i.postimg.cc/50sS3NhP/Skrinsot-19-04-2026-152357.jpg"
             }
           ],
           usedForStats: [
@@ -5962,7 +5962,7 @@ window.gameData = {
             {
               from: "Emote Crate",
               chance: "0.8%",
-              imageUrl: "https://i.postimg.cc/T1SbDZzP/Emote_Crate.jpg"
+              imageUrl: "https://i.postimg.cc/50sS3NhP/Skrinsot-19-04-2026-152357.jpg"
             }
           ],
           usedForStats: [
@@ -5978,7 +5978,7 @@ window.gameData = {
             {
               from: "Emote Crate",
               chance: "0.8%",
-              imageUrl: "https://i.postimg.cc/T1SbDZzP/Emote_Crate.jpg"
+              imageUrl: "https://i.postimg.cc/50sS3NhP/Skrinsot-19-04-2026-152357.jpg"
             }
           ],
           usedForStats: [
@@ -5994,7 +5994,7 @@ window.gameData = {
             {
               from: "Emote Crate",
               chance: "0.4%",
-              imageUrl: "https://i.postimg.cc/T1SbDZzP/Emote_Crate.jpg"
+              imageUrl: "https://i.postimg.cc/50sS3NhP/Skrinsot-19-04-2026-152357.jpg"
             }
           ],
           usedForStats: [
@@ -6010,7 +6010,7 @@ window.gameData = {
             {
               from: "Emote Crate",
               chance: "0.3%",
-              imageUrl: "https://i.postimg.cc/T1SbDZzP/Emote_Crate.jpg"
+              imageUrl: "https://i.postimg.cc/50sS3NhP/Skrinsot-19-04-2026-152357.jpg"
             }
           ],
           usedForStats: [
@@ -6026,7 +6026,7 @@ window.gameData = {
             {
               from: "Emote Crate",
               chance: "0.3%",
-              imageUrl: "https://i.postimg.cc/T1SbDZzP/Emote_Crate.jpg"
+              imageUrl: "https://i.postimg.cc/50sS3NhP/Skrinsot-19-04-2026-152357.jpg"
             }
           ],
           usedForStats: [
@@ -6372,7 +6372,7 @@ window.gameData = {
             {
               from: "Tag Crate",
               chance: "40%",
-              imageUrl: "https://i.postimg.cc/FzqSL2Mz/Tag_Crate.jpg"
+              imageUrl: "https://i.postimg.cc/DZxPgy9B/Skrinsot-19-04-2026-152418.jpg"
             }
           ],
           usedForStats: [
@@ -6388,7 +6388,7 @@ window.gameData = {
             {
               from: "Tag Crate",
               chance: "20%",
-              imageUrl: "https://i.postimg.cc/FzqSL2Mz/Tag_Crate.jpg"
+              imageUrl: "https://i.postimg.cc/DZxPgy9B/Skrinsot-19-04-2026-152418.jpg"
             }
           ],
           usedForStats: [
@@ -6404,7 +6404,7 @@ window.gameData = {
             {
               from: "Tag Crate",
               chance: "8%",
-              imageUrl: "https://i.postimg.cc/FzqSL2Mz/Tag_Crate.jpg"
+              imageUrl: "https://i.postimg.cc/DZxPgy9B/Skrinsot-19-04-2026-152418.jpg"
             }
           ],
           usedForStats: [
@@ -6420,7 +6420,7 @@ window.gameData = {
             {
               from: "Tag Crate",
               chance: "8%",
-              imageUrl: "https://i.postimg.cc/FzqSL2Mz/Tag_Crate.jpg"
+              imageUrl: "https://i.postimg.cc/DZxPgy9B/Skrinsot-19-04-2026-152418.jpg"
             }
           ],
           usedForStats: [
@@ -6436,7 +6436,7 @@ window.gameData = {
             {
               from: "Tag Crate",
               chance: "8%",
-              imageUrl: "https://i.postimg.cc/FzqSL2Mz/Tag_Crate.jpg"
+              imageUrl: "https://i.postimg.cc/DZxPgy9B/Skrinsot-19-04-2026-152418.jpg"
             }
           ],
           usedForStats: [
@@ -6452,7 +6452,7 @@ window.gameData = {
             {
               from: "Tag Crate",
               chance: "8%",
-              imageUrl: "https://i.postimg.cc/FzqSL2Mz/Tag_Crate.jpg"
+              imageUrl: "https://i.postimg.cc/DZxPgy9B/Skrinsot-19-04-2026-152418.jpg"
             }
           ],
           usedForStats: [
@@ -6468,7 +6468,7 @@ window.gameData = {
             {
               from: "Tag Crate",
               chance: "5.5%",
-              imageUrl: "https://i.postimg.cc/FzqSL2Mz/Tag_Crate.jpg"
+              imageUrl: "https://i.postimg.cc/DZxPgy9B/Skrinsot-19-04-2026-152418.jpg"
             }
           ],
           usedForStats: [
@@ -6484,7 +6484,7 @@ window.gameData = {
             {
               from: "Tag Crate",
               chance: "2%",
-              imageUrl: "https://i.postimg.cc/FzqSL2Mz/Tag_Crate.jpg"
+              imageUrl: "https://i.postimg.cc/DZxPgy9B/Skrinsot-19-04-2026-152418.jpg"
             }
           ],
           usedForStats: [
@@ -6500,7 +6500,7 @@ window.gameData = {
             {
               from: "Tag Crate",
               chance: "0.5%",
-              imageUrl: "https://i.postimg.cc/FzqSL2Mz/Tag_Crate.jpg"
+              imageUrl: "https://i.postimg.cc/DZxPgy9B/Skrinsot-19-04-2026-152418.jpg"
             }
           ],
           usedForStats: [
@@ -6632,7 +6632,7 @@ window.gameData = {
             {
               from: "Upgraded Raid Crate",
               chance: "10%",
-              imageUrl: "https://i.postimg.cc/HngnjFJh/Skrinsot-19-04-2026-152205.jpg"
+              imageUrl: "https://i.postimg.cc/d15jBtbz/Skrinsot-19-04-2026-152205.jpg"
             }
           ],
           usedForStats: [
@@ -6687,7 +6687,7 @@ window.gameData = {
             {
               from: "Upgraded Raid Crate",
               chance: "30%",
-              imageUrl: "https://i.postimg.cc/HngnjFJh/Skrinsot-19-04-2026-152205.jpg"
+              imageUrl: "https://i.postimg.cc/d15jBtbz/Skrinsot-19-04-2026-152205.jpg"
             },
             {
               from: "Salvaging Flamethrower Camera Guy",
@@ -6765,7 +6765,7 @@ window.gameData = {
             {
               from: "Upgraded Raid Crate",
               chance: "3%",
-              imageUrl: "https://i.postimg.cc/HngnjFJh/Skrinsot-19-04-2026-152205.jpg"
+              imageUrl: "https://i.postimg.cc/d15jBtbz/Skrinsot-19-04-2026-152205.jpg"
             },
             {
               from: "Train Route Map",
@@ -6808,7 +6808,7 @@ window.gameData = {
             {
               from: "Upgraded Raid Crate",
               chance: "3%",
-              imageUrl: "https://i.postimg.cc/HngnjFJh/Skrinsot-19-04-2026-152205.jpg"
+              imageUrl: "https://i.postimg.cc/d15jBtbz/Skrinsot-19-04-2026-152205.jpg"
             },
             {
               from: "Salvaging Toxic Camera Guy",
@@ -7757,7 +7757,7 @@ window.gameData = {
             {
               from: "Upgraded Raid Crate",
               chance: "0.5%",
-              imageUrl: "https://i.postimg.cc/HngnjFJh/Skrinsot-19-04-2026-152205.jpg"
+              imageUrl: "https://i.postimg.cc/d15jBtbz/Skrinsot-19-04-2026-152205.jpg"
             }
           ],
           usedForStats: [
@@ -8036,7 +8036,7 @@ window.gameData = {
         {
           id: 2,
           name: "Upgraded Raid Crate",
-          imageUrl: "https://i.postimg.cc/HngnjFJh/Skrinsot-19-04-2026-152205.jpg",
+          imageUrl: "https://i.postimg.cc/d15jBtbz/Skrinsot-19-04-2026-152205.jpg",
           openswith: "Upgraded Raid Key",
           openswithImageUrl: "https://i.postimg.cc/ZKhsYP2c/Upgraded_Raid_Key.png",
           drops: [
@@ -8159,6 +8159,24 @@ window.gameData = {
             { item: "Katana Speaker Woman Morph Token", imageUrl: "https://i.postimg.cc/c1hdV5mp/Скриншот_05_01_2026_171842.jpg", rarity: "mythic", chance: "0.4%" },
             { item: "Bomb Woman Morph Token", imageUrl: "https://i.postimg.cc/GmcLWkY8/Skrinsot-21-04-2026-204025.jpg", rarity: "mythic", chance: "0.2%" },
             { item: "Slotman (highroller) Morph Token", imageUrl: "https://i.postimg.cc/c1hdV5mp/Скриншот_05_01_2026_171842.jpg", rarity: "mythic", chance: "0.05%" }
+          ]
+        },
+        {
+          id: 9,
+          name: "Black Market Crate",
+          imageUrl: "https://i.postimg.cc/vB0tzHJk/Skrinsot-19-04-2026-152236.jpg",
+          openswith: "Black Market Key",
+          openswithImageUrl: "https://i.postimg.cc/qvpsW3gm/transparent-Photoroom-(34).png",
+          drops: [
+            { item: "Chain Link", imageUrl: "https://i.postimg.cc/zXBTqr8n/transparent-Photoroom-(31).png", rarity: "epic",    chance: "50%" },
+            { item: "Gas Can", imageUrl: "https://i.postimg.cc/HnfWGXTN/transparent-Photoroom-(32).png", rarity: "epic", chance: "35%" },
+            { item: "Supply Override Chip", imageUrl: "https://i.postimg.cc/XYyv6NGF/transparent-Photoroom-(39).png", rarity: "legendary", chance: "7.5" },
+            { item: "Speaker Mortar", imageUrl: "https://i.postimg.cc/jqcRGkXM/Скриншот_05_01_2026_171628.jpg", rarity: "legendary", chance: "5%" },
+            { item: "Overcharged Axe", imageUrl: "https://i.postimg.cc/RFFDcYwb/transparent-Photoroom-(30).png", rarity: "mythic", chance: "1.5%" },
+            { item: "Chainsaw Arm", imageUrl: "https://i.postimg.cc/x18NVyyn/transparent-Photoroom-(29).png", rarity: "mythic", chance: "0.7%" },
+            { item: "Crimson Dagger", imageUrl: "https://i.postimg.cc/FRMV7CpT/transparent-Photoroom-(28).png", rarity: "mythic", chance: "0.3%" },
+            { item: "Bomb Woman", imageUrl: "https://i.postimg.cc/W4CCLjZz/transparent-Photoroom-(40).png", rarity: "secret", chance: "0.01%" },
+            { item: "Slotman", imageUrl: "https://i.postimg.cc/9MkpdnQG/transparent-Photoroom-(19).png", rarity: "secret", chance: "0.01%" }
           ]
         }
       ],
@@ -8466,7 +8484,7 @@ window.gameData = {
           { name: "Zombie Key", detailsText: "For opening Zombie Crate", imageUrl: "https://i.postimg.cc/TwBk8nMK/Zombie_Key.png" , priceX1: "99 Robux", priceX10: "799 Robux" },
           { name: "Raid Key", detailsText: "For opening Raid Crate", imageUrl: "https://i.postimg.cc/43TxBSS7/Raid_Key.png" , priceX1: "99 Robux", priceX10: "799 Robux" },
           { name: "Weapon Key", detailsText: "For opening Weapon Crate", imageUrl: "https://i.postimg.cc/Kvfmhgvv/Weapon_Key.png" , priceX1: "199 Robux", priceX10: "1,499 Robux" },
-          { name: "Upgraded Raid Key", detailsText: "For opening Upgraded Raid Crate", imageUrl: "https://i.postimg.cc/HngnjFJh/Skrinsot-19-04-2026-152205.jpg" , priceX1: "199 Robux", priceX10: "1,499 Robux" }
+          { name: "Upgraded Raid Key", detailsText: "For opening Upgraded Raid Crate", imageUrl: "https://i.postimg.cc/d15jBtbz/Skrinsot-19-04-2026-152205.jpg" , priceX1: "199 Robux", priceX10: "1,499 Robux" }
         ]
       },
 
