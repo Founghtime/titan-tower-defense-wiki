@@ -8123,11 +8123,11 @@ window.gameData = {
             { item: "T-Pose Emote", imageUrl: "https://i.postimg.cc/MKKxmbyq/Скриншот_05_01_2026_172355.jpg", rarity: "common", chance: "19%" },
             { item: "Threaten Emote", imageUrl: "https://i.postimg.cc/2S1DPkcH/Скриншот_05_01_2026_172844.jpg", rarity: "common", chance: "19%" },
             { item: "Toilet Sit Emote", imageUrl: "https://i.postimg.cc/qvNT9Jbj/Скриншот_05_01_2026_172900.jpg", rarity: "uncommon", chance: "4.5%" },
-            { item: "Dap Up Emote", imageUrl: "https://i.postimg.cc/qvNT9Jbj/Скриншот_05_01_2026_172900.jpg", rarity: "uncommon", chance: "4.4%" },
+            { item: "Dap Up Emote", imageUrl: "https://i.postimg.cc/tCqxtbxY/transparent-Photoroom-(36).png", rarity: "uncommon", chance: "4.4%" },
             { item: "Kazotsky Kick Emote", imageUrl: "https://i.postimg.cc/L8Jpr9Cx/Скриншот_05_01_2026_172941.jpg", rarity: "rare", chance: "8.7%" },
             { item: "Parrot Wiggle Emote", imageUrl: "https://i.postimg.cc/K812dGqq/Скриншот_05_01_2026_172923.jpg", rarity: "rare", chance: "8.6%" },
             { item: "Company Dance Emote", imageUrl: "https://i.postimg.cc/rwDkvVnZ/Скриншот_05_01_2026_173030.jpg", rarity: "rare", chance: "8.6%" },
-            { item: "Beatbox Emote", imageUrl: "https://i.postimg.cc/rwDkvVnZ/Скриншот_05_01_2026_173030.jpg", rarity: "epic", chance: "1.6%" },
+            { item: "Beatbox Emote", imageUrl: "https://i.postimg.cc/BQSKc3K8/transparent-Photoroom-(37).png", rarity: "epic", chance: "1.6%" },
             { item: "The Star Emote", imageUrl: "https://i.postimg.cc/T3K6Zd7H/Скриншот_05_01_2026_173258.jpg", rarity: "epic", chance: "1.6%" },
             { item: "Orange Justice Emote", imageUrl: "https://i.postimg.cc/FHw4vM8C/Скриншот_05_01_2026_173903.jpg", rarity: "epic", chance: "1.6%" },
             { item: "Breakdance Emote", imageUrl: "https://i.postimg.cc/52DVJhT3/Скриншот_05_01_2026_173352.jpg", rarity: "legendary", chance: "0.8%" },
@@ -8136,7 +8136,7 @@ window.gameData = {
             { item: "Take The L Emote", imageUrl: "https://i.postimg.cc/wjnpzCZw/Скриншот_05_01_2026_173636.jpg", rarity: "mythic", chance: "0.4%" },
             { item: "The Honored One Emote", imageUrl: "https://i.postimg.cc/XYtbWRmQ/Скриншот_05_01_2026_173615.jpg", rarity: "mythic", chance: "0.3%" },
             { item: "Gambler Dance Emote", imageUrl: "https://i.postimg.cc/Cx9g03XP/Скриншот_05_01_2026_173655.jpg", rarity: "mythic", chance: "0.3%" },
-            { item: "Neko Dance Emote", imageUrl: "https://i.postimg.cc/Cx9g03XP/Скриншот_05_01_2026_173655.jpg", rarity: "mythic", chance: "0.15%" }
+            { item: "Neko Dance Emote", imageUrl: "https://i.postimg.cc/c4xnMWnv/transparent-Photoroom-(38).png", rarity: "mythic", chance: "0.15%" }
           ]
         },
         {
