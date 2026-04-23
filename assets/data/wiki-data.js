@@ -4925,6 +4925,87 @@ window.gameData = {
           }
         },
         { 
+          name: "Clock Woman (future)", 
+          imageUrl: "https://i.postimg.cc/v8NYnLLQ/transparent-Photoroom-(20).png",
+          rarity: 'secret',
+          type: 'AOE → Line AOE',
+          obtainmentInfo: {
+            mode: 'craft',
+            craft: [
+              {
+                name: 'Clock Woman',
+                rarity: 'secret',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/PJBGKvgm/transparent-Photoroom-(37).png'
+              },
+              {
+                name: 'Doom Blade',
+                rarity: 'secret',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/FKfrDTb7/transparent-Photoroom-(27).png'
+              },
+              {
+                name: "Glitch Core",
+                rarity: 'mythic',
+                quantity: 1,
+                imageUrl: 'https://i.postimg.cc/7PnBQwZH/transparent-Photoroom-(26).png'
+              },
+              {
+                name: "Titanium Frame",
+                rarity: 'mythic',
+                quantity: 9,
+                imageUrl: 'https://i.postimg.cc/6QjfrpWb/transparent-Photoroom-(33).png'
+              }
+            ]
+          },
+          stats: {
+            cost: { min: "20 Scrap", max: "120 Scrap + 49,600 Cash" },
+            placements: { min: 1, max: 1 },
+            range: { min: 32, max: "72" },
+            speed: { min: 3.5, max: 3 },
+            damage: { min: 125, max: "500" },
+            angle: { min: 120, max: 0 }
+          },
+          abilities: [
+            {
+              name: "Fast Forward",
+              description: "Game speed: +50%",
+              onLevel: 1,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: "0" },
+              dps: { min: 0, max: "0" }
+            },
+            {
+              name: "Time Rush",
+              description: "At the start of each wave gains +50% damage that lowers each seconds",
+              onLevel: 3,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: "0" },
+              dps: { min: 0, max: "0" }
+            },
+            {
+              name: "Time Loop",
+              description: 'Every 5 waves, repeats all "wave start" effects 1 more time',
+              onLevel: 8,
+              type: "Passive",
+              speed: { min: 0, max: 0 },
+              damage: { min: 0, max: "0" },
+              dps: { min: 0, max: "0" }
+            },
+            {
+              name: "Zero Hour",
+              description: 'Resets all Unit ability cooldowns in range',
+              onLevel: 10,
+              type: "Active",
+              speed: { min: 240, max: 240 },
+              damage: { min: 0, max: "0" },
+              dps: { min: 0, max: "0" }
+            }
+          ]
+        },
+        { 
           name: "Energy TV Guy", 
           imageUrl: "https://i.postimg.cc/brKXLS73/transparent_Photoroom_(36).png",
           rarity: 'secret',
@@ -8091,7 +8172,7 @@ window.gameData = {
             { item: "Katana", imageUrl: "https://i.postimg.cc/8cX9TYtW/transparent-Photoroom-(19).png", rarity: "mythic", chance: "0.5%" },
             { item: "Photon Grenade", imageUrl: "https://i.postimg.cc/hvXM1t1V/transparent-Photoroom-(20).png", rarity: "mythic", chance: "0.5%" },
             { item: "Chainsword", imageUrl: "https://i.postimg.cc/Vk8pmXF0/transparent-Photoroom-(21).png", rarity: "mythic", chance: "0.3%" },
-            { item: "Doom Blade", imageUrl: "https://i.postimg.cc/FKfrDTb7/transparent-Photoroom-(27).png", rarity: "mythic", chance: "0.01%" }
+            { item: "Doom Blade", imageUrl: "https://i.postimg.cc/FKfrDTb7/transparent-Photoroom-(27).png", rarity: "secret", chance: "0.01%" }
           ]
         },
         {
